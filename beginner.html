@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-page="beginner">
+<html lang="zh-CN" data-page="beginner">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,394 +91,365 @@
       
       <div class="navbar-actions">
         <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
-        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
         <button class="menu-toggle" aria-label="Menu">☰</button>
       </div>
     </div>
   </nav>
-    </div>
-  </nav>
 
-  <!-- 页面头部 -->
-  <header class="page-header">
-    <div class="page-header-bg" style="background-image: url('images/beginner/beginner_0.jpg');"></div>
-    <div class="page-header-overlay"></div>
-    <div class="page-header-content">
+  <!-- 页面横幅 -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('images/beginner/beginner_0.jpg');"></div>
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
       <div class="breadcrumb">
         <a href="index.html">首页</a> / <span>新手入门</span>
       </div>
-      <h1 class="page-title">📖 新手入门指南</h1>
-      <p class="page-subtitle">从零开始，助你快速融入星露谷的田园生活</p>
-      <div class="page-header-tags">
+      <h1 class="page-banner-title">📖 新手入门指南</h1>
+      <p class="page-banner-subtitle">从零开始，助你快速融入星露谷的田园生活</p>
+      <div class="page-banner-tags">
         <span class="tag tag-essential">🌟 新手必看</span>
         <span class="tag tag-spring">☘️ 入门教程</span>
       </div>
     </div>
-  </header>
+  </div>
 
-  <!-- 主内容 -->
+  <!-- 主内容区域 -->
   <main class="main-content">
-    <div class="container">
+    <div class="content-grid container">
+      <!-- 侧边栏目录 -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <h3 class="sidebar-title">📖 目录</h3>
+          <ul class="sidebar-menu">
+            <li><a href="#character" class="sidebar-link active">创建角色</a></li>
+            <li><a href="#first-day" class="sidebar-link">第一天</a></li>
+            <li><a href="#energy" class="sidebar-link">体力管理</a></li>
+            <li><a href="#tools" class="sidebar-link">工具升级</a></li>
+            <li><a href="#year1" class="sidebar-link">第一年规划</a></li>
+            <li><a href="#tips" class="sidebar-link">实用技巧</a></li>
+          </ul>
+        </nav>
+      </aside>
       
-      <!-- 快速导航 -->
-      <section class="quick-nav-section">
-        <div class="quick-nav-grid">
-          <a href="#character" class="quick-nav-item">🎭 创建角色</a>
-          <a href="#first-day" class="quick-nav-item">🌅 第一天</a>
-          <a href="#energy" class="quick-nav-item">⚡ 体力管理</a>
-          <a href="#tools" class="quick-nav-item">🔧 工具升级</a>
-          <a href="#year1" class="quick-nav-item">📅 第一年规划</a>
-          <a href="#tips" class="quick-nav-item">💡 实用技巧</a>
-        </div>
-      </section>
-
-      <!-- 创建角色 -->
-      <section class="content-section" id="character">
-        <div class="section-header">
+      <!-- 主内容 -->
+      <div class="main-content-area">
+        
+        <!-- 创建角色 -->
+        <section id="character" class="content-section">
           <h2 class="section-title">🎭 创建你的角色</h2>
           <p class="section-subtitle">第一印象很重要！选择你喜欢的外观和农场类型</p>
-        </div>
-        
-        <div class="info-grid">
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">👤</span>
-              <h3>外观定制</h3>
-            </div>
-            <div class="info-card-content">
-              <ul class="info-list">
-                <li>选择肤色、发型、服装风格</li>
-                <li>选择游戏开始时的农场名称</li>
-                <li>可选：选择宠物（猫或狗）</li>
-              </ul>
-            </div>
-          </div>
           
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">🗺️</span>
-              <h3>农场类型选择</h3>
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">👤</span>
+                <h3>外观定制</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li>选择肤色、发型、服装风格</li>
+                  <li>选择游戏开始时的农场名称</li>
+                  <li>可选：选择宠物（猫或狗）</li>
+                </ul>
+              </div>
             </div>
-            <div class="info-card-content">
-              <ul class="info-list">
-                <li><strong>标准农场</strong>：最大耕种面积</li>
-                <li><strong>河流农场</strong>：自带河流，可钓鱼</li>
-                <li><strong>森林农场</strong>：更多树木和采集点</li>
-                <li><strong>山顶农场</strong>：更多矿石</li>
-                <li><strong>野生动物农场</strong>：稀有野生动物</li>
-                <li><strong>树林茂密农场</strong>（1.6）：混合类型</li>
-              </ul>
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🗺️</span>
+                <h3>农场类型选择</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li><strong>标准农场</strong>：最大耕种面积</li>
+                  <li><strong>河流农场</strong>：自带河流，可钓鱼</li>
+                  <li><strong>森林农场</strong>：更多树木和采集点</li>
+                  <li><strong>山顶农场</strong>：更多矿石</li>
+                  <li><strong>野生动物农场</strong>：稀有野生动物</li>
+                  <li><strong>树林茂密农场</strong>（1.6）：混合类型</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 第一天攻略 -->
-      <section class="content-section" id="first-day">
-        <div class="section-header">
+        <!-- 第一天攻略 -->
+        <section id="first-day" class="content-section">
           <h2 class="section-title">🌅 第一天行动指南</h2>
           <p class="section-subtitle">合理分配时间，让你赢在起跑线</p>
-        </div>
-        
-        <div class="timeline">
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-marker spring"></div>
-            <div class="timeline-content">
-              <h3>上午（6:00-12:00）</h3>
-              <p>出门清理农场上的杂物（树桩、岩石）。优先砍倒杂树收集木材，用于制作工具升级。</p>
-              <div class="timeline-tips">
-                <span class="tip">💡 斧头砍树，稿子碎石</span>
-              </div>
-            </div>
-          </div>
           
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-marker summer"></div>
-            <div class="timeline-content">
-              <h3>中午（12:00-17:00）</h3>
-              <p>探索星露谷镇，认识NPC。访问皮埃尔的杂货店购买防风草种子（春季）。</p>
-              <div class="timeline-tips">
-                <span class="tip">💡 与NPC交谈可提升好感度</span>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker spring"></div>
+              <div class="timeline-content">
+                <h3>上午（6:00-12:00）</h3>
+                <p>出门清理农场上的杂物（树桩、岩石）。优先砍倒杂树收集木材，用于制作工具升级。</p>
+                <div class="timeline-tips">
+                  <span class="tip">💡 斧头砍树，稿子碎石</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker summer"></div>
+              <div class="timeline-content">
+                <h3>中午（12:00-17:00）</h3>
+                <p>探索星露谷镇，认识NPC。访问皮埃尔的杂货店购买防风草种子（春季）。</p>
+                <div class="timeline-tips">
+                  <span class="tip">💡 与NPC交谈可提升好感度</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker autumn"></div>
+              <div class="timeline-content">
+                <h3>下午至傍晚（17:00-22:00）</h3>
+                <p>去矿洞第一层练习战斗和采集。22:00后无法移动，会损失一半金钱。</p>
+                <div class="timeline-tips">
+                  <span class="tip">💡 注意22:00夜宵时间！</span>
+                </div>
               </div>
             </div>
           </div>
-          
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-marker autumn"></div>
-            <div class="timeline-content">
-              <h3>下午至傍晚（17:00-22:00）</h3>
-              <p>去矿洞第一层练习战斗和采集。22:00后无法移动，会损失一半金钱。</p>
-              <div class="timeline-tips">
-                <span class="tip">💡 注意22:00夜宵时间！</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 体力管理 -->
-      <section class="content-section" id="energy">
-        <div class="section-header">
+        <!-- 体力管理 -->
+        <section id="energy" class="content-section">
           <h2 class="section-title">⚡ 体力管理与恢复</h2>
           <p class="section-subtitle">体力是有限的资源，学会合理分配</p>
-        </div>
-        
-        <div class="info-grid">
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">🥗</span>
-              <h3>恢复体力方法</h3>
-            </div>
-            <div class="info-card-content">
-              <table class="data-table">
-                <tr><th>物品</th><th>恢复体力</th><th>备注</th></tr>
-                <tr><td>生命力药水</td><td>120</td><td>制作获得</td></tr>
-                <tr><td>蛋料理</td><td>50</td><td>鸡下蛋</td></tr>
-                <tr><td>沙拉</td><td>38</td><td>Saloon购买</td></tr>
-                <tr><td>早餐（游戏内）</td><td>200</td><td>木匠商店</td></tr>
-              </table>
-            </div>
-          </div>
           
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">🏥</span>
-              <h3>温泉恢复</h3>
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🥗</span>
+                <h3>恢复体力方法</h3>
+              </div>
+              <div class="info-card-content">
+                <table class="data-table">
+                  <tr><th>物品</th><th>恢复体力</th><th>备注</th></tr>
+                  <tr><td>生命力药水</td><td>120</td><td>制作获得</td></tr>
+                  <tr><td>蛋料理</td><td>50</td><td>鸡下蛋</td></tr>
+                  <tr><td>沙拉</td><td>38</td><td>Saloon购买</td></tr>
+                  <tr><td>早餐（游戏内）</td><td>200</td><td>木匠商店</td></tr>
+                </table>
+              </div>
             </div>
-            <div class="info-card-content">
-              <p>矿洞外的温泉（胖子石后面的山洞）是免费的体力恢复点！</p>
-              <ul class="info-list">
-                <li>每次泡温泉约恢复150体力</li>
-                <li>每分钟恢复约10体力</li>
-                <li>可以一边泡一边吃东西</li>
-              </ul>
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🏥</span>
+                <h3>温泉恢复</h3>
+              </div>
+              <div class="info-card-content">
+                <p>矿洞外的温泉（胖子石后面的山洞）是免费的体力恢复点！</p>
+                <ul class="info-list">
+                  <li>每次泡温泉约恢复150体力</li>
+                  <li>每分钟恢复约10体力</li>
+                  <li>可以一边泡一边吃东西</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 工具升级 -->
-      <section class="content-section" id="tools">
-        <div class="section-header">
+        <!-- 工具升级 -->
+        <section id="tools" class="content-section">
           <h2 class="section-title">🔧 工具升级优先级</h2>
           <p class="section-subtitle">合理升级顺序，最大化效率</p>
-        </div>
-        
-        <div class="info-card animate-on-scroll" style="max-width: 800px;">
-          <div class="info-card-content">
-            <h3 style="margin-bottom: 16px;">🎯 升级顺序建议</h3>
-            <ol class="ordered-list">
-              <li><strong>铜斧</strong> → 快速清理木材</li>
-              <li><strong>铜稿</strong> → 挖矿效率提升</li>
-              <li><strong>洒水器</strong> → 解放双手自动浇水</li>
-              <li><strong>铁斧/稿</strong> → 进入中后期</li>
-              <li><strong>自动采集器</strong> → 钓鱼必备</li>
-            </ol>
-            <div style="margin-top: 16px; padding: 12px; background: var(--bg-warm); border-radius: var(--radius-sm);">
-              <strong>💰 建议</strong>：第一年春季优先升级斧头和洒水器，中期再考虑其他工具。
+          
+          <div class="info-card">
+            <div class="info-card-content">
+              <h3 style="margin-bottom: 16px;">🎯 升级顺序建议</h3>
+              <ol class="ordered-list">
+                <li><strong>铜斧</strong> → 快速清理木材</li>
+                <li><strong>铜稿</strong> → 挖矿效率提升</li>
+                <li><strong>洒水器</strong> → 解放双手自动浇水</li>
+                <li><strong>铁斧/稿</strong> → 进入中后期</li>
+                <li><strong>自动采集器</strong> → 钓鱼必备</li>
+              </ol>
+              <div style="margin-top: 16px; padding: 12px; background: var(--bg-warm); border-radius: var(--radius-sm);">
+                <strong>💰 建议</strong>：第一年春季优先升级斧头和洒水器，中期再考虑其他工具。
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 第一年规划 -->
-      <section class="content-section" id="year1">
-        <div class="section-header">
+        <!-- 第一年规划 -->
+        <section id="year1" class="content-section">
           <h2 class="section-title">📅 第一年完美开局规划</h2>
           <p class="section-subtitle">每个季节都有必做事项</p>
-        </div>
-        
-        <div class="season-cards">
-          <div class="season-card spring animate-on-scroll">
-            <div class="season-card-header">
-              <span class="season-icon">🌸</span>
-              <h3>春季</h3>
-            </div>
-            <div class="season-card-content">
-              <ul class="season-todo">
-                <li>☘️ 种植防风草、草莓（第13天前买）</li>
-                <li>📦 收集木材和石头</li>
-                <li>💝 与NPC建立友谊</li>
-                <li>⛏️ 探索矿洞至40层</li>
-                <li>🌊 完成钓鱼挑战</li>
-              </ul>
-            </div>
-          </div>
           
-          <div class="season-card summer animate-on-scroll">
-            <div class="season-card-header">
-              <span class="season-icon">☀️</span>
-              <h3>夏季</h3>
+          <div class="season-cards">
+            <div class="season-card spring">
+              <div class="season-card-header">
+                <span class="season-icon">🌸</span>
+                <h3>春季</h3>
+              </div>
+              <div class="season-card-content">
+                <ul class="season-todo">
+                  <li>☘️ 种植防风草、草莓（第13天前买）</li>
+                  <li>📦 收集木材和石头</li>
+                  <li>💝 与NPC建立友谊</li>
+                  <li>⛏️ 探索矿洞至40层</li>
+                  <li>🌊 完成钓鱼挑战</li>
+                </ul>
+              </div>
             </div>
-            <div class="season-card-content">
-              <ul class="season-todo">
-                <li>🌽 种植玉米、蓝莓</li>
-                <li>🧊 建造冷藏箱</li>
-                <li>🏊 提升游泳能力</li>
-                <li>🎪 参加夏季节日</li>
-                <li>💰 积累资本</li>
-              </ul>
+            
+            <div class="season-card summer">
+              <div class="season-card-header">
+                <span class="season-icon">☀️</span>
+                <h3>夏季</h3>
+              </div>
+              <div class="season-card-content">
+                <ul class="season-todo">
+                  <li>🌽 种植玉米、蓝莓</li>
+                  <li>🧊 建造冷藏箱</li>
+                  <li>🏊 提升游泳能力</li>
+                  <li>🎪 参加夏季节日</li>
+                  <li>💰 积累资本</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="season-card autumn">
+              <div class="season-card-header">
+                <span class="season-icon">🍂</span>
+                <h3>秋季</h3>
+              </div>
+              <div class="season-card-content">
+                <ul class="season-todo">
+                  <li>🎃 种植南瓜、山药</li>
+                  <li>🍷 准备酿酒设备</li>
+                  <li>🌰 收集橡树树脂</li>
+                  <li>⛏️ 深入矿洞（目标80层+）</li>
+                  <li>🏠 装修房屋</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="season-card winter">
+              <div class="season-card-header">
+                <span class="season-icon">❄️</span>
+                <h3>冬季</h3>
+              </div>
+              <div class="season-card-content">
+                <ul class="season-todo">
+                  <li>🧊 种植杨桃种子</li>
+                  <li>🐟 钓鱼收集鱼类</li>
+                  <li>⛏️ 专注挖矿</li>
+                  <li>🎁 送礼提升好感</li>
+                  <li>🏗️ 规划第二年</li>
+                </ul>
+              </div>
             </div>
           </div>
-          
-          <div class="season-card autumn animate-on-scroll">
-            <div class="season-card-header">
-              <span class="season-icon">🍂</span>
-              <h3>秋季</h3>
-            </div>
-            <div class="season-card-content">
-              <ul class="season-todo">
-                <li>🎃 种植南瓜、山药</li>
-                <li>🍷 准备酿酒设备</li>
-                <li>🌰 收集橡树树脂</li>
-                <li>⛏️ 深入矿洞（目标80层+）</li>
-                <li>🏠 装修房屋</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="season-card winter animate-on-scroll">
-            <div class="season-card-header">
-              <span class="season-icon">❄️</span>
-              <h3>冬季</h3>
-            </div>
-            <div class="season-card-content">
-              <ul class="season-todo">
-                <li>🧊 种植杨桃种子</li>
-                <li>🐟 钓鱼收集鱼类</li>
-                <li>⛏️ 专注挖矿</li>
-                <li>🎁 送礼提升好感</li>
-                <li>🏗️ 规划第二年</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 实用技巧 -->
-      <section class="content-section" id="tips">
-        <div class="section-header">
+        <!-- 实用技巧 -->
+        <section id="tips" class="content-section">
           <h2 class="section-title">💡 新手实用技巧</h2>
           <p class="section-subtitle">来自老玩家的经验总结</p>
-        </div>
-        
-        <div class="tips-grid">
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">⏰</div>
-            <div class="tip-content">
-              <h4>时间管理</h4>
-              <p>使用锄头敲击时钟可以暂停！这是游戏中最重要的bug技。</p>
-            </div>
-          </div>
           
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">💰</div>
-            <div class="tip-content">
-              <h4>不要急着买鸡</h4>
-              <p>春季没有适合的作物喂鸡，买鸡会浪费钱。先种地对。</p>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">⏰</div>
+              <div class="tip-content">
+                <h4>时间管理</h4>
+                <p>使用锄头敲击时钟可以暂停！这是游戏中最重要的bug技。</p>
+              </div>
+            </div>
+            
+            <div class="tip-card">
+              <div class="tip-icon">💰</div>
+              <div class="tip-content">
+                <h4>不要急着买鸡</h4>
+                <p>春季没有适合的作物喂鸡，买鸡会浪费钱。先种地对。</p>
+              </div>
+            </div>
+            
+            <div class="tip-card">
+              <div class="tip-icon">📦</div>
+              <div class="tip-content">
+                <h4>留够出货箱空间</h4>
+                <p>每天出货箱会自动卖出物品，确保不要放错东西。</p>
+              </div>
+            </div>
+            
+            <div class="tip-card">
+              <div class="tip-icon">🎁</div>
+              <div class="tip-content">
+                <h4>记住NPC生日</h4>
+                <p>生日送礼双倍好感度！查看日历标记重要日期。</p>
+              </div>
+            </div>
+            
+            <div class="tip-card">
+              <div class="tip-icon">🌱</div>
+              <div class="tip-content">
+                <h4>多种果树</h4>
+                <p>果树每周产出，收益远超普通作物。第二年春季解锁温室后更值钱。</p>
+              </div>
+            </div>
+            
+            <div class="tip-card">
+              <div class="tip-icon">🍷</div>
+              <div class="tip-content">
+                <h4>酿酒致富</h4>
+                <p>远古种子+酿酒桶是后期最赚钱的组合，耐心等待收获。</p>
+              </div>
             </div>
           </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">📦</div>
-            <div class="tip-content">
-              <h4>留够出货箱空间</h4>
-              <p>每天出货箱会自动卖出物品，确保不要放错东西。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">🎁</div>
-            <div class="tip-content">
-              <h4>记住NPC生日</h4>
-              <p>生日送礼双倍好感度！查看日历标记重要日期。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">🌱</div>
-            <div class="tip-content">
-              <h4>多种果树</h4>
-              <p>果树每周产出，收益远超普通作物。第二年春季解锁温室后更值钱。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">🍷</div>
-            <div class="tip-content">
-              <h4>酿酒致富</h4>
-              <p>远古种子+酿酒桶是后期最赚钱的组合，耐心等待收获。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 相关推荐 -->
-      <section class="content-section">
-        <div class="section-header">
+        <!-- 相关推荐 -->
+        <section class="content-section">
           <h2 class="section-title">📚 相关攻略推荐</h2>
-        </div>
-        
-        <div class="card-grid">
-          <a href="seasons.html" class="nav-card animate-on-scroll">
-            <img src="images/card/seasons-card.jpg" alt="季节攻略" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">📅</div>
-            <h3 class="nav-card-title">季节攻略</h3>
-            <p class="nav-card-desc">各季节作物种植与节日活动</p>
-          </a>
           
-          <a href="farm.html" class="nav-card animate-on-scroll">
-            <img src="images/card/farm-card.jpg" alt="农场规划" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">🏡</div>
-            <h3 class="nav-card-title">农场规划</h3>
-            <p class="nav-card-desc">8种农场类型详细解析</p>
-          </a>
-          
-          <a href="community-center.html" class="nav-card animate-on-scroll">
-            <img src="images/community-center/community_0.jpg" alt="社区中心" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">🏛️</div>
-            <h3 class="nav-card-title">社区中心</h3>
-            <p class="nav-card-desc">献祭包完整攻略</p>
-          </a>
-          
-          <a href="money.html" class="nav-card animate-on-scroll">
-            <img src="images/money/money_0.jpg" alt="赚钱攻略" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">💰</div>
-            <h3 class="nav-card-title">赚钱攻略</h3>
-            <p class="nav-card-desc">最全收益分析</p>
-          </a>
-        </div>
-      </section>
+          <div class="card-grid">
+            <a href="seasons.html" class="nav-card">
+              <img src="images/card/seasons-card.jpg" alt="季节攻略" class="nav-card-image" loading="lazy">
+              <div class="nav-card-overlay"></div>
+              <div class="nav-card-icon">📅</div>
+              <h3 class="nav-card-title">季节攻略</h3>
+              <p class="nav-card-desc">各季节作物种植与节日活动</p>
+            </a>
+            
+            <a href="farm.html" class="nav-card">
+              <img src="images/card/farm-card.jpg" alt="农场规划" class="nav-card-image" loading="lazy">
+              <div class="nav-card-overlay"></div>
+              <div class="nav-card-icon">🏡</div>
+              <h3 class="nav-card-title">农场规划</h3>
+              <p class="nav-card-desc">8种农场类型详细解析</p>
+            </a>
+            
+            <a href="community-center.html" class="nav-card">
+              <img src="images/community-center/community_0.jpg" alt="社区中心" class="nav-card-image" loading="lazy">
+              <div class="nav-card-overlay"></div>
+              <div class="nav-card-icon">🏛️</div>
+              <h3 class="nav-card-title">社区中心</h3>
+              <p class="nav-card-desc">献祭包完整攻略</p>
+            </a>
+            
+            <a href="money.html" class="nav-card">
+              <img src="images/money/money_0.jpg" alt="赚钱攻略" class="nav-card-image" loading="lazy">
+              <div class="nav-card-overlay"></div>
+              <div class="nav-card-icon">💰</div>
+              <h3 class="nav-card-title">赚钱攻略</h3>
+              <p class="nav-card-desc">最全收益分析</p>
+            </a>
+          </div>
+        </section>
 
+      </div>
     </div>
   </main>
 
   <!-- 页脚 -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>关于攻略站</h4>
-          <p>星露谷物语中文攻略站致力于为玩家提供最全面、最准确的游戏攻略。</p>
-        </div>
-        <div class="footer-section">
-          <h4>快速链接</h4>
-          <ul>
-            <li><a href="seasons.html">季节攻略</a></li>
-            <li><a href="skills.html">技能系统</a></li>
-            <li><a href="npc.html">NPC攻略</a></li>
-            <li><a href="money.html">赚钱攻略</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>联系我们</h4>
-          <p>有问题或建议？欢迎反馈！</p>
-        </div>
-      </div>
       <div class="footer-bottom">
         <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
       </div>
@@ -487,8 +458,5 @@
 
   <script src="i18n.js"></script>
   <script src="script.js"></script>
-<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CLOUDFLARE_TOKEN"}'></script>
 </body>
 </html>
