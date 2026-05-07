@@ -86,6 +86,89 @@ const i18n = {
     'npc.gift.hated': '好感度 -10',
     'npc.tip': '💡 小贴士：每周给同一NPC送礼物只能增加一次好感度，选择生日或节日送礼效果更佳！',
 
+    // 姜岛探索页面翻译
+    'ginger.breadcrumb.home': '首页',
+    'ginger.breadcrumb.current': '姜岛探索',
+    'ginger.sidebar.title': '📖 目录',
+    'ginger.sidebar.overview': '🗺️ 姜岛概述',
+    'ginger.sidebar.regions': '🏝️ 岛屿区域',
+    'ginger.sidebar.walnut': '🥜 金核桃收集',
+    'ginger.sidebar.volcano': '🌋 火山地牢',
+    'ginger.sidebar.crops': '🌴 热带作物',
+    'ginger.sidebar.related': '📌 相关推荐',
+    'ginger.island_overview': '📖 姜岛概述',
+    'ginger.island_overview_subtitle': '解锁条件与岛屿特点',
+    'ginger.island_regions': '🗺️ 岛屿区域详解',
+    'ginger.island_regions_subtitle': '姜岛各个区域一览',
+    'ginger.golden_walnut': '🥜 金核桃收集',
+    'ginger.golden_walnut_subtitle': '共130个金核桃，分布在岛屿各处',
+    'ginger.volcano_dungeon': '🌋 火山地牢攻略',
+    'ginger.volcano_dungeon_subtitle': '挑战高难度地牢，获得珍贵奖励',
+    'ginger.special_crops': '🌴 姜岛特色作物',
+    'ginger.special_crops_subtitle': '热带气候下的特殊种植',
+
+    // 社区中心页面翻译
+    'community.overview': '🏛️ 社区中心概述',
+    'community.routes': '⚖️ 两条路线对比',
+    'community.bundles': '📦 所有献祭包详解',
+    'community.rewards': '🎁 完整奖励',
+    'community.related': '📚 相关攻略',
+
+    // 沙漠页面翻译
+    'desert.overview': '🏜️ 沙漠概述',
+    'desert.skull_cave': '⛏️ 骷髅洞攻略',
+    'desert.trader': '🛒 沙漠商人',
+    'desert.tips': '💡 实用技巧',
+    'desert.related': '📚 相关攻略',
+
+    // Mod教程页面翻译
+    'mods.prep': '📦 安装前准备',
+    'mods.recommend': '⭐ 热门Mod推荐',
+    'mods.conflicts': '⚠️ Mod冲突解决',
+    'mods.related': '📚 相关攻略',
+
+    // 联机教程页面翻译
+    'multiplayer.methods': '🌐 联机方式',
+    'multiplayer.roles': '👥 联机分工',
+    'multiplayer.tips': '⚠️ 注意事项',
+    'multiplayer.related': '📚 相关攻略',
+
+    // 1.6版本页面翻译
+    'update16.items': '🎁 新增物品',
+    'update16.events': '🎭 新增事件',
+    'update16.improvements': '⚙️ 游戏改进',
+    'update16.related': '📚 相关攻略',
+
+    // 成就系统页面翻译
+    'achievements.overview': '🏆 成就系统概览',
+    'achievements.farming': '🌾 农业成就',
+    'achievements.mining': '⛏️ 采矿成就',
+    'achievements.fishing': '🎣 钓鱼成就',
+    'achievements.social': '💬 社交成就',
+    'achievements.related': '📚 相关攻略',
+
+    // 战斗系统页面翻译
+    'combat.profession': '⚔️ 职业选择',
+    'combat.weapons': '🗡️ 武器推荐',
+    'combat.monsters': '👹 怪物图鉴',
+    'combat.tips': '💥 战斗技巧',
+    'combat.related': '📚 相关攻略',
+
+    // 赚钱攻略页面翻译
+    'money.core': '💰 核心赚钱思路',
+    'money.crops': '🌾 作物经济',
+    'money.winemaking': '🍷 酿酒致富',
+    'money.other': '📦 其他赚钱途径',
+    'money.related': '📚 相关攻略',
+
+    // 新手入门页面翻译
+    'beginner.character': '👤 创建角色',
+    'beginner.firstday': '📅 第一天指南',
+    'beginner.energy': '⚡ 体力管理',
+    'beginner.tools': '🔧 工具升级',
+    'beginner.planning': '📆 四季规划',
+    'beginner.related': '📚 相关攻略',
+
     // 首页英雄区域
     'hero.badge': '🌟 游戏版本 1.6 兼容',
     'hero.title': '欢迎来到<span>星露谷</span>',
@@ -288,6 +371,89 @@ const i18n = {
     'npc.gift.neutral': 'Hearts +0',
     'npc.gift.hated': 'Hearts -10',
     'npc.tip': '💡 Tip: You can only give one gift per week to each NPC. Giving gifts on birthdays or festivals is more effective!',
+
+    // Ginger Island page translations
+    'ginger.breadcrumb.home': 'Home',
+    'ginger.breadcrumb.current': 'Ginger Island',
+    'ginger.sidebar.title': '📖 Contents',
+    'ginger.sidebar.overview': '🗺️ Island Overview',
+    'ginger.sidebar.regions': '🏝️ Island Regions',
+    'ginger.sidebar.walnut': '🥜 Golden Walnut Collection',
+    'ginger.sidebar.volcano': '🌋 Volcano Dungeon',
+    'ginger.sidebar.crops': '🌴 Tropical Crops',
+    'ginger.sidebar.related': '📌 Related Guides',
+    'ginger.island_overview': '🗺️ Island Overview',
+    'ginger.island_overview_subtitle': 'Unlock conditions and island features',
+    'ginger.island_regions': '🗺️ Island Regions Guide',
+    'ginger.island_regions_subtitle': 'Overview of all Ginger Island areas',
+    'ginger.golden_walnut': '🥜 Golden Walnut Collection',
+    'ginger.golden_walnut_subtitle': '130 golden walnuts scattered across the island',
+    'ginger.volcano_dungeon': '🌋 Volcano Dungeon Guide',
+    'ginger.volcano_dungeon_subtitle': 'Challenge the high-difficulty dungeon for rare rewards',
+    'ginger.special_crops': '🌴 Ginger Island Special Crops',
+    'ginger.special_crops_subtitle': 'Special farming in tropical climate',
+
+    // Community Center page translations
+    'community.overview': '🏛️ Community Center Overview',
+    'community.routes': '⚖️ Two Paths Comparison',
+    'community.bundles': '📦 All Bundle Details',
+    'community.rewards': '🎁 Complete Rewards',
+    'community.related': '📚 Related Guides',
+
+    // Desert page translations
+    'desert.overview': '🏜️ Desert Overview',
+    'desert.skull_cave': '⛏️ Skull Cave Guide',
+    'desert.trader': '🛒 Desert Trader',
+    'desert.tips': '💡 Useful Tips',
+    'desert.related': '📚 Related Guides',
+
+    // Mods page translations
+    'mods.prep': '📦 Pre-Installation Setup',
+    'mods.recommend': '⭐ Popular Mods',
+    'mods.conflicts': '⚠️ Resolving Mod Conflicts',
+    'mods.related': '📚 Related Guides',
+
+    // Multiplayer page translations
+    'multiplayer.methods': '🌐 Multiplayer Methods',
+    'multiplayer.roles': '👥 Multiplayer Roles',
+    'multiplayer.tips': '⚠️ Important Notes',
+    'multiplayer.related': '📚 Related Guides',
+
+    // Version 1.6 page translations
+    'update16.items': '🎁 New Items',
+    'update16.events': '🎭 New Events',
+    'update16.improvements': '⚙️ Game Improvements',
+    'update16.related': '📚 Related Guides',
+
+    // Achievements page translations
+    'achievements.overview': '🏆 Achievements Overview',
+    'achievements.farming': '🌾 Farming Achievements',
+    'achievements.mining': '⛏️ Mining Achievements',
+    'achievements.fishing': '🎣 Fishing Achievements',
+    'achievements.social': '💬 Social Achievements',
+    'achievements.related': '📚 Related Guides',
+
+    // Combat page translations
+    'combat.profession': '⚔️ Profession Choice',
+    'combat.weapons': '🗡️ Weapon Recommendations',
+    'combat.monsters': '👹 Monster Guide',
+    'combat.tips': '💥 Combat Tips',
+    'combat.related': '📚 Related Guides',
+
+    // Money Guide page translations
+    'money.core': '💰 Core Money-Making Strategies',
+    'money.crops': '🌾 Crop Economy',
+    'money.winemaking': '🍷 Wine Making',
+    'money.other': '📦 Other Money-Making Methods',
+    'money.related': '📚 Related Guides',
+
+    // Beginner page translations
+    'beginner.character': '👤 Create Your Character',
+    'beginner.firstday': '📅 First Day Guide',
+    'beginner.energy': '⚡ Energy Management',
+    'beginner.tools': '🔧 Tool Upgrades',
+    'beginner.planning': '📆 Seasonal Planning',
+    'beginner.related': '📚 Related Guides',
 
     // Home page hero
     'hero.badge': '🌟 Game Version 1.6 Compatible',
