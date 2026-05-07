@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-page="npc">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPC攻略 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语NPC攻略，包含可结婚对象、礼物喜好表、生日时间、好感度提升技巧">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link active" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview">NPC概览</a></li>
+              <li class="sidebar-item"><a href="#bachelors">💙 可结婚男性</a></li>
+              <li class="sidebar-item"><a href="#bachelorettes">💗 可结婚女性</a></li>
+              <li class="sidebar-item"><a href="#other">👥 其他NPC</a></li>
+              <li class="sidebar-item"><a href="#gifts">🎁 礼物喜好表</a></li>
+              <li class="sidebar-item"><a href="#friendship">💕 好感度系统</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/npc-banner.jpg" alt="NPC攻略" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">💝 NPC攻略</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>NPC攻略</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">💝 NPC攻略</h1>
+            <p class="page-subtitle">与村民建立友谊，了解他们的故事，送上他们最爱的礼物！</p>
+          </div>
+
+          <!-- NPC概览 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🌟 NPC概览</h2>
+            
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>好感度系统：</strong></p>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                  <li>❤️ 心形图标代表好感度（最高10心，需结婚才能达到14心）</li>
+                  <li>每周给NPC送礼物可增加好感度上限+2</li>
+                  <li>对话可增加1点好感度</li>
+                  <li>完成任务可增加好感度</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>送礼物技巧：</strong>记住每个NPC的生日！在生日当天送礼，好感度是平时的8倍！每个NPC生日一年只有一次，不要错过！
+              </div>
+            </div>
+          </section>
+
+          <!-- 可结婚男性详细表 -->
+          <section id="bachelors" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💙 可结婚男性NPC - 详细攻略</h2>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>快速攻略：</strong>优先记住NPC生日！送礼好感度+8倍。阿比盖尔(秋13)、艾米丽(春27)、海莉(春14)、莉亚(冬23)、玛鲁(夏10)、潘妮(秋2)
+              </div>
+            </div>
+
+            <table class="data-table" style="margin-top: 16px;">
+              <thead>
+                <tr>
+                  <th>NPC</th>
+                  <th>生日</th>
+                  <th>住址</th>
+                  <th>最爱礼物(5个)</th>
+                  <th>事件触发条件</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>阿比盖尔 Abigail</td>
+                  <td>秋季13日</td>
+                  <td>皮埃尔杂货店</td>
+                  <td>紫水晶/南瓜派/香蕉布丁/巧克力蛋糕/河豚</td>
+                  <td>2心后周三去博物馆图书馆</td>
+                </tr>
+                <tr>
+                  <td>艾米丽 Emily</td>
+                  <td>春季27日</td>
+                  <td>鹈鹕镇</td>
+                  <td>红宝石/椰子/鸭毛/绿宝石/紫水晶</td>
+                  <td>2心后去她家对话</td>
+                </tr>
+                <tr>
+                  <td>海莉 Haley</td>
+                  <td>春季14日</td>
+                  <td>鹈鹕镇</td>
+                  <td>椰子/向日葵/凤梨/钻石/太阳精华</td>
+                  <td>2心后去她家门口</td>
+                </tr>
+                <tr>
+                  <td>莉亚 Leah</td>
+                  <td>冬季23日</td>
+                  <td>山坡木屋</td>
+                  <td>山羊奶酪/松露/炒蘑菇/葡萄酒/蟹黄堡</td>
+                  <td>2心后去山坡木屋</td>
+                </tr>
+                <tr>
+                  <td>玛鲁 Maru</td>
+                  <td>夏季10日</td>
+                  <td>诊所二楼</td>
+                  <td>草莓/钻石/充电电池/融岩鳗鱼汤/比萨</td>
+                  <td>2心后去诊所</td>
+                </tr>
+                <tr>
+                  <td>潘妮 Penny</td>
+                  <td>秋季2日</td>
+                  <td>河畔拖车</td>
+                  <td>香脆石鱼/黄宝石/钻石/祖母绿/红宝石</td>
+                  <td>2心后去河畔拖车</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 style="margin-top: 24px; margin-bottom: 12px;">💙 男性可结婚对象</h3>
+            <div class="npc-grid">
+              <!-- 亚历克斯 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🏈</div>
+                <div class="npc-info">
+                  <div class="npc-name">亚历克斯 Alex</div>
+                  <div class="npc-location">📍 海滩小屋 | 🎂 夏季13日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>完整早餐/海陆混合披萨/椰子<br>
+                    <strong>💜 喜欢：</strong>煎饼/跑步杂志/高尔夫球杆
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心海边，6心诊所地下室
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 艾利欧特 -->
+              <div class="npc-card">
+                <div class="npc-avatar">📚</div>
+                <div class="npc-info">
+                  <div class="npc-name">艾利欧特 Elliott</div>
+                  <div class="npc-location">📍 海滩灯塔 | 🎂 秋季5日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>螃蟹大餐/龙涎香/鸭蛋黄/椰子/石榴<br>
+                    <strong>💜 喜欢：</strong>葡萄酒/意大利面/红叶卷心菜
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心图书馆，6心海滩
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 哈维 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🏥</div>
+                <div class="npc-info">
+                  <div class="npc-name">哈维 Harvey</div>
+                  <div class="npc-location">📍 诊所 | 🎂 冬季14日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>咖啡/松露/腌菜/超级早餐/葡萄酒<br>
+                    <strong>💜 喜欢：</strong>能量饮料/酸辣卷心菜/pickles
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心诊所，6心医院屋顶
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 山姆 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🎸</div>
+                <div class="npc-info">
+                  <div class="npc-name">山姆 Sam</div>
+                  <div class="npc-location">📍 鹈鹕镇 | 🎂 夏季17日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>Trader JoePep/披萨/枫糖浆棒/鸡尾酒<br>
+                    <strong>💜 喜欢：</strong>吉他弦/能量饮料/joja可乐
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心镇广场，6心社区中心
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 塞巴斯蒂安 -->
+              <div class="npc-card">
+                <div class="npc-avatar">💻</div>
+                <div class="npc-info">
+                  <div class="npc-name">塞巴斯蒂安 Sebastian</div>
+                  <div class="npc-location">📍 山坡木屋 | 🎂 冬季20日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>冰柱/寿司/石榴/ oyster/紫水晶<br>
+                    <strong>💜 喜欢：</strong>咖啡/空腹百吉/电动车杂志
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心矿洞入口，6心她的房间
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 谢恩 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🍺</div>
+                <div class="npc-info">
+                  <div class="npc-name">谢恩 Shane</div>
+                  <div class="npc-location">📍 玛妮牧场 | 🎂 春季20日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>辛辣食物/辣椒/啤酒/披萨/微波快餐<br>
+                    <strong>💜 喜欢：</strong>鸡蛋/玉米卷/冰啤酒
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心鸡舍，6心酿酒店
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 可结婚女性详细表 -->
+          <section id="bachelorettes" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💗 可结婚女性NPC - 详细攻略</h2>
+
+            <div class="npc-grid">
+              <!-- 阿比盖尔 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🎮</div>
+                <div class="npc-info">
+                  <div class="npc-name">阿比盖尔 Abigail</div>
+                  <div class="npc-location">📍 皮埃尔杂货店 | 🎂 秋季13日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>紫水晶/南瓜派/香蕉布丁/巧克力蛋糕/河豚<br>
+                    <strong>💜 喜欢：</strong>洞穴萝卜/紫色蘑菇/宝石
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心周三博物馆，6心墓地
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 艾米丽 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🧘</div>
+                <div class="npc-info">
+                  <div class="npc-name">艾米丽 Emily</div>
+                  <div class="npc-location">📍 鹈鹕镇 | 🎂 春季27日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>红宝石/椰子/鸭毛/绿宝石/紫水晶<br>
+                    <strong>💜 喜欢：</strong>大多数矿物/贝壳/石英
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心鹈鹕镇，6心海滩
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 海莉 -->
+              <div class="npc-card">
+                <div class="npc-avatar">📸</div>
+                <div class="npc-info">
+                  <div class="npc-name">海莉 Haley</div>
+                  <div class="npc-location">📍 鹈鹕镇 | 🎂 春季14日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>椰子/向日葵/凤梨/钻石/太阳精华<br>
+                    <strong>💜 喜欢：</strong>所有花(除野山葵)/沙滩商品
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心鹈鹕镇，6心盐矿
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 莉亚 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🎨</div>
+                <div class="npc-info">
+                  <div class="npc-name">莉亚 Leah</div>
+                  <div class="npc-location">📍 山坡木屋 | 🎂 冬季23日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>山羊奶酪/松露/炒蘑菇/葡萄酒/蟹黄堡<br>
+                    <strong>💜 喜欢：</strong>沙拉/收集品/蔬菜
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心山坡，6心森林
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 玛鲁 -->
+              <div class="npc-card">
+                <div class="npc-avatar">🔧</div>
+                <div class="npc-info">
+                  <div class="npc-name">玛鲁 Maru</div>
+                  <div class="npc-location">📍 诊所二楼 | 🎂 夏季10日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>草莓/钻石/充电电池/融岩鳗鱼汤/比萨<br>
+                    <strong>💜 喜欢：</strong>矿物/起司/制作物品
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心诊所，6心天文台
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 潘妮 -->
+              <div class="npc-card">
+                <div class="npc-avatar">📖</div>
+                <div class="npc-info">
+                  <div class="npc-name">潘妮 Penny</div>
+                  <div class="npc-location">📍 河畔拖车 | 🎂 秋季2日</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>❤️ 最爱：</strong>香脆石鱼/黄宝石/钻石/祖母绿/红宝石<br>
+                    <strong>💜 喜欢：</strong>沙拉/根茎蔬菜/泡菜
+                  </div>
+                  <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                    <strong>事件：</strong>2心拖车，6心沙漠
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 其他重要NPC -->
+          <section id="other" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">👥 其他重要NPC</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👨‍💼</span>
+                  <h3 class="info-card-title">刘易斯 Lewis</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>职位：镇长</p>
+                  <p>位置：镇中心</p>
+                  <p>生日：夏季7日</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>黄金南瓜、鸭仔</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🔨</span>
+                  <h3 class="info-card-title">克林特 Clint</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>职位：铁匠</p>
+                  <p>位置：矿洞入口附近</p>
+                  <p>生日：冬季26日</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>铱锭、绿宝石、煤炭</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧙</span>
+                  <h3 class="info-card-title">法师 Mrascal</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>位置：法师塔</p>
+                  <p>生日：冬季17日</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>虚空精华、紫色蘑菇、魔法糖</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧛</span>
+                  <h3 class="info-card-title">科罗布斯 Krobus</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>位置：下水道</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>虚空精华、黑色短剑、宜居土壤</p>
+                  <p><strong>提示：</strong>可赠送但不能结婚</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">威利 Willy</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>职位：鱼店老板</p>
+                  <p>位置：海滩</p>
+                  <p>生日：夏季24日</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>太平洋鳟鱼、石鱼、传奇饵</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🛒</span>
+                  <h3 class="info-card-title">皮埃尔 Pierre</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>职位：杂货店老板</p>
+                  <p>位置：杂货店</p>
+                  <p>生日：春季26日</p>
+                  <p style="margin-top: 8px;"><strong>❤️ 最爱：</strong>糖糖玉米、椰子、酸辣酱</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 礼物喜好表 -->
+          <section id="gifts" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🎁 全NPC礼物喜好速查表</h2>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">📋</span>
+              <div class="tip-box-content">
+                <strong>礼物等级说明：</strong>最爱(8倍) > 喜欢(2倍) > 普通 > 不喜欢(-2倍) > 讨厌(-5倍)
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">万能礼物（几乎所有人都喜欢）</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>物品</th>
+                  <th>效果</th>
+                  <th>获取方式</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🍲 椰汁汤</td><td>❤️ 几乎所有人都爱</td><td>艾米丽好感7后教授</td></tr>
+                <tr><td>💎 钻石</td><td>❤️ 大多数NPC最爱</td><td>矿洞/晶球开出</td></tr>
+                <tr><td>🐚 鸭毛</td><td>❤️ 大多数NPC最爱</td><td>鸭子掉落</td></tr>
+                <tr><td>🍄 炒蘑菇</td><td>❤️ 大多数NPC喜欢</td><td>烹饪获得</td></tr>
+                <tr><td>☕ 咖啡</td><td>💜 大多数NPC喜欢</td><td>山地咖啡机/种植</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">按物品分类</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>物品类别</th>
+                  <th>代表物品</th>
+                  <th>适用NPC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🍯 花蜜</td><td>所有花朵</td><td>哈尔最爱(除了野山葵)</td></tr>
+                <tr><td>💎 宝石</td><td>绿宝石、红宝石等</td><td>埃利奥特、艾米丽、玛鲁等</td></tr>
+                <tr><td>🍕 披萨</td><td>披萨</td><td>亚历克斯、山姆、谢恩</td></tr>
+                <tr><td>🥬 蔬菜</td><td>大多数蔬菜</td><td>莉亚、佩妮</td></tr>
+                <tr><td>🧀 奶酪</td><td>山羊奶酪、奶酪</td><td>莉亚</td></tr>
+                <tr><td>🍺 酒类</td><td>啤酒、葡萄酒</td><td>谢恩、克林特</td></tr>
+                <tr><td>🧸 独特物品</td><td>兔子的脚、鸭仔等</td><td>特定NPC</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 好感度系统 -->
+          <section id="friendship">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💕 好感度系统</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">❤️</span>
+                  <h3 class="info-card-title">好感度等级</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>0-99 ❤️ (陌生人)</p>
+                  <p>100-199 💛 (认识)</p>
+                  <p>200-249 💚 (朋友)</p>
+                  <p>250-399 💙 (很好的朋友)</p>
+                  <p>400-549 💜 (特别的朋友)</p>
+                  <p>550+ ❤️‍🔥 (恋人/结婚候选人)</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📈</span>
+                  <h3 class="info-card-title">好感度提升方式</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>❤️ 最爱礼物：+80 (生日+640)</p>
+                  <p>💜 喜欢礼物：+45 (生日+360)</p>
+                  <p>💚 普通礼物：+20 (生日+160)</p>
+                  <p>💬 对话：+20</p>
+                  <p>🎁 任务完成：+200-500</p>
+                  <p>🎂 生日礼物：×8 倍率</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📉</span>
+                  <h3 class="info-card-title">好感度下降</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>😠 讨厌礼物：-40</p>
+                  <p>🤬 讨厌礼物：-80</p>
+                  <p>📅 不送礼物(每周)：-2</p>
+                  <p>💬 不对话(每天)：-2</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-box warning" style="margin-top: 24px;">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <strong>结婚条件：</strong>达到8心好感度后，购买一束鲜花(200g)送给对方即可告白。告白后需要10颗钻石升级婚戒才能正式结婚。
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

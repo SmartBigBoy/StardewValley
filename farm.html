@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-page="farm">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>农场规划 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语农场规划指南，包含8种农场地图详解、温室种植、自动化农场建设">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link active" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#farm-types">🗺️ 农场地图</a></li>
+              <li class="sidebar-item"><a href="#greenhouse">🏛️ 温室种植</a></li>
+              <li class="sidebar-item"><a href="#animals">🐄 动物养殖</a></li>
+              <li class="sidebar-item"><a href="#automation">🤖 自动化农场</a></li>
+              <li class="sidebar-item"><a href="#buildings">🏗️ 建筑设施</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/farm-banner.jpg" alt="农场规划" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">🏡 农场规划</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>农场规划</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">🏡 农场规划</h1>
+            <p class="page-subtitle">从零开始规划你的梦幻农场，选择最适合你的农场地图类型！</p>
+          </div>
+
+          <!-- 农场地图类型 -->
+          <section id="farm-types" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🗺️ 农场地图类型</h2>
+            
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p>每个农场地图的总面积相同(16384格)，但可耕地面积和地形分布不同。<strong>选择农场地图后无法更改！</strong></p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">8种农场详细对比</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>农场</th>
+                  <th>英文名</th>
+                  <th>可耕地</th>
+                  <th>特点</th>
+                  <th>适合</th>
+                  <th>推荐</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🌾 标准</td><td>Standard</td><td>~4200格</td><td>开阔平整</td><td>最大化种植</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td>🌲 森林</td><td>Forest</td><td>~3200格</td><td>树桩产混合种子</td><td>采集/有机</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td>⛰️ 山顶</td><td>Hilltop</td><td>~2700格</td><td>晶洞产矿石</td><td>采矿玩家</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td>🌊 河边</td><td>Riverland</td><td>~2400格</td><td>河流纵横</td><td>钓鱼玩家</td><td>⭐⭐</td></tr>
+                <tr><td>🏔️ 荒野</td><td>Wilderness</td><td>~3100格</td><td>夜间刷怪</td><td>战斗玩家</td><td>⭐⭐⭐</td></tr>
+                <tr><td>🛤️ 四角</td><td>Four Corners</td><td>~2500格</td><td>四区分离</td><td>多人合作</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td>🏖️ 海滩</td><td>Beach</td><td>~2200格</td><td>沙地无法种田</td><td>钓鱼/收集</td><td>⭐⭐</td></tr>
+                <tr><td>🐑 草原</td><td>Meadowlands</td><td>~2800格</td><td>动物+15%心情</td><td>养殖玩家</td><td>⭐⭐⭐⭐</td></tr>
+              </tbody>
+            </table>
+
+            <div class="npc-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); margin-top: 24px;">
+              <div class="npc-card">
+                <div class="npc-avatar">🌾</div>
+                <div class="npc-info">
+                  <div class="npc-name">标准农场 Standard</div>
+                  <div class="npc-location">推荐指数：⭐⭐⭐⭐⭐</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>可耕地：</strong>~4200格（最大）<br>
+                    <strong>特点：</strong>大部分区域可耕种，地形开阔<br>
+                    <strong>推荐理由：</strong>新手首选，种植效率最高
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🌲</div>
+                <div class="npc-info">
+                  <div class="npc-name">森林农场 Forest</div>
+                  <div class="npc-location">推荐指数：⭐⭐⭐⭐</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>可耕地：</strong>~3200格<br>
+                    <strong>特点：</strong>左侧树桩持续刷新，掉落混合种子<br>
+                    <strong>推荐理由：</strong>有机农业玩家的最爱
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">⛰️</div>
+                <div class="npc-info">
+                  <div class="npc-name">山顶农场 Hilltop</div>
+                  <div class="npc-location">推荐指数：⭐⭐⭐⭐</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>可耕地：</strong>~2700格<br>
+                    <strong>特点：</strong>西南角晶洞石头，持续刷新矿石<br>
+                    <strong>推荐理由：</strong>采矿效率高，矿石自给自足
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🐑</div>
+                <div class="npc-info">
+                  <div class="npc-name">草原农场 Meadowlands</div>
+                  <div class="npc-location">推荐指数：⭐⭐⭐⭐</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>可耕地：</strong>~2800格<br>
+                    <strong>特点：</strong>起始有鸡舍，动物心情+15%，蓝草<br>
+                    <strong>推荐理由：</strong>养殖玩家首选，蓝草加速牧草生长
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 温室种植 -->
+          <section id="greenhouse" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🏛️ 温室种植</h2>
+
+            <div class="info-card" style="border-left: 4px solid var(--primary-green); margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>解锁方式：</strong>完成社区中心茶水间收集包</p>
+                <p style="margin-top: 8px;">温室位于农场地图的右下角，是一片神圣的种植区域！可以在里面种植任何季节的作物。</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">温室详细布局</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>区域</th>
+                  <th>尺寸</th>
+                  <th>可耕地</th>
+                  <th>说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>主种植区</td><td>10×12</td><td>120格</td><td>可种任何季节作物</td></tr>
+                <tr><td>果树区(左)</td><td>1×12</td><td>0格</td><td>可种6棵果树</td></tr>
+                <tr><td>果树区(右)</td><td>1×12</td><td>0格</td><td>可种6棵果树</td></tr>
+                <tr><td>水槽</td><td>两侧</td><td>-</td><td>可装满喷壶</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">果树种植收益表</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>果树</th>
+                  <th>英文名</th>
+                  <th>售价</th>
+                  <th>季节</th>
+                  <th>年结果</th>
+                  <th>年利润(×12)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🍑 杏树</td><td>Apricot Tree</td><td>75g</td><td>春季</td><td>1次</td><td>900g</td></tr>
+                <tr><td>🍒 樱桃树</td><td>Cherry Tree</td><td>80g</td><td>春季</td><td>1次</td><td>960g</td></tr>
+                <tr><td>🍊 橙树</td><td>Orange Tree</td><td>100g</td><td>夏季</td><td>2次</td><td>2400g</td></tr>
+                <tr><td>🍑 桃树</td><td>Peach Tree</td><td>100g</td><td>夏季</td><td>1次</td><td>1200g</td></tr>
+                <tr><td>🥭 芒果</td><td>Mango Tree</td><td>100g</td><td>夏季</td><td>1次</td><td>1200g</td></tr>
+                <tr><td>🍎 苹果树</td><td>Apple Tree</td><td>100g</td><td>秋季</td><td>1次</td><td>1200g</td></tr>
+                <tr><td>🍇 石榴树</td><td>Pomegranate Tree</td><td>140g</td><td>秋季</td><td>1次</td><td>1680g</td></tr>
+                <tr><td>🥥 椰子树</td><td>Coconut Tree</td><td>100g</td><td>全年</td><td>2次</td><td>2400g</td></tr>
+              </tbody>
+            </table>
+
+            <div class="card-grid" style="margin-top: 24px;">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍷</span>
+                  <h3 class="info-card-title">远古果实酿酒流攻略</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>收入分析（温室×120格）：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>远古果实售价：3850g/个（酿酒后：23100g/桶）</li>
+                    <li>种植：每格1棵，28天成熟</li>
+                    <li>全年可种4轮（春1→夏2→秋3→冬4）</li>
+                    <li>单格年产量：7个（每周产1个×28天）</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>收入计算：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>单格酿酒后年收入：7×23100 = 161,700g</li>
+                    <li>温室120格年收入：~1,940万g</li>
+                    <li>建议配合农业专精（+10%售价）</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-box" style="margin-top: 20px;">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>温室果树收益：</strong>果树每年结果一次（椰子和橙树每年两次）。配合果树专精和农业技能，收入非常可观！建议尽早种植，等待28天成熟。
+              </div>
+            </div>
+          </section>
+
+          <!-- 动物养殖 -->
+          <section id="animals" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🐄 动物养殖</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐔</span>
+                  <h3 class="info-card-title">鸡舍</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>4,800g (罗宾处)</p>
+                  <p><strong>容纳：</strong>初始8只，可升级至12/24只</p>
+                  <p style="margin-top: 8px;"><strong>产物：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>鸡蛋 - 基础产物</li>
+                    <li>大鸡蛋 - 25%概率</li>
+                    <li>棕色鸡蛋 - 25%概率</li>
+                    <li>棕色大鸡蛋 - 25%概率</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐮</span>
+                  <h3 class="info-card-title">牛棚</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>6,000g (罗宾处)</p>
+                  <p><strong>容纳：</strong>初始4只，可升级至12/24只</p>
+                  <p style="margin-top: 8px;"><strong>产物：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>牛奶 - 基础产物</li>
+                    <li>大壶牛奶 - 50%概率</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐑</span>
+                  <h3 class="info-card-title">羊棚</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>8,000g (罗宾处)</p>
+                  <p><strong>容纳：</strong>初始4只，可升级至12/24只</p>
+                  <p style="margin-top: 8px;"><strong>产物：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>羊毛 - 每周可剪一次</li>
+                    <li>需要保持动物心情为最好</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐷</span>
+                  <h3 class="info-card-title">猪棚</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>12,000g (罗宾处)</p>
+                  <p><strong>容纳：</strong>初始4只，可升级至12/24只</p>
+                  <p style="margin-top: 8px;"><strong>产物：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>松露 - 室外觅食时发现</li>
+                    <li>高价值产物，售价150g+</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">动物产物加工</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>设备</th>
+                  <th>加工产物</th>
+                  <th>售价加成</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>蛋黄酱机</td><td>鸡蛋→蛋黄酱</td><td>基础125g → 225g</td></tr>
+                <tr><td>压酪机</td><td>牛奶→奶酪</td><td>基础125g → 225g</td></tr>
+                <tr><td>山羊压酪机</td><td>山羊奶→山羊奶酪</td><td>基础225g → 400g</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 自动化农场 -->
+          <section id="automation" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🤖 自动化农场</h2>
+
+            <div class="info-card" style="border-left: 4px solid var(--summer); margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>自动化是星露谷的终极目标！</strong></p>
+                <p style="margin-top: 8px;">通过洒水器自动浇水、筒仓自动收集干草、出货箱自动出售产物，解放双手！</p>
+              </div>
+            </div>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💧</span>
+                  <h3 class="info-card-title">洒水器自动化</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>阶段1：</strong>普通洒水器 (4格)</p>
+                  <p style="margin-top: 4px;">覆盖中心地格周围的4个地格</p>
+                  <p style="margin-top: 8px;"><strong>阶段2：</strong>优质洒水器 (8格)</p>
+                  <p style="margin-top: 4px;">覆盖3×3中心区域</p>
+                  <p style="margin-top: 8px;"><strong>阶段3：</strong>铱制洒水器 (24格)</p>
+                  <p style="margin-top: 4px;">覆盖5×5中心区域，效率最高</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌾</span>
+                  <h3 class="info-card-title">干草自动化</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>建造筒仓(120 Wood + 100 Stone)</p>
+                  <p style="margin-top: 8px;">使用镰刀割草时，干草自动存入筒仓</p>
+                  <p style="margin-top: 8px;">筒仓容量：240个干草</p>
+                  <p style="margin-top: 8px;">鸡舍/牛棚自动从筒仓取用干草</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📦</span>
+                  <h3 class="info-card-title">出货箱</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>出货箱会在每天凌晨自动出售箱中物品</p>
+                  <p style="margin-top: 8px;">放置多个出货箱分散在农场各处</p>
+                  <p style="margin-top: 8px;">配合路径规划，方便收获后直接出货</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐄</span>
+                  <h3 class="info-card-title">动物照顾自动化</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>自动抚摸机：</strong>JOJA超市购买</p>
+                  <p style="margin-top: 8px;">替代手动抚摸，保持动物心情</p>
+                  <p style="margin-top: 8px;"><strong>加热器：</strong>冬季防止动物心情下降</p>
+                  <p style="margin-top: 8px;"><strong>冷却器：</strong>夏季防止动物心情下降</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 建筑设施 -->
+          <section id="buildings">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🏗️ 重要建筑一览</h2>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>建筑</th>
+                  <th>费用</th>
+                  <th>材料</th>
+                  <th>功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>筒仓</td><td>无</td><td>100 Stone, 50 Wood</td><td>存储干草</td></tr>
+                <tr><td>鸡舍</td><td>4,800g</td><td>350 Wood, 150 Stone</td><td>养鸡</td></tr>
+                <tr><td>牛棚</td><td>6,000g</td><td>450 Wood, 200 Stone</td><td>养牛</td></tr>
+                <tr><td>羊棚</td><td>8,000g</td><td>550 Wood, 300 Stone</td><td>养羊</td></tr>
+                <tr><td>猪棚</td><td>12,000g</td><td>650 Wood, 400 Stone</td><td>养猪</td></tr>
+                <tr><td>磨坊</td><td>2,500g</td><td>100 Stone, 50 Wood</td><td>小麦→面粉</td></tr>
+                <tr><td>酿造桶</td><td>-</td><td>配方解锁</td><td>水果→果酒</td></tr>
+                <tr><td>小桶</td><td>-</td><td>配方解锁</td><td>蜂蜜→ Mead</td></tr>
+                <tr><td>汞合金回收器</td><td>35,000g</td><td>-</td><td>每日产石头</td></tr>
+              </tbody>
+            </table>
+
+            <div class="tip-box warning" style="margin-top: 24px;">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <strong>升级费用：</strong>所有动物建筑都可以升级增加容量(费用递减)。记得留足够的资金！
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" data-page="fishing">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>钓鱼指南 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语钓鱼攻略，包含鱼类出没表、钓具升级、传说鱼捕捉技巧">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+ Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#rods">🎣 钓竿升级</a></li>
+              <li class="sidebar-item"><a href="#fish-location">📍 鱼类出没地点</a></li>
+              <li class="sidebar-item"><a href="#legendary">⭐ 传说鱼攻略</a></li>
+              <li class="sidebar-item"><a href="#tips">💡 钓鱼技巧</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/fishing-banner.jpg" alt="钓鱼指南" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">🎣 钓鱼指南</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>钓鱼指南</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">🎣 钓鱼指南</h1>
+            <p class="page-subtitle">从河边的太阳鱼到深海中的传说鱼，成为星露谷最伟大的渔夫！</p>
+          </div>
+
+          <!-- 钓竿升级 -->
+          <section id="rods" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🎣 钓竿升级</h2>
+
+            <div class="info-card" style="border-left: 4px solid #2196f3; margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>购买地点：</strong>威利的鱼店（海滩）</p>
+                <p style="margin-top: 8px;">从竹竿到铱金钓竿，解锁更多钓鱼配件和功能！</p>
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>钓竿</th>
+                  <th>获取方式</th>
+                  <th>费用</th>
+                  <th>功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🎋 竹竿</td>
+                  <td>游戏开始自带</td>
+                  <td>-</td>
+                  <td>只能钓鱼，无法使用鱼饵</td>
+                </tr>
+                <tr>
+                  <td>🎋 训练竹竿</td>
+                  <td>威利处购买</td>
+                  <td>25g</td>
+                  <td>新手练习用，只能钓普通鱼</td>
+                </tr>
+                <tr>
+                  <td>🪝 玻璃纤维钓竿</td>
+                  <td>威利处购买</td>
+                  <td>1,800g</td>
+                  <td>可使用鱼饵 <span class="badge badge-summer">Lv.2</span></td>
+                </tr>
+                <tr>
+                  <td>⭐ 铱金钓竿</td>
+                  <td>威利处购买</td>
+                  <td>7,500g</td>
+                  <td>可同时使用鱼饵和浮标 <span class="badge badge-summer">Lv.6</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">鱼饵类型</h3>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪱</span>
+                  <h3 class="info-card-title">鱼饵</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>效果：鱼类上钩速度+25%</p>
+                  <p style="margin-top: 8px;">获取：虫肉制作(5个)或商店购买</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪤</span>
+                  <h3 class="info-card-title">特级鱼饵</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>效果：鱼类上钩速度+50%</p>
+                  <p style="margin-top: 8px;">获取：钓鱼Lv.7配方</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍳</span>
+                  <h3 class="info-card-title">美食鱼饵</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>效果：钓到传说鱼概率+25%</p>
+                  <p style="margin-top: 8px;">获取：钓鱼Lv.9配方</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">浮标类型</h3>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪁</span>
+                  <h3 class="info-card-title">软木浮标</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>效果：钓鱼条消耗速度-25%</p>
+                  <p style="margin-top: 8px;">获取：钓鱼Lv.3配方</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏋️</span>
+                  <h3 class="info-card-title">重金属浮标</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>效果：更容易捕捉大型鱼类</p>
+                  <p style="margin-top: 8px;">获取：钓鱼Lv.6配方</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 传说鱼详细攻略 -->
+          <section id="legendary" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🏆 传说鱼完整攻略</h2>
+
+            <div class="tip-box" style="margin-bottom: 20px;">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>传说鱼收集：</strong>全部5条传说鱼可解锁"捕鱼大师"成就！每条鱼只能用钓竿钓到，宝箱不会开出传说鱼。
+              </div>
+            </div>
+
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+              <div class="info-card" style="border-left: 4px solid #9c27b0;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">鮟鱇鱼 Angler</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>900-1800g (普通-铱)</p>
+                  <p><strong>地点：</strong>鹈鹕镇河流最北端</p>
+                  <p><strong>时间：</strong>任意</p>
+                  <p><strong>季节：</strong>全年</p>
+                  <p><strong>天气：</strong>任意</p>
+                  <p><strong>难度：</strong>85 (最高)</p>
+                  <p style="margin-top: 8px;"><strong>攻略：</strong>需要钓鱼Lv3+。桥上钓鱼，连续收线不要停。</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid #f44336;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">绯红鱼 Crimsonfish</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>1000-2000g (普通-铱)</p>
+                  <p><strong>地点：</strong>鹈鹕镇海滩</p>
+                  <p><strong>时间：</strong>6:00-19:00</p>
+                  <p><strong>季节：</strong>夏季</p>
+                  <p><strong>天气：</strong>🌧️ 雨天必须</p>
+                  <p><strong>难度：</strong>50</p>
+                  <p style="margin-top: 8px;"><strong>攻略：</strong>必须在雨天！夏季雨天时间去海滩最右侧。</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid #ff9800;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">河豚 Pufferfish</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>200-400g (普通-铱)</p>
+                  <p><strong>地点：</strong>鹈鹕镇海滩</p>
+                  <p><strong>时间：</strong>12:00-16:00</p>
+                  <p><strong>季节：</strong>夏季</p>
+                  <p><strong>天气：</strong>☀️ 晴天必须</p>
+                  <p><strong>难度：</strong>60</p>
+                  <p style="margin-top: 8px;"><strong>攻略：</strong>必须晴天+中午！夏季晴天12-16点去海滩。</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid #2196f3;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">_SUPER_HOOK 大马哈鱼</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>500-1000g (普通-铱)</p>
+                  <p><strong>地点：</strong>深山湖泊</p>
+                  <p><strong>时间：</strong>6:00-次日2:00</p>
+                  <p><strong>季节：</strong>全年</p>
+                  <p><strong>天气：</strong>任意</p>
+                  <p><strong>难度：</strong>55</p>
+                  <p style="margin-top: 8px;"><strong>攻略：</strong>任意时间可钓，需要滑到地图最右侧进入深山。</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid #4caf50;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h3 class="info-card-title">午夜鲤鱼 Midnight Carp</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>售价：</strong>550-1100g (普通-铱)</p>
+                  <p><strong>地点：</strong>深山湖泊</p>
+                  <p><strong>时间：</strong>22:00-次日2:00</p>
+                  <p><strong>季节：</strong>冬季</p>
+                  <p><strong>天气：</strong>任意</p>
+                  <p><strong>难度：</strong>55</p>
+                  <p style="margin-top: 8px;"><strong>攻略：</strong>必须冬季！22点后去深山湖泊才能钓到。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 鱼类出没地点详细表 -->
+          <section id="fish-location" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📍 鱼类出没地点详细表</h2>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>钓鱼技巧：</strong>鱼类上钩率=运气+技能等级+鱼饵效果。使用美食鱼饵可增加传说鱼几率！
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">🐟 河流鱼类</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>鱼名</th>
+                  <th>英文</th>
+                  <th>季节</th>
+                  <th>时间</th>
+                  <th>天气</th>
+                  <th>难度</th>
+                  <th>售价</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🐟 太阳鱼</td><td>Sunfish</td><td>春夏秋</td><td>6:00-19:00</td><td>任意</td><td>30</td><td>30g</td></tr>
+                <tr><td>🐟 鲶鱼</td><td>Catfish</td><td>春夏秋</td><td>任意</td><td>🌧️ 雨</td><td>45</td><td>100g</td></tr>
+                <tr><td>🐟 西鲱</td><td>Shad</td><td>春夏秋</td><td>任意</td><td>🌧️ 雨</td><td>45</td><td>60g</td></tr>
+                <tr><td>🐟 虎纹鳟鱼</td><td>Tiger Trout</td><td>秋冬</td><td>6:00-19:00</td><td>任意</td><td>45</td><td>100g</td></tr>
+                <tr><td>🐟 大眼鱼</td><td>Sturgeon</td><td>全年</td><td>0:00-2:00</td><td>🌧️ 雨</td><td>58</td><td>150g</td></tr>
+                <tr><td>🐟 鲑鱼</td><td>Salmon</td><td>夏秋</td><td>6:00-19:00</td><td>任意</td><td>35</td><td>75g</td></tr>
+                <tr><td>🐟 河豚</td><td>Pufferfish</td><td>夏季</td><td>12:00-16:00</td><td>☀️ 晴</td><td>60</td><td>200g</td></tr>
+                <tr><td>🐟 小嘴鲈鱼</td><td>Smallmouth Bass</td><td>春夏秋</td><td>任意</td><td>任意</td><td>28</td><td>50g</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">🌊 海洋鱼类</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>鱼名</th>
+                  <th>英文</th>
+                  <th>季节</th>
+                  <th>时间</th>
+                  <th>天气</th>
+                  <th>难度</th>
+                  <th>售价</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🐟 沙丁鱼</td><td>Sardine</td><td>春秋冬</td><td>任意</td><td>任意</td><td>5</td><td>20g</td></tr>
+                <tr><td>🐟 金枪鱼</td><td>Tuna</td><td>夏季冬季</td><td>6:00-19:00</td><td>任意</td><td>50</td><td>100g</td></tr>
+                <tr><td>🐟 绯红鱼</td><td>Crimsonfish</td><td>夏季</td><td>6:00-19:00</td><td>🌧️ 雨</td><td>50</td><td>1000g</td></tr>
+                <tr><td>🐟 鬼头刀</td><td>Mahi-Mahi</td><td>全年</td><td>任意</td><td>任意</td><td>65</td><td>100g</td></tr>
+                <tr><td>🐟 橙子鱼</td><td>Orange Rou</td><td>全年</td><td>任意</td><td>任意</td><td>35</td><td>50g</td></tr>
+                <tr><td>🐟 鳐鱼</td><td>Flounder</td><td>春季夏季</td><td>6:00-20:00</td><td>任意</td><td>38</td><td>80g</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">🏞️ 湖泊鱼类</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>鱼名</th>
+                  <th>英文</th>
+                  <th>季节</th>
+                  <th>时间</th>
+                  <th>天气</th>
+                  <th>难度</th>
+                  <th>售价</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🐟 _SUPER_HOOK</td><td>Great Northern</td><td>全年</td><td>6:00-2:00</td><td>任意</td><td>55</td><td>500g</td></tr>
+                <tr><td>🐟 午夜鲤鱼</td><td>Midnight Carp</td><td>冬季</td><td>22:00-2:00</td><td>任意</td><td>55</td><td>550g</td></tr>
+                <tr><td>🐟 黑鲈鱼</td><td>Largemouth Bass</td><td>全年</td><td>6:00-19:00</td><td>任意</td><td>40</td><td>100g</td></tr>
+                <tr><td>🐟 小绿鱼</td><td>Perch</td><td>冬季</td><td>任意</td><td>任意</td><td>35</td><td>55g</td></tr>
+                <tr><td>🐟 虹鳟鱼</td><td>Rainbow Trout</td><td>夏秋</td><td>6:00-19:00</td><td>☀️ 晴</td><td>30</td><td>65g</td></tr>
+              </tbody>
+            </table>
+          </section>
+                  <th>鱼名</th>
+                  <th>出现季节</th>
+                  <th>出现时间</th>
+                  <th>天气</th>
+                  <th>售价</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🐠 大嘴鲈鱼</td><td><span class="badge badge-spring">春</span><span class="badge badge-summer">夏</span><span class="badge badge-autumn">秋</span></td><td>6:00-19:00</td><td>任意</td><td>60g</td></tr>
+                <tr><td>🐠 鲤鱼</td><td><span class="badge badge-spring">春</span><span class="badge badge-summer">夏</span><span class="badge badge-autumn">秋</span></td><td>任意</td><td>任意</td><td>100g</td></tr>
+                <tr><td>🐠 大头鱼</td><td><span class="badge badge-spring">春</span><span class="badge badge-summer">夏</span><span class="badge badge-autumn">秋</span><span class="badge badge-winter">冬</span></td><td>任意</td><td>任意</td><td>50g</td></tr>
+                <tr><td>🐠 鲟鱼</td><td><span class="badge badge-summer">夏</span><span class="badge badge-winter">冬</span></td><td>任意</td><td>任意</td><td>200g</td></tr>
+                <tr><td>🐠 夜水母</td><td><span class="badge badge-summer">夏</span></td><td>22:00-2:00</td><td>任意</td><td>750g</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">海洋鱼类</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>鱼名</th>
+                  <th>出现季节</th>
+                  <th>出现时间</th>
+                  <th>天气</th>
+                  <th>售价</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🐟 沙丁鱼</td><td><span class="badge badge-spring">春</span><span class="badge badge-autumn">秋</span><span class="badge badge-winter">冬</span></td><td>6:00-19:00</td><td>任意</td><td>40g</td></tr>
+                <tr><td>🐟 金枪鱼</td><td><span class="badge badge-summer">夏</span><span class="badge badge-winter">冬</span></td><td>6:00-19:00</td><td>任意</td><td>100g</td></tr>
+                <tr><td>🐟 红鲷鱼</td><td><span class="badge badge-summer">夏</span><span class="badge badge-autumn">秋</span></td><td>6:00-19:00</td><td>🌧️ 雨天</td><td>80g</td></tr>
+                <tr><td>🐟 罗非鱼</td><td><span class="badge badge-summer">夏</span><span class="badge badge-autumn">秋</span></td><td>6:00-22:00</td><td>任意</td><td>60g</td></tr>
+                <tr><td>🐟 鳗鱼</td><td><span class="badge badge-spring">春</span><span class="badge badge-autumn">秋</span></td><td>16:00-2:00</td><td>🌧️ 雨天</td><td>85g</td></tr>
+                <tr><td>🐡 河豚</td><td><span class="badge badge-summer">夏</span></td><td>12:00-16:00</td><td>☀️ 晴天</td><td>125g</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 传说鱼攻略 -->
+          <section id="legendary" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⭐ 传说鱼攻略</h2>
+
+            <div class="info-card" style="border-left: 4px solid var(--badge-rare); margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p>传说鱼是游戏中最难钓的鱼类，每个传说鱼都分布在特定地点且有独特的时间/天气要求。</p>
+                <p style="margin-top: 8px;">使用<strong>美食鱼饵</strong>可以将传说鱼出现概率提高25%！</p>
+              </div>
+            </div>
+
+            <div class="npc-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+              <div class="npc-card">
+                <div class="npc-avatar">🐟</div>
+                <div class="npc-info">
+                  <div class="npc-name">angler 石鱼</div>
+                  <div class="npc-location">📍 秘密森林池塘</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>全年、任意天气、6:00-20:00<br>
+                    <strong>售价：</strong>900g<br>
+                    <strong>难度：</strong>⭐⭐⭐⭐ (85)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">👻</div>
+                <div class="npc-info">
+                  <div class="npc-name">Ghostfish 鬼鱼</div>
+                  <div class="npc-location">📍 矿洞任意有水的层</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>全年、任意天气、任意时间<br>
+                    <strong>售价：</strong>500g<br>
+                    <strong>难度：</strong>⭐⭐⭐ (70)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🦈</div>
+                <div class="npc-info">
+                  <div class="npc-name">Sand Shark 沙鱼</div>
+                  <div class="npc-location">📍 沙漠</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>全年、任意天气、6:00-20:00<br>
+                    <strong>售价：</strong>1000g<br>
+                    <strong>难度：</strong>⭐⭐⭐⭐ (80)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🌳</div>
+                <div class="npc-info">
+                  <div class="npc-name">Woodskip 木跃鱼</div>
+                  <div class="npc-location">📍 秘密森林池塘</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>春季、任意天气、6:00-19:00<br>
+                    <strong>售价：</strong>300g<br>
+                    <strong>难度：</strong>⭐⭐ (50)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">⭐</div>
+                <div class="npc-info">
+                  <div class="npc-name">Legend 大收获日</div>
+                  <div class="npc-location">📍 山顶农场湖泊</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>春季、任意天气、任意时间<br>
+                    <strong>售价：</strong>5000g<br>
+                    <strong>难度：</strong>⭐⭐⭐⭐⭐ (110)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🌙</div>
+                <div class="npc-info">
+                  <div class="npc-name">Crimsonfish 深海怪</div>
+                  <div class="npc-location">📍 海滩</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>夏季、任意天气、任意时间<br>
+                    <strong>售价：</strong>3500g<br>
+                    <strong>难度：</strong>⭐⭐⭐⭐⭐ (95)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🍂</div>
+                <div class="npc-info">
+                  <div class="npc-name">Squid Kid 鱿鱼小子</div>
+                  <div class="npc-location">📍 海滩</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>秋季、任意天气、任意时间<br>
+                    <strong>售价：</strong>1500g<br>
+                    <strong>难度：</strong>⭐⭐⭐⭐ (85)
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">❄️</div>
+                <div class="npc-info">
+                  <div class="npc-name">Ice Pip 冰豚</div>
+                  <div class="npc-location">📍 矿洞任意有水的层</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>条件：</strong>冬季、任意天气、任意时间<br>
+                    <strong>售价：</strong>1000g<br>
+                    <strong>难度：</strong>⭐⭐⭐ (75)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 钓鱼技巧 -->
+          <section id="tips">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💡 钓鱼技巧</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎯</span>
+                  <h3 class="info-card-title">钓鱼条控制</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>钓鱼时需要保持绿色指示条在鱼的范围内。鱼的移动会越来越快和复杂。</p>
+                  <p style="margin-top: 8px;"><strong>技巧：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>观察鱼的移动规律</li>
+                    <li>使用浮标减少消耗</li>
+                    <li>大鱼需要更多耐心</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎁</span>
+                  <h3 class="info-card-title">鱼类品质</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>鱼类品质受钓鱼技能等级和浮标影响：</p>
+                  <ul style="padding-left: 20px; margin-top: 8px;">
+                    <li>普通品质 - 基础售价</li>
+                    <li>银星 - 1.5倍售价</li>
+                    <li>金星 - 2倍售价</li>
+                  </ul>
+                  <p style="margin-top: 8px;">渔夫专精可额外提升25%售价！</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📍</span>
+                  <h3 class="info-card-title">最佳钓鱼地点</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>矿洞湖泊：</strong>有独特的地下鱼类</p>
+                  <p style="margin-top: 4px;"><strong>秘密森林：</strong>石鱼和木跃鱼的家园</p>
+                  <p style="margin-top: 4px;"><strong>沙漠：</strong>沙鱼和夜市鱼类</p>
+                  <p style="margin-top: 4px;"><strong>姜岛：</strong>独特热带鱼类</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🦀</span>
+                  <h3 class="info-card-title">蟹笼技巧</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>蟹笼可以放置在任意水域，每8小时检查一次获得产物。</p>
+                  <p style="margin-top: 8px;"><strong>建议：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>使用鱼饵增加产物数量</li>
+                    <li>放置多个蟹笼提高效率</li>
+                    <li>产物有：虾、蟹、蜗牛、蚌等</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

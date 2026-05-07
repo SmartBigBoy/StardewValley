@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" data-page="seasons">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>季节攻略 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语各季节作物种植攻略，包含春季、夏季、秋季、冬季完整作物表与献祭收集包完成指南">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link active" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview">季节概览</a></li>
+              <li class="sidebar-item"><a href="#spring">🌸 春季作物</a></li>
+              <li class="sidebar-item"><a href="#summer">☀️ 夏季作物</a></li>
+              <li class="sidebar-item"><a href="#autumn">🍂 秋季作物</a></li>
+              <li class="sidebar-item"><a href="#winter">❄️ 冬季活动</a></li>
+              <li class="sidebar-item"><a href="#bundles">📦 献祭收集包</a></li>
+              <li class="sidebar-item"><a href="#tips">💡 种植技巧</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/seasons-banner.jpg" alt="季节攻略" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">📅 季节攻略</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>季节攻略</span>
+          </div>
+
+          <!-- 页面标题 -->
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">📅 季节攻略</h1>
+            <p class="page-subtitle">星露谷每个季节28天，合理的种植规划是致富的关键！</p>
+          </div>
+
+          <!-- 季节概览 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🌈 季节概览</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+              <div class="info-card" style="border-left: 4px solid var(--spring);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌸</span>
+                  <h3 class="info-card-title">春季</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>第1-28天 | 适合种植短期作物</p>
+                  <p style="margin-top: 8px;">主要作物：防风草(4天)、土豆、花椰菜、草莓(13日限定)</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--summer);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">☀️</span>
+                  <h3 class="info-card-title">夏季</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>第29-56天 | 高收益季节</p>
+                  <p style="margin-top: 8px;">主要作物：蓝莓、甜瓜、番茄、啤酒花、杨桃</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--autumn);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍂</span>
+                  <h3 class="info-card-title">秋季</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>第57-84天 | 丰收季节</p>
+                  <p style="margin-top: 8px;">主要作物：南瓜、蔓越莓、玉米、南瓜、向日葵</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--winter);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">❄️</span>
+                  <h3 class="info-card-title">冬季</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>第85-112天 | 无法种植普通作物</p>
+                  <p style="margin-top: 8px;">可种植：冬季种子 | 可活动：钓鱼、采矿、刨蚯蚓</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 春季作物详细表 -->
+          <section id="spring" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">
+              <span class="badge badge-spring">春季</span> 春季作物详细利润表
+            </h2>
+            
+            <div class="tip-box">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>新手必读：</strong>春季第13日的花舞节可在玛妮牧场购买草莓种子！种子100g，8天成熟后可每4天再收，售价120g，是春季利润最高的作物！
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>作物</th>
+                  <th>英文名</th>
+                  <th>种子价</th>
+                  <th>生长天数</th>
+                  <th>再收天数</th>
+                  <th>售价</th>
+                  <th>单株利润</th>
+                  <th>日均利润</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🥕 防风草</td>
+                  <td>Parsnip</td>
+                  <td>20g</td>
+                  <td>4天</td>
+                  <td>—</td>
+                  <td>35g</td>
+                  <td>+15g</td>
+                  <td>3.75g/天</td>
+                  <td>新手标配，完成献祭必备</td>
+                </tr>
+                <tr>
+                  <td>🧄 蒜</td>
+                  <td>Garlic</td>
+                  <td>40g</td>
+                  <td>4天</td>
+                  <td>—</td>
+                  <td>60g</td>
+                  <td>+20g</td>
+                  <td>5g/天</td>
+                  <td>超市无售，春季独有</td>
+                </tr>
+                <tr>
+                  <td>🥔 土豆</td>
+                  <td>Potato</td>
+                  <td>50g</td>
+                  <td>6天</td>
+                  <td>—</td>
+                  <td>80g</td>
+                  <td>+30g+</td>
+                  <td>5g+/天</td>
+                  <td>有50%几率额外掉落1个</td>
+                </tr>
+                <tr>
+                  <td>🌷 郁金香</td>
+                  <td>Tulip</td>
+                  <td>20g</td>
+                  <td>6天</td>
+                  <td>—</td>
+                  <td>30g</td>
+                  <td>+10g</td>
+                  <td>1.67g/天</td>
+                  <td>送礼用，海莉最爱</td>
+                </tr>
+                <tr>
+                  <td>🥬 甘蓝菜</td>
+                  <td>Kale</td>
+                  <td>70g</td>
+                  <td>6天</td>
+                  <td>—</td>
+                  <td>110g</td>
+                  <td>+40g</td>
+                  <td>6.67g/天</td>
+                  <td>比土豆略好</td>
+                </tr>
+                <tr>
+                  <td>💙 蓝爵</td>
+                  <td>Blue Jazz</td>
+                  <td>30g</td>
+                  <td>7天</td>
+                  <td>—</td>
+                  <td>50g</td>
+                  <td>+20g</td>
+                  <td>2.86g/天</td>
+                  <td>送礼用，艾米丽喜欢</td>
+                </tr>
+                <tr>
+                  <td>🥦 花椰菜</td>
+                  <td>Cauliflower</td>
+                  <td>80g</td>
+                  <td>12天</td>
+                  <td>—</td>
+                  <td>175g</td>
+                  <td>+95g</td>
+                  <td>7.92g/天</td>
+                  <td>1%几率变巨大花椰菜(744g)</td>
+                </tr>
+                <tr>
+                  <td>🍓 草莓</td>
+                  <td>Strawberry</td>
+                  <td>100g</td>
+                  <td>8天</td>
+                  <td>4天</td>
+                  <td>120g</td>
+                  <td>+580g+</td>
+                  <td>20.83g/天</td>
+                  <td>花舞节限定！春季必种！</td>
+                </tr>
+                <tr>
+                  <td>🫘 青豆</td>
+                  <td>Green Bean</td>
+                  <td>60g</td>
+                  <td>10天</td>
+                  <td>3天</td>
+                  <td>40g</td>
+                  <td>+120g+</td>
+                  <td>7.2g/天</td>
+                  <td>需开垦土地后种植</td>
+                </tr>
+                <tr>
+                  <td>🌿 大黄</td>
+                  <td>Rhubarb</td>
+                  <td>100g</td>
+                  <td>13天</td>
+                  <td>—</td>
+                  <td>220g</td>
+                  <td>+120g</td>
+                  <td>9.23g/天</td>
+                  <td>皮埃尔商店春季限定</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div style="margin-top: 16px; padding: 12px; background: rgba(76, 175, 80, 0.1); border-radius: 8px;">
+              <strong>🌟 春季利润排行：</strong>草莓(+580g+) > 大黄(+120g) > 花椰菜(+95g) > 甘蓝菜(+40g) > 土豆(+30g+) > 防风草(+15g)
+            </div>
+          </section>
+
+          <!-- 夏季作物详细表 -->
+          <section id="summer" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">
+              <span class="badge badge-summer">夏季</span> 夏季作物详细利润表
+            </h2>
+            
+            <div class="tip-box warning">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <strong>注意：</strong>皮埃尔商店每周三关门。夏季是赚钱的黄金季节，蓝莓多次收获+酿酒利润翻倍，是致富关键！
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>作物</th>
+                  <th>英文名</th>
+                  <th>种子价</th>
+                  <th>生长天数</th>
+                  <th>再收天数</th>
+                  <th>售价</th>
+                  <th>单株利润</th>
+                  <th>日均利润</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🍅 番茄</td>
+                  <td>Tomato</td>
+                  <td>50g</td>
+                  <td>6天</td>
+                  <td>4天</td>
+                  <td>60g</td>
+                  <td>+310g+</td>
+                  <td>15.5g/天</td>
+                  <td>多次收获，酿酒价值高</td>
+                </tr>
+                <tr>
+                  <td>🌶️ 辣椒</td>
+                  <td>Hot Pepper</td>
+                  <td>40g</td>
+                  <td>5天</td>
+                  <td>3天</td>
+                  <td>40g</td>
+                  <td>+280g+</td>
+                  <td>21.5g/天</td>
+                  <td>多次收获，谢恩最爱</td>
+                </tr>
+                <tr>
+                  <td>🫐 蓝莓</td>
+                  <td>Blueberry</td>
+                  <td>80g</td>
+                  <td>4天</td>
+                  <td>4天</td>
+                  <td>80g</td>
+                  <td>+680g+</td>
+                  <td>20.89g/天</td>
+                  <td>★夏季之王！多次收获！</td>
+                </tr>
+                <tr>
+                  <td>🍈 甜瓜</td>
+                  <td>Melon</td>
+                  <td>80g</td>
+                  <td>12天</td>
+                  <td>—</td>
+                  <td>250g</td>
+                  <td>+170g+</td>
+                  <td>14.17g/天</td>
+                  <td>1%几率变巨大甜瓜(1250g)</td>
+                </tr>
+                <tr>
+                  <td>🌽 玉米</td>
+                  <td>Corn</td>
+                  <td>150g</td>
+                  <td>14天</td>
+                  <td>4天</td>
+                  <td>150g</td>
+                  <td>+450g+</td>
+                  <td>13.57g/天</td>
+                  <td>可跨季节，酿酒价值高</td>
+                </tr>
+                <tr>
+                  <td>☕ 咖啡豆</td>
+                  <td>Coffee Bean</td>
+                  <td>450g</td>
+                  <td>10天</td>
+                  <td>2天</td>
+                  <td>15g×4</td>
+                  <td>+210g+</td>
+                  <td>20.89g/天</td>
+                  <td>旅行货车购入，产量高</td>
+                </tr>
+                <tr>
+                  <td>🌻 向日葵</td>
+                  <td>Sunflower</td>
+                  <td>200g</td>
+                  <td>8天</td>
+                  <td>—</td>
+                  <td>80g</td>
+                  <td>+380g+</td>
+                  <td>13.33g/天</td>
+                  <td>夏季/秋季可种，产葵花籽</td>
+                </tr>
+                <tr>
+                  <td>⭐ 杨桃</td>
+                  <td>Starfruit</td>
+                  <td>200g</td>
+                  <td>13天</td>
+                  <td>—</td>
+                  <td>750g</td>
+                  <td>+550g</td>
+                  <td>42.31g/天</td>
+                  <td>沙漠购入，利润最高</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div style="margin-top: 16px; padding: 12px; background: rgba(255, 152, 0, 0.1); border-radius: 8px;">
+              <strong>🌟 夏季利润排行：</strong>杨桃(+550g) > 蓝莓(+680g/季) > 咖啡豆(+210g) > 番茄(+310g) > 甜瓜(+170g) > 玉米(+450g)
+            </div>
+          </section>
+
+          <!-- 秋季作物详细表 -->
+          <section id="autumn" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">
+              <span class="badge badge-autumn">秋季</span> 秋季作物详细利润表
+            </h2>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>作物</th>
+                  <th>英文名</th>
+                  <th>种子价</th>
+                  <th>生长天数</th>
+                  <th>再收天数</th>
+                  <th>售价</th>
+                  <th>单株利润</th>
+                  <th>日均利润</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🌽 玉米</td>
+                  <td>Corn</td>
+                  <td>150g</td>
+                  <td>14天</td>
+                  <td>4天</td>
+                  <td>150g</td>
+                  <td>+450g+</td>
+                  <td>13.57g/天</td>
+                  <td>夏季/秋季可种，可跨季节</td>
+                </tr>
+                <tr>
+                  <td>🎃 南瓜</td>
+                  <td>Pumpkin</td>
+                  <td>100g</td>
+                  <td>14天</td>
+                  <td>—</td>
+                  <td>320g</td>
+                  <td>+220g+</td>
+                  <td>15.71g/天</td>
+                  <td>1%几率变巨大南瓜(1125g)</td>
+                </tr>
+                <tr>
+                  <td>🫐 蔓越莓</td>
+                  <td>Cranberry</td>
+                  <td>240g</td>
+                  <td>7天</td>
+                  <td>5天</td>
+                  <td>75g</td>
+                  <td>+735g+</td>
+                  <td>17.86g/天</td>
+                  <td>★秋季之王！多次收获！</td>
+                </tr>
+                <tr>
+                  <td>🍆 茄子</td>
+                  <td>Eggplant</td>
+                  <td>20g</td>
+                  <td>5天</td>
+                  <td>5天</td>
+                  <td>60g</td>
+                  <td>+380g+</td>
+                  <td>22.67g/天</td>
+                  <td>旅行货车购入，多次收获</td>
+                </tr>
+                <tr>
+                  <td>🌻 向日葵</td>
+                  <td>Sunflower</td>
+                  <td>200g</td>
+                  <td>8天</td>
+                  <td>—</td>
+                  <td>80g</td>
+                  <td>+280g+</td>
+                  <td>11.25g/天</td>
+                  <td>秋季可种两次以上</td>
+                </tr>
+                <tr>
+                  <td>🍇 葡萄</td>
+                  <td>Grape</td>
+                  <td>60g</td>
+                  <td>10天</td>
+                  <td>3天</td>
+                  <td>80g</td>
+                  <td>+580g+</td>
+                  <td>14.88g/天</td>
+                  <td>多次收获，莉亚最爱</td>
+                </tr>
+                <tr>
+                  <td>🍠 山药</td>
+                  <td>Yam</td>
+                  <td>80g</td>
+                  <td>15天</td>
+                  <td>—</td>
+                  <td>160g</td>
+                  <td>+80g</td>
+                  <td>5.33g/天</td>
+                  <td>基础价格较高</td>
+                </tr>
+                <tr>
+                  <td>🥬 红叶卷心菜</td>
+                  <td>Red Cabbage</td>
+                  <td>100g</td>
+                  <td>9天</td>
+                  <td>—</td>
+                  <td>260g</td>
+                  <td>+160g</td>
+                  <td>17.78g/天</td>
+                  <td>献祭包需要</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div style="margin-top: 16px; padding: 12px; background: rgba(139, 69, 19, 0.1); border-radius: 8px;">
+              <strong>🌟 秋季利润排行：</strong>蔓越莓(+735g+) > 茄子(+380g+) > 葡萄(+580g+) > 南瓜(+220g+) > 玉米(+450g+) > 红叶卷心菜(+160g)
+            </div>
+          </section>
+
+          <!-- 冬季活动 -->
+          <section id="winter" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">
+              <span class="badge badge-winter">冬季</span> 冬季活动指南
+            </h2>
+
+            <div class="info-card" style="margin-bottom: 20px; border-left: 4px solid var(--winter);">
+              <p style="font-size: 1.1rem; color: var(--text-primary);">
+                ❄️ <strong>冬季无法种植普通作物</strong>，但有许多其他活动可以赚钱和提升技能！
+              </p>
+            </div>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌱</span>
+                  <h3 class="info-card-title">冬季种子</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>售价: 0g | 冬季可种植</p>
+                  <p style="margin-top: 8px;">从野生种子和种子制造机获取，可获得冬季根、水晶果等，收益较低但能提升采集经验。</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪱</span>
+                  <h3 class="info-card-title">刨蚯蚓</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>使用锄头在雨水后的泥土上</p>
+                  <p style="margin-top: 8px;">冬季是刨蚯蚓的最佳季节，可获得古物、矿石、种子等。建议雨后去海滩和农场。</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">❄️</span>
+                  <h3 class="info-card-title">冰泪</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>冬季限定收集品</p>
+                  <p style="margin-top: 8px;">冬季每天可以在矿洞入口附近的水洼采集冰泪，是献祭收集包的重要物品。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 献祭收集包 -->
+          <section id="bundles" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📦 社区中心献祭收集包</h2>
+            
+            <div class="tip-box">
+              <span class="tip-box-icon">📋</span>
+              <div class="tip-box-content">
+                <strong>完成社区中心献祭是游戏的主要目标之一！</strong>每个收集包完成可获得丰厚奖励，包括解锁温室、矿洞电梯等。
+              </div>
+            </div>
+
+            <div class="npc-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+              <div class="npc-card">
+                <div class="npc-avatar">🌸</div>
+                <div class="npc-info">
+                  <div class="npc-name">春季收集包</div>
+                  <div class="npc-location">需要：防风草×1、绿豆×1、花椰菜×1、土豆×1</div>
+                  <div class="npc-gifts">奖励：春季种子×30</div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">☀️</div>
+                <div class="npc-info">
+                  <div class="npc-name">夏季收集包</div>
+                  <div class="npc-location">需要：番茄×1、蓝莓×1、杏子×1</div>
+                  <div class="npc-gifts">奖励：夏季种子×30</div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🍂</div>
+                <div class="npc-info">
+                  <div class="npc-name">秋季收集包</div>
+                  <div class="npc-location">需要：葡萄×1、南瓜×1、山药×1、蔓越莓×1</div>
+                  <div class="npc-gifts">奖励：秋季种子×30</div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">❄️</div>
+                <div class="npc-info">
+                  <div class="npc-name">冬季收集包</div>
+                  <div class="npc-location">需要：冬根×1、番红花×1、雪山药×1、冰泪×1</div>
+                  <div class="npc-gifts">奖励：冬季种子×30</div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🏆</div>
+                <div class="npc-info">
+                  <div class="npc-name">建筑收集包</div>
+                  <div class="npc-location">需要：木材99、石头99、硬木10</div>
+                  <div class="npc-gifts">奖励：煤炭窑制作图纸</div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">💎</div>
+                <div class="npc-info">
+                  <div class="npc-name">矿石收集包</div>
+                  <div class="npc-location">需要：铜矿×5、铁矿×5、金矿×5</div>
+                  <div class="npc-gifts">奖励：优质洒水器图纸</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 种植技巧 -->
+          <section id="tips">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💡 种植技巧</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⏰</span>
+                  <h3 class="info-card-title">计算生长周期</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>每个季节只有28天！种植前务必计算好作物是否能在季节结束前收获。</p>
+                  <p style="margin-top: 8px;">例如：春季第22天后不能再种防风草(4天)，但可以种草莓(8天但需第13日购买)</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💧</span>
+                  <h3 class="info-card-title">洒水器升级</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>洒水器可以自动浇水，节省大量时间：</p>
+                  <ul style="margin-top: 8px; padding-left: 20px;">
+                    <li>普通洒水器：4格（3×3中间）</li>
+                    <li>优质洒水器：8格（5×5中间）</li>
+                    <li>铱制洒水器：24格（7×7中间）</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌟</span>
+                  <h3 class="info-card-title">高品质作物</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>使用高级肥料可以提高作物品质（普通/银星/金星）：</p>
+                  <p style="margin-top: 8px;">普通品质：标准售价<br>银星：1.25倍售价<br>金星：1.5倍售价</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏛️</span>
+                  <h3 class="info-card-title">温室种植</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>完成社区中心后解锁温室，可以种植任何季节的作物！</p>
+                  <p style="margin-top: 8px;">推荐在温室种植：果树（杏、桃、橙等），它们需要28天成熟但每年结果</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-page="community">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语社区中心攻略 - 所有献祭包完整指南，替代路线解析，助力完成社区中心献祭">
+  <meta name="keywords" content="星露谷物语, 社区中心, 献祭包, Junimo, 献祭, Stardew Valley">
+  <title>社区中心 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/community_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>社区中心</span>
+      </div>
+      <h1 class="page-title">🏛️ 社区中心献祭指南</h1>
+      <p class="page-subtitle">修复星露谷的灵魂所在，让村庄重现生机</p>
+      <div class="page-header-tags">
+        <span class="tag tag-rare">⭐ 主线任务</span>
+        <span class="tag tag-spring">🐹 Junimo</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 概述 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📖 社区中心概述</h2>
+          <p class="section-subtitle">社区中心是游戏的核心目标之一</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🏛️</span>
+              <h3>什么是社区中心？</h3>
+            </div>
+            <div class="info-card-content">
+              <p>社区中心是星露谷的核心目标。完成献祭包可以：</p>
+              <ul class="info-list">
+                <li>解锁新区域和功能</li>
+                <li>获得独特的奖励和物品</li>
+                <li>体验游戏的主要剧情</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🐹</span>
+              <h3>Junimo 是什么？</h3>
+            </div>
+            <div class="info-card-content">
+              <p>Junimo是帮助修复社区中心的小精灵。它们会：</p>
+              <ul class="info-list">
+                <li>出现在完成.Bundle的区域</li>
+                <li>给玩家带来所需的物品</li>
+                <li>在所有献祭包完成后跳舞庆祝</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 替代路线 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">⚖️ 两条路线对比</h2>
+          <p class="section-subtitle">选择你的游玩方式</p>
+        </div>
+        
+        <div class="comparison-grid">
+          <div class="comparison-card animate-on-scroll">
+            <div class="comparison-header community">
+              <h3>🐹 社区中心路线</h3>
+            </div>
+            <div class="comparison-content">
+              <ul class="info-list">
+                <li>✅ 全部免费，无需持续付费</li>
+                <li>✅ 可获得独特物品</li>
+                <li>✅ 有可爱的Junimo陪伴</li>
+                <li>❌ 需要收集特定物品</li>
+                <li>❌ 部分物品获取较难</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="comparison-card animate-on-scroll">
+            <div class="comparison-header joja">
+              <h3>🏪 JojaMart路线</h3>
+            </div>
+            <div class="comparison-content">
+              <ul class="info-list">
+                <li>✅ 只需花钱即可完成</li>
+                <li>✅ 更加便捷快速</li>
+                <li>❌ 社区中心变为仓库</li>
+                <li>❌ 无法获得Junimo奖励</li>
+                <li>❌ 失去社区氛围</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="max-width: 600px; margin: 20px auto;">
+          <div class="info-card-content" style="text-align: center;">
+            <p><strong>💡 推荐：</strong>首次游玩建议选择社区中心路线，体验完整的游戏内容！</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 献祭包详解 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📦 所有献祭包详解</h2>
+          <p class="section-subtitle">6个房间，30个献祭包</p>
+        </div>
+        
+        <!-- 储藏室 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">🏠</span> 储藏室 (Pantry)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>春季作物包</h4>
+              <p>防风草(5)、绿叶菜(5)、大黄(1)</p>
+              <span class="bundle-reward">💰 60g + 春季种子x3</span>
+            </div>
+            <div class="bundle-card">
+              <h4>夏季作物包</h4>
+              <p>番茄(5)、辣椒(5)、蓝莓(1)</p>
+              <span class="bundle-reward">💰 120g + 夏季种子x3</span>
+            </div>
+            <div class="bundle-card">
+              <h4>秋季作物包</h4>
+              <p>玉米(5)、南瓜(1)、山药(1)、蔓越莓(1)</p>
+              <span class="bundle-reward">💰 200g + 秋季种子x3</span>
+            </div>
+            <div class="bundle-card">
+              <h4>高品质包</h4>
+              <p>金/铱品质防风草、番茄、玉米、南瓜各1</p>
+              <span class="bundle-reward">🎁 桂树枝x25</span>
+            </div>
+            <div class="bundle-card">
+              <h4>动物产品包</h4>
+              <p>蛋黄酱(1)、鸭蛋(1)、山羊奶(1)、猪肉(1)、兔子的脚(1)</p>
+              <span class="bundle-reward">🐔 小屋升级折扣</span>
+            </div>
+            <div class="bundle-card">
+              <h4> artisan 包</h4>
+              <p>果酒(1)、啤酒(1)、果汁(1)、果冻(1)、腌菜(1)</p>
+              <span class="bundle-reward">🍷 桶和罐头厂升级折扣</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 工艺室 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">🔨</span> 工艺室 (Crafts Room)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>橡木包</h4>
+              <p>橡树脂(40)、软木(60)、红木(25)</p>
+              <span class="bundle-reward">🪵 木围栏x50</span>
+            </div>
+            <div class="bundle-card">
+              <h4>森林包</h4>
+              <p>野李子(10)、黑莓(10)、木屑(40)、普通蘑菇(10)</p>
+              <span class="bundle-reward">🌲 施肥器</span>
+            </div>
+            <div class="bundle-card">
+              <h4>纸浆包</h4>
+              <p>石头(99)、木材(99)、纤维(60)</p>
+              <span class="bundle-reward">⛏️ 研磨机</span>
+            </div>
+            <div class="bundle-card">
+              <h4>石头包</h4>
+              <p>石头(60)、铜矿石(10)、铁矿石(10)</p>
+              <span class="bundle-reward">🏗️ 石头围栏x30</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 鱼缸 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">🐟</span> 鱼缸 (Fish Tank)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>河流鱼包</h4>
+              <p>河鲈(1)、蛇鳟(1)、大马哈鱼(1)、罗非鱼(1)、黑头鲦鱼(1)</p>
+              <span class="bundle-reward">🎣 碎泥鳅(2)</span>
+            </div>
+            <div class="bundle-card">
+              <h4>湖泊鱼包</h4>
+              <p>太阳鱼(1)、小嘴鲈鱼(1)、大眼鱼(1)、鲤鱼(1)、黄鲈(1)</p>
+              <span class="bundle-reward">🏞️ 湖边地图解锁</span>
+            </div>
+            <div class="bundle-card">
+              <h4>海洋鱼包</h4>
+              <p>沙鱼(1)、大比目鱼(1)、红鲷(1)、罗姆酒(1)、鳗鱼(1)</p>
+              <span class="bundle-reward">🌊 海滩地图解锁</span>
+            </div>
+            <div class="bundle-card">
+              <h4>夜间垂钓包</h4>
+              <p>鮟鱇鱼(1)、猫鱼(1)、狮子鱼(1)、大西洋大马哈鱼(1)</p>
+              <span class="bundle-reward">🐙 水母(1)</span>
+            </div>
+            <div class="bundle-card">
+              <h4>粪包</h4>
+              <p>angler鱼(1)、黄鲈(1)、青鱼(1)、鲈鱼(1)、沙鱼(1)</p>
+              <span class="bundle-reward">🏆 高级钓竿</span>
+            </div>
+            <div class="bundle-card">
+              <h4>水产养殖包</h4>
+              <p>金宝石鱼(1)、珊瑚(1)、虾(1)、海胆(1)、蛤蜊(1)</p>
+              <span class="bundle-reward">🐚 珊瑚礁装饰</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 布告栏 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">📋</span> 布告栏 (Bulletin Board)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>2个春天包</h4>
+              <p>野李子(50)、蛋(100)、苋菜(50)</p>
+              <span class="bundle-reward">🐑 羊的价值+50%</span>
+            </div>
+            <div class="bundle-card">
+              <h4>4个夏天包</h4>
+              <p>番茄(50)、蛋(100)、黑莓(25)</p>
+              <span class="bundle-reward">🥚 鸡的价值+50%</span>
+            </div>
+            <div class="bundle-card">
+              <h4>6个夏天包</h4>
+              <p>玉米(50)、蛋(100)、小麦(50)</p>
+              <span class="bundle-reward">🐐 山羊的价值+50%</span>
+            </div>
+            <div class="bundle-card">
+              <h4>8个夏天包</h4>
+              <p>南瓜(50)、蔓越莓(50)、栗子(50)</p>
+              <span class="bundle-reward">🐷 猪的价值+50%</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 锅炉房 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">🔥</span> 锅炉房 (Boiler Room)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>铜锭包</h4>
+              <p>铜锭(5)、铜矿石(25)</p>
+              <span class="bundle-reward">⛏️ 铜砍刀</span>
+            </div>
+            <div class="bundle-card">
+              <h4>铁锭包</h4>
+              <p>铁锭(5)、铁矿石(25)</p>
+              <span class="bundle-reward">⛏️ 铁砍刀</span>
+            </div>
+            <div class="bundle-card">
+              <h4>金锭包</h4>
+              <p>金锭(5)、金矿石(25)</p>
+              <span class="bundle-reward">⛏️ 金砍刀</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 地下室 -->
+        <div class="bundle-section animate-on-scroll">
+          <h3 class="bundle-title"><span class="bundle-icon">💎</span> 金库 (Vault)</h3>
+          <div class="bundle-grid">
+            <div class="bundle-card">
+              <h4>2,500g 包</h4>
+              <p>25,000金</p>
+              <span class="bundle-reward">🎁 煤(20)</span>
+            </div>
+            <div class="bundle-card">
+              <h4>5,000g 包</h4>
+              <p>50,000金</p>
+              <span class="bundle-reward">🎁 铱洒水器</span>
+            </div>
+            <div class="bundle-card">
+              <h4>10,000g 包</h4>
+              <p>100,000金</p>
+              <span class="bundle-reward">🎁 晶球x30</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 完成奖励 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🎁 完整奖励</h2>
+          <p class="section-subtitle">完成所有献祭包后获得</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🌟</span>
+              <h3>主要奖励</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>解锁姜岛旅游</li>
+                <li>解锁温泉</li>
+                <li>解锁火车服务</li>
+                <li>解锁矿洞电梯（每5层）</li>
+                <li>获得独特物品</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🎉</span>
+              <h3>Junimo庆祝</h3>
+            </div>
+            <div class="info-card-content">
+              <p>完成所有献祭包后，所有Junimo会在社区中心跳舞，这是游戏中最温馨的场景之一！</p>
+              <p style="margin-top: 12px;">📅 之后的每个节日，Junimo都会在社区中心庆祝。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📚 相关攻略</h2>
+        </div>
+        <div class="card-grid">
+          <a href="beginner.html" class="nav-card animate-on-scroll">
+            <img src="images/beginner_0.jpg" alt="新手入门" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">📖</div>
+            <h3 class="nav-card-title">新手入门</h3>
+            <p class="nav-card-desc">基础游戏指南</p>
+          </a>
+          <a href="fishing.html" class="nav-card animate-on-scroll">
+            <img src="images/fishing-card.jpg" alt="钓鱼" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🎣</div>
+            <h3 class="nav-card-title">钓鱼指南</h3>
+            <p class="nav-card-desc">鱼类收集攻略</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

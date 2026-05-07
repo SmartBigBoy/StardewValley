@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" data-page="skills">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技能系统 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语五大技能详解：耕种、采矿、采集、钓鱼、战斗，含完整技能树与专精选择指南">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link active" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview">技能概览</a></li>
+              <li class="sidebar-item"><a href="#farming">🌱 耕种技能</a></li>
+              <li class="sidebar-item"><a href="#mining">⛏️ 采矿技能</a></li>
+              <li class="sidebar-item"><a href="#foraging">🌳 采集技能</a></li>
+              <li class="sidebar-item"><a href="#fishing">🎣 钓鱼技能</a></li>
+              <li class="sidebar-item"><a href="#combat">⚔️ 战斗技能</a></li>
+              <li class="sidebar-item"><a href="#mastery">🏆 精通技能</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/skills-banner.jpg" alt="技能系统" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">⚔️ 技能系统</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>技能系统</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">⚔️ 技能系统</h1>
+            <p class="page-subtitle">五大技能决定你在星露谷的各种能力，每次升级都能解锁新配方或天赋！</p>
+          </div>
+
+          <!-- 技能概览 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🌟 技能概览</h2>
+            
+            <div class="card-grid">
+              <div class="info-card" style="border-top: 4px solid var(--spring);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌱</span>
+                  <h3 class="info-card-title">耕种 Farming</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>通过收获作物获得经验</p>
+                  <p style="margin-top: 8px;">解锁洒水器、肥料等农业配方</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-top: 4px solid #795548;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⛏️</span>
+                  <h3 class="info-card-title">采矿 Mining</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>通过粉碎石头获得经验</p>
+                  <p style="margin-top: 8px;">解锁熔炉、矿石锭制作</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-top: 4px solid #4caf50;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌳</span>
+                  <h3 class="info-card-title">采集 Foraging</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>通过采集和砍树获得经验</p>
+                  <p style="margin-top: 8px;">解锁树枝、硬木采集与加工</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-top: 4px solid #2196f3;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎣</span>
+                  <h3 class="info-card-title">钓鱼 Fishing</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>通过钓鱼和蟹笼获得经验</p>
+                  <p style="margin-top: 8px;">解锁高级钓竿和鱼饵</p>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-top: 4px solid #f44336;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚔️</span>
+                  <h3 class="info-card-title">战斗 Combat</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>通过击杀怪物获得经验</p>
+                  <p style="margin-top: 8px;">解锁武器和戒指</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 耕种技能 -->
+          <section id="farming" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🌱 耕种技能</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>升级方式：</strong>收获作物</p>
+                <p><strong>主要NPC：</strong>糖糖(潘姆的女儿)可以教授耕种书籍</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">技能树</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>等级</th>
+                  <th>解锁内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lv 1</td><td>初级肥料配方</td></tr>
+                <tr><td>Lv 2</td><td>洒水器制作图纸</td></tr>
+                <tr><td>Lv 3</td><td>初级保湿土壤配方</td></tr>
+                <tr><td>Lv 4</td><td>堆肥桶制作图纸</td></tr>
+                <tr><td>Lv 5 ⭐</td><td><strong>选择专精</strong></td></tr>
+                <tr><td>Lv 6</td><td>高级肥料配方</td></tr>
+                <tr><td>Lv 7</td><td>高级保湿土壤配方</td></tr>
+                <tr><td>Lv 8</td><td>树肥配方</td></tr>
+                <tr><td>Lv 9</td><td>优质洒水器制作图纸</td></tr>
+                <tr><td>Lv 10 ⭐</td><td><strong>选择专精</strong></td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">5级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid var(--primary-green);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌻</span>
+                  <h3 class="info-card-title">农学家</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>作物有更高几率产生高品质作物（银星/金星）</p>
+                  <p style="margin-top: 8px; color: var(--primary-green);">推荐：追求高品质作物售价的玩家</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid var(--secondary-warm);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍯</span>
+                  <h3 class="info-card-title">工匠</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>动物制品价值+50%（牛奶、蛋、羊毛等）</p>
+                  <p style="margin-top: 8px; color: var(--secondary-warm);">推荐：主要收入来自养殖的玩家</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 采矿技能 -->
+          <section id="mining" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⛏️ 采矿技能</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>升级方式：</strong>粉碎或炸碎岩石</p>
+                <p><strong>主要NPC：</strong>克林特(铁匠)可以升级工具</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">技能树</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>等级</th>
+                  <th>解锁内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lv 1</td><td>宝石复制机图纸</td></tr>
+                <tr><td>Lv 2</td><td>搬砖石配方</td></tr>
+                <tr><td>Lv 3</td><td>熔炉制作图纸</td></tr>
+                <tr><td>Lv 4</td><td>搬运矿石配方</td></tr>
+                <tr><td>Lv 5 ⭐</td><td><strong>选择专精</strong></td></tr>
+                <tr><td>Lv 6</td><td>煤锭制作</td></tr>
+                <tr><td>Lv 7</td><td>宝箱制作</td></tr>
+                <tr><td>Lv 8</td><td>磁铁制作</td></tr>
+                <tr><td>Lv 9</td><td>铱锭制作</td></tr>
+                <tr><td>Lv 10 ⭐</td><td><strong>选择专精</strong></td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">5级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid #9e9e9e;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💎</span>
+                  <h3 class="info-card-title">矿工</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>矿石掉落量+1，挖掘时有几率额外获得煤炭</p>
+                  <p style="margin-top: 8px; color: #757575;">推荐：快速获取矿石资源</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid #607d8b;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🔨</span>
+                  <h3 class="info-card-title">勘探者</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>晶球出现几率+25%</p>
+                  <p style="margin-top: 8px; color: #607d8b;">推荐：收集文物和宝石</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 采集技能 -->
+          <section id="foraging" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🌳 采集技能</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>升级方式：</strong>采集野外物品和砍树</p>
+                <p><strong>重要提示：</strong>每周一和周四会在农场生成新的大树桩</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">技能树</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>等级</th>
+                  <th>解锁内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lv 1</td><td>木围栏配方</td></tr>
+                <tr><td>Lv 2</td><td>野外种子（春季）配方</td></tr>
+                <tr><td>Lv 3</td><td>野外种子（夏季）配方</td></tr>
+                <tr><td>Lv 4</td><td>野外种子（秋季）配方</td></tr>
+                <tr><td>Lv 5 ⭐</td><td><strong>选择专精</strong></td></tr>
+                <tr><td>Lv 6</td><td>野外种子（冬季）配方</td></tr>
+                <tr><td>Lv 7</td><td>森林农场地图解锁</td></tr>
+                <tr><td>Lv 8</td><td>树肥配方</td></tr>
+                <tr><td>Lv 9</td><td>松焦油制作</td></tr>
+                <tr><td>Lv 10 ⭐</td><td><strong>选择专精</strong></td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">5级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid #8bc34a;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌲</span>
+                  <h3 class="info-card-title">采集者</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>野外采集物品有双倍几率获得</p>
+                  <p style="margin-top: 8px; color: #689f38;">推荐：收集种子和稀有物品</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid #795548;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪓</span>
+                  <h3 class="info-card-title">伐木工</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>砍树有几率掉落额外木材，硬木获取量+1</p>
+                  <p style="margin-top: 8px; color: #5d4037;">推荐：需要大量硬木建造</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 钓鱼技能 -->
+          <section id="fishing" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🎣 钓鱼技能</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>升级方式：</strong>钓鱼成功捕获、使用蟹笼</p>
+                <p><strong>重要NPC：</strong>威利(鱼店老板)出售钓竿和鱼饵</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">技能树</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>等级</th>
+                  <th>解锁内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lv 1</td><td>钓竿制作图纸(竹竿)</td></tr>
+                <tr><td>Lv 2</td><td>鱼饵制作图纸</td></tr>
+                <tr><td>Lv 3</td><td>软木浮标制作</td></tr>
+                <tr><td>Lv 4</td><td>陷阱鱼笼制作</td></tr>
+                <tr><td>Lv 5 ⭐</td><td><strong>选择专精</strong></td></tr>
+                <tr><td>Lv 6</td><td>重金属浮标制作</td></tr>
+                <tr><td>Lv 7</td><td>特级鱼饵制作</td></tr>
+                <tr><td>Lv 8</td><td>倒刺钩制作</td></tr>
+                <tr><td>Lv 9</td><td>美食鱼饵制作</td></tr>
+                <tr><td>Lv 10 ⭐</td><td><strong>选择专精</strong></td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">5级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid #03a9f4;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎯</span>
+                  <h3 class="info-card-title">渔夫</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>鱼类和蟹笼产物售价+25%</p>
+                  <p style="margin-top: 8px; color: #0288d1;">推荐：主要收入来自钓鱼</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid #00bcd4;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🦈</span>
+                  <h3 class="info-card-title">垂钓者</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>更容易捕捉大型鱼类，减少钓鱼条消耗</p>
+                  <p style="margin-top: 8px; color: #0097a7;">推荐：挑战传说鱼的玩家</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 战斗技能 -->
+          <section id="combat" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⚔️ 战斗技能</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>升级方式：</strong>击杀怪物</p>
+                <p><strong>重要地点：</strong>矿洞、采石场、煤矿森林、沙漠</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">技能树</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>等级</th>
+                  <th>解锁内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Lv 1</td><td>史莱姆孵化器图纸</td></tr>
+                <tr><td>Lv 2</td><td>生命药水配方</td></tr>
+                <tr><td>Lv 3</td><td>友谊戒指图纸</td></tr>
+                <tr><td>Lv 4</td><td>战士戒指/游侠戒指</td></tr>
+                <tr><td>Lv 5 ⭐</td><td><strong>选择专精</strong></td></tr>
+                <tr><td>Lv 6</td><td>果味饮料配方</td></tr>
+                <tr><td>Lv 7</td><td>光亮戒指图纸</td></tr>
+                <tr><td>Lv 8</td><td>爆炸弹丸配方</td></tr>
+                <tr><td>Lv 9</td><td>坚固戒指图纸</td></tr>
+                <tr><td>Lv 10 ⭐</td><td><strong>选择专精</strong></td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">5级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid #f44336;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚔️</span>
+                  <h3 class="info-card-title">战斗大师</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>近战武器伤害+15%</p>
+                  <p style="margin-top: 8px; color: #d32f2f;">推荐：使用剑类武器</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid #ff9800;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏹</span>
+                  <h3 class="info-card-title">射手</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>弹弓伤害+15%，弹药消耗减少50%</p>
+                  <p style="margin-top: 8px; color: #f57c00;">推荐：使用弹弓</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">10级专精选择</h3>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="info-card" style="border-left: 4px solid #9c27b0;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💪</span>
+                  <h3 class="info-card-title"> brute</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>暴击伤害+50%</p>
+                </div>
+              </div>
+              <div class="info-card" style="border-left: 4px solid #e91e63;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🗡️</span>
+                  <h3 class="info-card-title">刺客</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>暴击率翻倍</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 精通技能 -->
+          <section id="mastery">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🏆 精通技能</h2>
+
+            <div class="info-card" style="border-left: 4px solid var(--secondary-warm);">
+              <div class="info-card-content">
+                <p><strong>解锁条件：</strong>任意两项技能达到10级</p>
+                <p style="margin-top: 12px;">完成精通洞穴任务后开启精通技能树，提供额外加成和高级配方。</p>
+              </div>
+            </div>
+
+            <div class="tip-box" style="margin-top: 20px;">
+              <span class="tip-box-icon">🎯</span>
+              <div class="tip-box-content">
+                <strong>快速升级建议：</strong>每项技能都有其独特的升级策略。耕种多产作物、采矿多带炸药、采集多砍树、钓鱼多用蟹笼、战斗多刷矿洞。
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
