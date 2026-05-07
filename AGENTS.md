@@ -23,7 +23,31 @@
 │   ├── coze-preview-build.sh
 │   └── coze-preview-run.sh
 ├── *.html              # 各攻略页面（18个）
-└── images/             # 325张配图
+└── images/             # 按页面分类的配图
+    ├── nav-card/       # 导航卡片图
+    ├── achievements/   # 成就页面
+    ├── beginner/       # 新手入门
+    ├── combat/         # 战斗系统
+    ├── community-center/ # 社区中心
+    ├── crafting/       # 制造
+    ├── desert/         # 沙漠
+    ├── farm/           # 农场
+    ├── fish/           # 鱼类
+    ├── fishing/        # 钓鱼
+    ├── foraging/       # 采集
+    ├── ginger-island/  # 姜岛
+    ├── hero/           # 首页横幅
+    ├── mines/          # 矿洞
+    ├── mods/           # Mod教程
+    ├── money/          # 赚钱攻略
+    ├── multiplayer/    # 联机
+    ├── npc/            # NPC角色图
+    ├── seasons/        # 季节（含四季子图）
+    ├── skills/         # 技能
+    ├── slime/          # 史莱姆
+    ├── update16/       # 1.6版本
+    ├── cooking/        # 烹饪
+    └── items/          # 物品图
 ```
 
 ## 关键入口 / 核心模块
