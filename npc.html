@@ -567,6 +567,21 @@
           <section id="friendship">
             <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💕 好感度系统</h2>
 
+            <div class="info-card" style="margin-bottom: 24px;">
+              <div class="info-card-header">
+                <span class="info-card-icon">📊</span>
+                <h3 class="info-card-title">好感度上限说明</h3>
+              </div>
+              <div class="info-card-content">
+                <ul style="padding-left: 20px;">
+                  <li><strong>普通村民：</strong>最高10心(2500好感度)</li>
+                  <li><strong>可结婚对象（送花束前）：</strong>最高8心(2249好感度)</li>
+                  <li><strong>可结婚对象（送花束后）：</strong>最高10心(2749好感度)</li>
+                  <li><strong>配偶：</strong>最高14心(3749好感度，需要赠送美人鱼吊坠才能达到14心)</li>
+                </ul>
+              </div>
+            </div>
+
             <div class="card-grid">
               <div class="info-card">
                 <div class="info-card-header">
@@ -612,6 +627,63 @@
               </div>
             </div>
 
+            <!-- 所有NPC礼物喜好总表 -->
+            <div style="margin-top: 32px;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 16px;">🎁 全NPC礼物喜好表（最爱的礼物）</h3>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>NPC</th>
+                    <th>生日</th>
+                    <th>最爱礼物</th>
+                    <th>讨厌礼物</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>👨 亚历克斯 Alex</td><td>夏14</td><td>椰子、煎饼早餐、全早餐、美味便当</td><td>所有垃圾</td></tr>
+                  <tr><td>👩 阿比盖尔 Abigail</td><td>秋13</td><td>紫水晶、南瓜派、香蕉布丁、巧克力蛋糕、河豚</td><td>糖</td></tr>
+                  <tr><td>👨 艾利欧特 Elliott</td><td>秋5</td><td>螃蟹大餐、龙涎香、鸭蛋黄、椰子、石榴</td><td>海胆</td></tr>
+                  <tr><td>👩 艾米丽 Emily</td><td>春27</td><td>红宝石、椰子、鸭毛、绿宝石、紫水晶</td><td>—</td></tr>
+                  <tr><td>👨 哈维 Harvey</td><td>冬14</td><td>咖啡、松露、能量滋补水、超早餐、葡萄酒</td><td>—</td></tr>
+                  <tr><td>👩 海莉 Haley</td><td>春14</td><td>椰子、向日葵、菠萝、钻石、太阳精华</td><td>—</td></tr>
+                  <tr><td>👨 山姆 Sam</td><td>夏17</td><td>Trader Joe's披萨、披萨、枫糖浆棒、鸡尾酒</td><td>所有金属物品</td></tr>
+                  <tr><td>👩 莉亚 Leah</td><td>冬23</td><td>山羊奶酪、松露、炒蘑菇、葡萄酒、蟹黄堡</td><td>海草</td></tr>
+                  <tr><td>👩 玛鲁 Maru</td><td>夏10</td><td>电池组、矮人小工具、金锭、铱锭</td><td>—</td></tr>
+                  <tr><td>👩 潘妮 Penny</td><td>秋2</td><td>价格目录、沙鱼、虞美人花、宝石</td><td>红蘑菇</td></tr>
+                  <tr><td>👨 塞巴斯蒂安 Sebastian</td><td>冬20</td><td>青蛙蛋、黑曜石、虚空蛋、橙水晶</td><td>粘土</td></tr>
+                  <tr><td>👨 谢恩 Shane</td><td>春20</td><td>辛辣食物、辣椒、啤酒、披萨、微波快餐</td><td>—</td></tr>
+                  <tr><td>👴 乔治 George</td><td>冬4</td><td>炒蓝蘑菇、蒜、根类蔬菜拼盘</td><td>—</td></tr>
+                  <tr><td>👵 艾芙琳 Evelyn</td><td>冬20</td><td>炒椰子、亚麻地毯、椰子、宝石</td><td>—</td></tr>
+                  <tr><td>👨 格斯 Gus</td><td>夏5</td><td>螃蟹大餐、钻石、炒蘑菇、意大利调味饭</td><td>—</td></tr>
+                  <tr><td>👩 乔迪 Jodi</td><td>秋11</td><td>炒蘑菇、咖喱粉、鲟鱼、葡萄酒</td><td>—</td></tr>
+                  <tr><td>👨 肯特 Kent</td><td>春13</td><td>烤板栗、蔓越莓酱、松露、枣</td><td>—</td></tr>
+                  <tr><td>👩 玛妮 Marnie</td><td>冬18</td><td>宝石、罂粟籽煎饼、南瓜派、向日葵</td><td>粘土</td></tr>
+                  <tr><td>👩 潘姆 Pam</td><td>春18</td><td>啤酒、咖啡、鸭毛、能量滋补水</td><td>章鱼、鱿鱼</td></tr>
+                  <tr><td>👨 威利 Willy</td><td>夏20</td><td>鲶鱼、金锭、铱锭、章鱼、海参、鲟鱼</td><td>—</td></tr>
+                  <tr><td>👨 皮埃尔 Pierre</td><td>春26</td><td>价格目录</td><td>所有鱼</td></tr>
+                  <tr><td>👩 卡洛琳 Caroline</td><td>冬7</td><td>椰子、茶叶、夏季亮片、黄水仙</td><td>—</td></tr>
+                  <tr><td>👩 罗宾 Robin</td><td>冬21</td><td>山羊奶酪、胡萝卜汁、硬木、枫糖浆</td><td>—</td></tr>
+                  <tr><td>👨 德米特里厄斯 Demetrius</td><td>夏19</td><td>炒蘑菇、草莓、枫糖浆、果盘</td><td>—</td></tr>
+                  <tr><td>👨 克林特 Clint</td><td>冬26</td><td>绿宝石、紫水晶、石榴、铱锭</td><td>—</td></tr>
+                  <tr><td>👴 莱纳斯 Linus</td><td>冬3</td><td>椰子、山羊奶酪、块茎蔬菜拼盘、瀑布醋</td><td>所有垃圾</td></tr>
+                  <tr><td>👨 法师 Wizard</td><td>夏23</td><td>太阳精华、虚空精华、大海参、晶球</td><td>史莱姆泥</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tip-box" style="margin-top: 24px;">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>送礼小技巧：</strong>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                  <li>生日送礼好感度×8，一周可省一次送礼机会</li>
+                  <li>阅读《交友导论》后可永久+10%好感度获取</li>
+                  <li>品质越高的礼物好感度加成越多（银星+10%、金星+25%、铱星+50%）</li>
+                  <li>婚后给配偶送礼好感度只有正常的32.5%</li>
+                </ul>
+              </div>
+            </div>
+
             <div class="tip-box warning" style="margin-top: 24px;">
               <span class="tip-box-icon">⚠️</span>
               <div class="tip-box-content">
@@ -635,5 +707,8 @@
   <button class="back-to-top" aria-label="返回顶部">↑</button>
   <script src="i18n.js"></script>
   <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CLOUDFLARE_TOKEN"}'></script>
 </body>
 </html>
