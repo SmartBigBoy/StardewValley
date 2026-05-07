@@ -97,283 +97,307 @@
     </div>
   </nav>
 
-  <!-- 页面横幅 -->
-  <div class="page-banner">
-    <div class="page-banner-bg" style="background-image: url('images/combat/combat-detail.jpg');"></div>
-    <div class="page-banner-overlay"></div>
-    <div class="page-banner-content">
-      <div class="breadcrumb">
-        <a href="index.html">首页</a> / <span>战斗系统</span>
-      </div>
-      <h1 class="page-banner-title">🗡️ 战斗系统详解</h1>
-      <p class="page-banner-subtitle">武器选择、技能树、职业进阶与怪物图鉴</p>
-      <div class="page-banner-tags">
-        <span class="tag tag-summer">⚔️ 战斗技能</span>
-        <span class="tag tag-rare">🗡️ 武器</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 主内容区域 -->
-  <main class="main-content">
-    <div class="content-grid container">
-      <!-- 侧边栏目录 -->
-      <aside class="sidebar">
-        <nav class="sidebar-nav">
-          <h3 class="sidebar-title">📖 目录</h3>
-          <ul class="sidebar-menu">
-            <li><a href="#profession" class="sidebar-link active">⚔️ 战斗职业</a></li>
-            <li><a href="#weapons" class="sidebar-link">🗡️ 武器推荐</a></li>
-            <li><a href="#monsters" class="sidebar-link">👹 怪物图鉴</a></li>
-            <li><a href="#tips" class="sidebar-link">💥 战斗技巧</a></li>
-            <li><a href="#related" class="sidebar-link">📌 相关推荐</a></li>
-          </ul>
-        </nav>
-      </aside>
-      
-      <!-- 主内容 -->
-      <div class="main-content-area">
-        
-        <!-- 页面横幅 -->
-        <div class="page-banner">
-          <img src="images/combat/combat-detail.jpg" alt="战斗系统" loading="lazy">
-          <div class="page-banner-overlay">
-            <h1 class="page-banner-title">⚔️ 战斗系统指南</h1>
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📖 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#profession">⚔️ 战斗职业</a></li>
+              <li class="sidebar-item"><a href="#weapons">🗡️ 武器推荐</a></li>
+              <li class="sidebar-item"><a href="#monsters">👹 怪物图鉴</a></li>
+              <li class="sidebar-item"><a href="#tips">💡 战斗技巧</a></li>
+              <li class="sidebar-item"><a href="#related">📌 相关推荐</a></li>
+            </ul>
           </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/combat/combat-detail.jpg" alt="战斗系统" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">⚔️ 战斗系统指南</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>战斗系统</span>
+          </div>
+
+          <!-- 页面标题 -->
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">⚔️ 战斗系统指南</h1>
+            <p class="page-subtitle">矿洞冒险与战斗技巧</p>
+          </div>
+
+          <!-- 战斗职业 -->
+          <section id="profession" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⚔️ 战斗职业技能</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);">达到5级后可选择职业分支</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🗡️</span>
+                  <h3 class="info-card-title">战斗 (Combat)</h3>
+                </div>
+                <div class="info-card-content">
+                  <div style="margin-bottom: 16px;">
+                    <h4 style="color: var(--primary);">⬆️ 骑士 (Fighter)</h4>
+                    <p>+15%伤害，+1防御</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">适合新手，稳定的近战路线</p>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--summer);">⚔️ 剑客 (Berserker)</h4>
+                    <p>+50%伤害，-2防御</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">高风险高回报，适合老手</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏹</span>
+                  <h3 class="info-card-title">敏捷 (Agility)</h3>
+                </div>
+                <div class="info-card-content">
+                  <div style="margin-bottom: 16px;">
+                    <h4 style="color: var(--primary);">🥷 刺客 (Scout)</h4>
+                    <p>+25%移动速度</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">更快逃离危险</p>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--summer);">⚡ 弹道学 (Desperado)</h4>
+                    <p>近战有几率造成暴击</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">弹射武器暴击伤害翻倍</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 武器推荐 -->
+          <section id="weapons" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🗡️ 武器推荐</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);">各阶段最强武器一览</p>
+            
+            <div class="info-card">
+              <div class="info-card-content">
+                <table class="data-table">
+                  <tr>
+                    <th>武器</th>
+                    <th>伤害</th>
+                    <th>速度</th>
+                    <th>获取方式</th>
+                    <th>推荐度</th>
+                  </tr>
+                  <tr>
+                    <td>🗡️ 铁剑</td>
+                    <td>16-22</td>
+                    <td>快</td>
+                    <td>矿洞40层</td>
+                    <td>⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td>⚔️ 银河之剑</td>
+                    <td>26-42</td>
+                    <td>中等</td>
+                    <td>任务奖励</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td>🪓 矮人之斧</td>
+                    <td>34-50</td>
+                    <td>慢</td>
+                    <td>矿洞100层+</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td>🌟 铱短剑</td>
+                    <td>44-66</td>
+                    <td>极快</td>
+                    <td>矿洞110层+</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td>🔱 三叉戟</td>
+                    <td>21-31</td>
+                    <td>中等</td>
+                    <td>钓鱼专家</td>
+                    <td>⭐⭐⭐</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- 怪物图鉴 -->
+          <section id="monsters" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">👾 怪物图鉴</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);">矿洞中的危险生物</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟢</span>
+                  <h4 class="info-card-title">绿色史莱姆</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>最弱的怪物，新手练习对象</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 30 | DMG: 0-2</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🔵</span>
+                  <h4 class="info-card-title">蓝色史莱姆</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>较常见的史莱姆</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 45 | DMG: 0-4</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟡</span>
+                  <h4 class="info-card-title">蝙蝠</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>会飞的敌人，攻击范围大</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 20 | DMG: 0-6</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪨</span>
+                  <h4 class="info-card-title">岩石怪</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>高防怪物，需要多次攻击</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 80 | DMG: 0-8</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💀</span>
+                  <h4 class="info-card-title">骷髅</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>后期常见怪物，攻击迅速</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 60 | DMG: 0-10</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟣</span>
+                  <h4 class="info-card-title">紫色史莱姆</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>掉落史莱姆蛋</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 100 | DMG: 0-15</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌟</span>
+                  <h4 class="info-card-title">流星</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>掉落铱矿，极难对付</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 150 | DMG: 0-20</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👹</span>
+                  <h4 class="info-card-title">幽灵</h4>
+                </div>
+                <div class="info-card-content">
+                  <p>深层的恐怖存在</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 80 | DMG: 0-25</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 战斗技巧 -->
+          <section id="tips" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💡 战斗技巧</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🛡️</span>
+                  <h3 class="info-card-title">保持移动</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>战斗中不断移动，避免被包围。使用方向键绕圈。</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍖</span>
+                  <h3 class="info-card-title">携带食物</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>总是携带足够的食物，危急时刻可以恢复生命。</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💍</span>
+                  <h3 class="info-card-title">戒指选择</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>战斗戒指能极大提升生存能力，优先获取。</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📍</span>
+                  <h3 class="info-card-title">熟悉地形</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>记住矿洞布局，利用地形卡位怪物。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 相关推荐 -->
+          <section id="related" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📚 相关攻略</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <a href="mines.html" class="info-card" style="text-decoration: none;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⛏️</span>
+                  <h3 class="info-card-title">矿洞探险</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>深入地底探索</p>
+                </div>
+              </a>
+              <a href="skills.html" class="info-card" style="text-decoration: none;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚔️</span>
+                  <h3 class="info-card-title">技能系统</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>全技能解析</p>
+                </div>
+              </a>
+            </div>
+          </section>
+
         </div>
-        
-        <!-- 面包屑 -->
-        <div class="breadcrumb">
-          <a href="index.html">首页</a>
-          <span class="breadcrumb-separator">/</span>
-          <span>战斗系统</span>
-        </div>
-
-        <!-- 页面标题 -->
-        <div class="page-header" style="display: none;">
-          <h1 class="page-title">⚔️ 战斗系统指南</h1>
-          <p class="page-subtitle">矿洞冒险与战斗技巧</p>
-        </div>
-        
-        <!-- 战斗职业 -->
-        <section id="profession" class="content-section">
-          <h2 class="section-title">🎯 战斗职业技能</h2>
-          <p class="section-subtitle">达到5级后可选择职业分支</p>
-          
-          <div class="profession-grid">
-            <div class="profession-card">
-              <h3>🗡️ 战斗 (Combat)</h3>
-              <div class="profession-branches">
-                <div class="branch">
-                  <h4>⬆️ 骑士 (Fighter)</h4>
-                  <p>+15%伤害，+1防御</p>
-                  <p>适合新手，稳定的近战路线</p>
-                </div>
-                <div class="branch">
-                  <h4>⚔️ 剑客 (Berserker)</h4>
-                  <p>+50%伤害，-2防御</p>
-                  <p>高风险高回报，适合老手</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="profession-card">
-              <h3>🏹 敏捷 (Agility)</h3>
-              <div class="profession-branches">
-                <div class="branch">
-                  <h4>🥷 刺客 (Scout)</h4>
-                  <p>+25%移动速度</p>
-                  <p>更快逃离危险</p>
-                </div>
-                <div class="branch">
-                  <h4>⚡ 弹道学 (Desperado)</h4>
-                  <p>近战有几率造成暴击</p>
-                  <p>弹射武器暴击伤害翻倍</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- 武器推荐 -->
-        <section id="weapons" class="content-section">
-          <h2 class="section-title">⚔️ 武器推荐</h2>
-          <p class="section-subtitle">各阶段最强武器一览</p>
-          
-          <div class="info-card">
-            <div class="info-card-content">
-              <table class="data-table">
-                <tr>
-                  <th>武器</th>
-                  <th>伤害</th>
-                  <th>速度</th>
-                  <th>获取方式</th>
-                  <th>推荐度</th>
-                </tr>
-                <tr>
-                  <td>🗡️ 铁剑</td>
-                  <td>16-22</td>
-                  <td>快</td>
-                  <td>矿洞40层</td>
-                  <td>⭐⭐⭐⭐</td>
-                </tr>
-                <tr>
-                  <td>⚔️ 银河之剑</td>
-                  <td>26-42</td>
-                  <td>中等</td>
-                  <td>任务奖励</td>
-                  <td>⭐⭐⭐⭐⭐</td>
-                </tr>
-                <tr>
-                  <td>🪓 矮人之斧</td>
-                  <td>34-50</td>
-                  <td>慢</td>
-                  <td>矿洞100层+</td>
-                  <td>⭐⭐⭐⭐⭐</td>
-                </tr>
-                <tr>
-                  <td>🌟 铱短剑</td>
-                  <td>44-66</td>
-                  <td>极快</td>
-                  <td>矿洞110层+</td>
-                  <td>⭐⭐⭐⭐⭐</td>
-                </tr>
-                <tr>
-                  <td>🔱 三叉戟</td>
-                  <td>21-31</td>
-                  <td>中等</td>
-                  <td>钓鱼专家</td>
-                  <td>⭐⭐⭐</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <!-- 怪物图鉴 -->
-        <section id="monsters" class="content-section">
-          <h2 class="section-title">👾 怪物图鉴</h2>
-          <p class="section-subtitle">矿洞中的危险生物</p>
-          
-          <div class="monster-grid">
-            <div class="monster-card">
-              <div class="monster-icon">🟢</div>
-              <h4>绿色史莱姆</h4>
-              <p>最弱的怪物，新手练习对象</p>
-              <span class="monster-stat">HP: 30 | DMG: 0-2</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">🔵</div>
-              <h4>蓝色史莱姆</h4>
-              <p>较常见的史莱姆</p>
-              <span class="monster-stat">HP: 45 | DMG: 0-4</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">🟡</div>
-              <h4>蝙蝠</h4>
-              <p>会飞的敌人，攻击范围大</p>
-              <span class="monster-stat">HP: 20 | DMG: 0-6</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">🪨</div>
-              <h4>岩石怪</h4>
-              <p>高防怪物，需要多次攻击</p>
-              <span class="monster-stat">HP: 80 | DMG: 0-8</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">💀</div>
-              <h4>骷髅</h4>
-              <p>后期常见怪物，攻击迅速</p>
-              <span class="monster-stat">HP: 60 | DMG: 0-10</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">🟣</div>
-              <h4>紫色史莱姆</h4>
-              <p>掉落史莱姆蛋</p>
-              <span class="monster-stat">HP: 100 | DMG: 0-15</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">🌟</div>
-              <h4>流星</h4>
-              <p>掉落铱矿，极难对付</p>
-              <span class="monster-stat">HP: 150 | DMG: 0-20</span>
-            </div>
-            
-            <div class="monster-card">
-              <div class="monster-icon">👹</div>
-              <h4>幽灵</h4>
-              <p>深层的恐怖存在</p>
-              <span class="monster-stat">HP: 80 | DMG: 0-25</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- 战斗技巧 -->
-        <section id="tips" class="content-section">
-          <h2 class="section-title">💡 战斗技巧</h2>
-          
-          <div class="tips-grid">
-            <div class="tip-card">
-              <div class="tip-icon">🛡️</div>
-              <div class="tip-content">
-                <h4>保持移动</h4>
-                <p>战斗中不断移动，避免被包围。使用方向键绕圈。</p>
-              </div>
-            </div>
-            
-            <div class="tip-card">
-              <div class="tip-icon">🍖</div>
-              <div class="tip-content">
-                <h4>携带食物</h4>
-                <p>总是携带足够的食物，危急时刻可以恢复生命。</p>
-              </div>
-            </div>
-            
-            <div class="tip-card">
-              <div class="tip-icon">💍</div>
-              <div class="tip-content">
-                <h4>戒指选择</h4>
-                <p>战斗戒指能极大提升生存能力，优先获取。</p>
-              </div>
-            </div>
-            
-            <div class="tip-card">
-              <div class="tip-icon">📍</div>
-              <div class="tip-content">
-                <h4>熟悉地形</h4>
-                <p>记住矿洞布局，利用地形卡位怪物。</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- 相关推荐 -->
-        <section id="related" class="content-section">
-          <h2 class="section-title">📚 相关攻略</h2>
-          <div class="card-grid">
-            <a href="mines.html" class="nav-card">
-              <img src="images/mines/mines-banner.jpg" alt="矿洞" class="nav-card-image" loading="lazy">
-              <div class="nav-card-overlay"></div>
-              <div class="nav-card-icon">⛏️</div>
-              <h3 class="nav-card-title">矿洞探险</h3>
-              <p class="nav-card-desc">深入地底探索</p>
-            </a>
-            <a href="skills.html" class="nav-card">
-              <img src="images/skills/skills-banner.jpg" alt="技能" class="nav-card-image" loading="lazy">
-              <div class="nav-card-overlay"></div>
-              <div class="nav-card-icon">⚔️</div>
-              <h3 class="nav-card-title">技能系统</h3>
-              <p class="nav-card-desc">全技能解析</p>
-            </a>
-          </div>
-        </section>
-
       </div>
     </div>
   </main>
