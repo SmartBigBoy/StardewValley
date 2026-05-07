@@ -167,9 +167,9 @@ const i18n = {
     'footer.links.achievements': '成就系统',
     'footer.links.combat': '战斗系统',
     'footer.about.desc': '本站为星露谷物语中文攻略站',
-    'footer.about.domain': '域名: openclow.net',
+    'footer.about.domain': '域名: StardewValley.help',
     'footer.about.copyright': '游戏版权归ConcernedApe所有',
-    'footer.bottom': '© 2024 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans',
+    'footer.bottom': '© 2026 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans',
     'footer.bottom.note': '本站内容仅供学习交流，请支持正版游戏',
 
     // 通用
@@ -345,9 +345,9 @@ const i18n = {
     'footer.links.achievements': 'Achievements',
     'footer.links.combat': 'Combat System',
     'footer.about.desc': 'Stardew Valley Chinese Guide',
-    'footer.about.domain': 'Domain: openclow.net',
+    'footer.about.domain': 'Domain: StardewValley.help',
     'footer.about.copyright': 'Game copyright belongs to ConcernedApe',
-    'footer.bottom': '© 2024 Stardew Valley Guide | Made with 💚 for Stardew Valley fans',
+    'footer.bottom': '© 2026 Stardew Valley Guide | Made with 💚 for Stardew Valley fans',
     'footer.bottom.note': 'Content for learning only. Please support the official game.',
 
     // Common
