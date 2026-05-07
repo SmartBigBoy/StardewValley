@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-page="desert">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语沙漠攻略 - 卡利科沙漠、骷髅洞、沙漠商人、化石解析完整指南">
+  <meta name="keywords" content="星露谷物语, 沙漠, 骷髅洞, 卡利科沙漠, Stardew Valley">
+  <title>卡利科沙漠 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏜️</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/desert_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>卡利科沙漠</span>
+      </div>
+      <h1 class="page-title">🏜️ 卡利科沙漠</h1>
+      <p class="page-subtitle">骷髅洞探险、化石收集、沙漠商人交易</p>
+      <div class="page-header-tags">
+        <span class="tag tag-autumn">🏜️ 沙漠区域</span>
+        <span class="tag tag-rare">💎 稀有矿物</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 概述 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📖 沙漠概述</h2>
+          <p class="section-subtitle">解锁条件与基本区域</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🔓</span>
+              <h3>解锁条件</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>修复公交车服务（花费40,000g）</li>
+                <li>或者从矿区入口步行到达</li>
+                <li>公交车票：单程100g</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🏜️</span>
+              <h3>主要区域</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li><strong>绿洲</strong> - 温泉恢复点</li>
+                <li><strong>骷髅洞</strong> - 深层地牢</li>
+                <li><strong>沙漠商人</strong> - 每日交易</li>
+                <li><strong>沙漠节日</strong> - 特殊活动</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 骷髅洞 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">💀 骷髅洞详解</h2>
+          <p class="section-subtitle">比普通矿洞更具挑战性的地牢</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">⚔️</span>
+              <h3>与普通矿洞的区别</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>没有电梯，需要自己探索</li>
+                <li>怪物更密集、更危险</li>
+                <li>铱矿更常见</li>
+                <li>有专属矿物节点</li>
+                <li>需要大量食物和药水</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">💎</span>
+              <h3>可获得稀有物品</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li><strong>铱矿</strong> - 最珍贵的矿物</li>
+                <li><strong>晶球</strong> - 开出各种矿物</li>
+                <li><strong>恐龙蛋</strong> - 可孵化</li>
+                <li><strong>陨石碎片</strong> - 稀有收集品</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 沙漠商人 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">🛒 沙漠商人</h2>
+          <p class="section-subtitle">每日特惠商品</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="max-width: 800px;">
+          <div class="info-card-content">
+            <table class="data-table">
+              <tr><th>商品</th><th>价格</th><th>备注</th></tr>
+              <tr><td>沙漠汤</td><td>175g</td><td>恢复体力+恢复</td></tr>
+              <tr><td>果酒</td><td>400g</td><td>快速恢复</td></tr>
+              <tr><td>腌菜</td><td>75g</td><td>快速恢复</td></tr>
+              <tr><td>史莱姆孵化器</td><td>1000g</td><td>放置在史莱姆屋</td></tr>
+              <tr><td>稀有种子</td><td>1000g</td><td>季节限定</td></tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 实用技巧 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">💡 沙漠探险技巧</h2>
+        </div>
+        
+        <div class="tips-grid">
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🧪</div>
+            <div class="tip-content">
+              <h4>准备充足</h4>
+              <p>带上大量食物、药水和矿洞炸弹。骷髅洞比普通矿洞消耗更大。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🎯</div>
+            <div class="tip-content">
+              <h4>选择时机</h4>
+              <p>幸运日去骷髅洞收益更高。使用四叶苜蓿提升运气。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">⏰</div>
+            <div class="tip-content">
+              <h4>时间管理</h4>
+              <p>22:00前必须离开沙漠，否则会晕倒并损失金钱。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🔮</div>
+            <div class="tip-content">
+              <h4>保命装备</h4>
+              <p>携带史莱姆戒指减少来自史莱姆的伤害。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📚 相关攻略</h2>
+        </div>
+        <div class="card-grid">
+          <a href="mines.html" class="nav-card animate-on-scroll">
+            <img src="images/mines-banner.jpg" alt="矿洞" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">⛏️</div>
+            <h3 class="nav-card-title">矿洞探险</h3>
+            <p class="nav-card-desc">基础矿洞攻略</p>
+          </a>
+          <a href="ginger-island.html" class="nav-card animate-on-scroll">
+            <img src="images/ginger_0.jpg" alt="姜岛" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🏝️</div>
+            <h3 class="nav-card-title">姜岛攻略</h3>
+            <p class="nav-card-desc">热带岛屿探索</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

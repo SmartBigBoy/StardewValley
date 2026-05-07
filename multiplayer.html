@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-page="multiplayer">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语联机教程 - 多人合作、联机设置、农场共享完整指南">
+  <meta name="keywords" content="星露谷物语, 联机, 多人, 合作, Stardew Valley">
+  <title>联机教程 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👥</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/multiplayer_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>联机教程</span>
+      </div>
+      <h1 class="page-title">👥 多人联机指南</h1>
+      <p class="page-subtitle">与朋友一起经营农场，享受合作乐趣</p>
+      <div class="page-header-tags">
+        <span class="tag tag-spring">👥 联机</span>
+        <span class="tag tag-rare">🎮 多人合作</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 联机方式 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">🎮 联机方式</h2>
+          <p class="section-subtitle">选择最适合你的联机方式</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🌐</span>
+              <h3>局域网联机</h3>
+            </div>
+            <div class="info-card-content">
+              <p>同一网络下的玩家可以直连：</p>
+              <ul class="info-list">
+                <li>主机选择"邀请"</li>
+                <li>加入者选择"加入"</li>
+                <li>选择同一网络的主机</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">💻</span>
+              <h3>互联网联机</h3>
+            </div>
+            <div class="info-card-content">
+              <p>使用VPN或Steam好友功能：</p>
+              <ul class="info-list">
+                <li>Steam邀请好友</li>
+                <li>使用Hamachi等VPN</li>
+                <li>端口转发设置</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联机分工 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🤝 联机分工建议</h2>
+          <p class="section-subtitle">合理的分工让农场更高效</p>
+        </div>
+        
+        <div class="tips-grid">
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🌱</div>
+            <div class="tip-content">
+              <h4>农民</h4>
+              <p>专注于种植和收获作物，管理温室。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">⛏️</div>
+            <div class="tip-content">
+              <h4>矿工</h4>
+              <p>专注挖矿，获取资源和升级材料。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🎣</div>
+            <div class="tip-content">
+              <h4>渔夫</h4>
+              <p>钓鱼收集鱼类，完成社区中心献祭。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">💝</div>
+            <div class="tip-content">
+              <h4>社交官</h4>
+              <p>与NPC交流，提升好感度，获取任务。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联机规则 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📋 联机注意事项</h2>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="max-width: 800px;">
+          <div class="info-card-content">
+            <h4>共享资源：</h4>
+            <ul class="info-list">
+              <li>金币共享（可设置独立钱包）</li>
+              <li>物品可以互相交易</li>
+              <li>出货箱收入共享</li>
+            </ul>
+            
+            <h4 style="margin-top: 16px;">独立资源：</h4>
+            <ul class="info-list">
+              <li>每个玩家有独立背包</li>
+              <li>每个玩家有独立工具</li>
+              <li>独立的小屋（额外小屋）</li>
+              <li>独立的好感度进度</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📚 相关攻略</h2>
+        </div>
+        <div class="card-grid">
+          <a href="farm.html" class="nav-card animate-on-scroll">
+            <img src="images/farm-banner.jpg" alt="农场" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🏡</div>
+            <h3 class="nav-card-title">农场规划</h3>
+            <p class="nav-card-desc">联机农场设计</p>
+          </a>
+          <a href="community-center.html" class="nav-card animate-on-scroll">
+            <img src="images/community_0.jpg" alt="社区中心" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🏛️</div>
+            <h3 class="nav-card-title">社区中心</h3>
+            <p class="nav-card-desc">联机献祭攻略</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

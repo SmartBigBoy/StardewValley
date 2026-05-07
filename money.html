@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-page="money">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语赚钱攻略 - 最高收益作物、酿酒系统、投资回报分析，全方位赚钱指南">
+  <meta name="keywords" content="星露谷物语, 赚钱, 收益, 作物, 酿酒, Stardew Valley">
+  <title>赚钱攻略 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/money_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>赚钱攻略</span>
+      </div>
+      <h1 class="page-title">💰 全方位赚钱攻略</h1>
+      <p class="page-subtitle">从第一桶金到百万富翁的致富之路</p>
+      <div class="page-header-tags">
+        <span class="tag tag-summer">💵 收益分析</span>
+        <span class="tag tag-rare">⭐ 热门</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 概述 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">💡 赚钱核心思路</h2>
+          <p class="section-subtitle">理解游戏经济系统是致富的第一步</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🌱</span>
+              <h3>农业是基础</h3>
+            </div>
+            <div class="info-card-content">
+              <p>种植作物是游戏中最稳定的收入来源。建议：</p>
+              <ul class="info-list">
+                <li>春季：草莓 > 防风草</li>
+                <li>夏季：蓝莓 > 玉米</li>
+                <li>秋季：蔓越莓 > 南瓜</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🍷</span>
+              <h3>加工提升价值</h3>
+            </div>
+            <div class="info-card-content">
+              <p>将原材料加工成工艺品可以大幅提升收益：</p>
+              <ul class="info-list">
+                <li>水果 → 果酒（价值×3）</li>
+                <li>蔬菜 → 腌菜（价值×2）</li>
+                <li>蜂蜜 → 果酒桶</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 作物收益表 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🌾 作物收益排行榜</h2>
+          <p class="section-subtitle">每日收益分析（不含酿酒）</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <div class="info-card-content">
+            <table class="data-table">
+              <tr>
+                <th>排名</th>
+                <th>作物</th>
+                <th>季节</th>
+                <th>成本</th>
+                <th>售价</th>
+                <th>天数</th>
+                <th>日均收益</th>
+              </tr>
+              <tr>
+                <td>🥇</td>
+                <td>🥭 蔓越莓</td>
+                <td>秋季</td>
+                <td>240g</td>
+                <td>165g</td>
+                <td>7</td>
+                <td style="color: var(--primary-green); font-weight: bold;">17.9g/天</td>
+              </tr>
+              <tr>
+                <td>🥈</td>
+                <td>🍓 草莓</td>
+                <td>春季</td>
+                <td>100g</td>
+                <td>120g</td>
+                <td>8</td>
+                <td style="color: var(--primary-green);">15g/天</td>
+              </tr>
+              <tr>
+                <td>🥉</td>
+                <td>🫐 蓝莓</td>
+                <td>夏季</td>
+                <td>400g</td>
+                <td>80g</td>
+                <td>13</td>
+                <td>10.8g/天</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>🌽 玉米</td>
+                <td>夏/秋</td>
+                <td>150g</td>
+                <td>100g</td>
+                <td>14</td>
+                <td>9.3g/天</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>🎃 南瓜</td>
+                <td>秋季</td>
+                <td>100g</td>
+                <td>120g</td>
+                <td>13</td>
+                <td>9.2g/天</td>
+              </tr>
+            </table>
+            <p style="margin-top: 12px; color: var(--text-secondary); font-size: 0.9rem;">
+              * 表中为普通品质作物数据，金/铱品质售价更高
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 酿酒系统 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">🍷 酿酒系统详解</h2>
+          <p class="section-subtitle">收益最大化的核心手段</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🗺️</span>
+              <h3>设备建筑</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li><strong>酿酒桶</strong>：制作果酒（水果）</li>
+                <li><strong>罐头厂</strong>：制作腌菜（蔬菜）</li>
+                <li><strong>蜂窝</strong>：生产蜂蜜</li>
+                <li><strong>奶酪厂</strong>：生产奶酪</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">💰</span>
+              <h3>收益计算</h3>
+            </div>
+            <div class="info-card-content">
+              <p><strong>远古种子酿酒示例：</strong></p>
+              <ul class="info-list">
+                <li>远古种子成本：100g</li>
+                <li>远古水果售价：550g</li>
+                <li>酿酒后：1650g</li>
+                <li>收益率：1500%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="margin-top: 20px;">
+          <div class="info-card-header">
+            <span class="info-card-icon">🏆</span>
+            <h3>最佳酿酒作物排名</h3>
+          </div>
+          <div class="info-card-content">
+            <table class="data-table">
+              <tr><th>作物</th><th>原售价</th><th>酿酒后</th><th>收益率</th></tr>
+              <tr><td>🌺 远古种子</td><td>550g</td><td>1650g</td><td>1650%</td></tr>
+              <tr><td>🍇 夏黑葡萄</td><td>400g</td><td>1200g</td><td>1200%</td></tr>
+              <tr><td>🍑 杏子</td><td>350g</td><td>1050g</td><td>1050%</td></tr>
+              <tr><td>🥭 芒果</td><td>250g</td><td>750g</td><td>750%</td></tr>
+              <tr><td>🍌 香蕉</td><td>150g</td><td>450g</td><td>450%</td></tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 其他赚钱途径 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">💎 其他赚钱途径</h2>
+          <p class="section-subtitle">多元化收入来源</p>
+        </div>
+        
+        <div class="tips-grid">
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🐷</div>
+            <div class="tip-content">
+              <h4>松露/猪</h4>
+              <p>松露售价极高，养猪后每天可捡拾大量松露，年收入轻松破百万。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🐟</div>
+            <div class="tip-content">
+              <h4>鱼塘养殖</h4>
+              <p>养殖传说鱼或高价鱼，如鮟鱇鱼、螃蟹等，每周产出可观的收入。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">💎</div>
+            <div class="tip-content">
+              <h4>矿洞挖矿</h4>
+              <p>铱矿是最值钱的矿物，配合矿工职业收益翻倍。稳定日入数万金。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🏆</div>
+            <div class="tip-content">
+              <h4>节日比赛</h4>
+              <p>参加展览会的作物比赛、钓鱼比赛，获胜可获得丰厚奖金。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🦴</div>
+            <div class="tip-content">
+              <h4>考古/文物</h4>
+              <p>收集文物和矿石卖给博物馆，可获得捐赠奖励和资金。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🐔</div>
+            <div class="tip-content">
+              <h4>蛋和禽蛋</h4>
+              <p>养鸡后出售鸡蛋，或制作蛋黄酱提升价值。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 各阶段策略 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📅 各阶段赚钱策略</h2>
+          <p class="section-subtitle">从零到百万的财富积累之路</p>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-marker spring"></div>
+            <div class="timeline-content">
+              <h3>第一年：积累期</h3>
+              <p>专注于基础农业和社区中心。种植防风草、草莓，积累初始资本。</p>
+              <ul class="info-list">
+                <li>目标：完成社区中心</li>
+                <li>收入：主要靠卖作物</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-marker summer"></div>
+            <div class="timeline-content">
+              <h3>第二年：扩张期</h3>
+              <p>扩大种植面积，建设酿酒设施。开始建设温室，种植果树。</p>
+              <ul class="info-list">
+                <li>目标：建造10+酿酒桶</li>
+                <li>收入：农业+酿酒</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-marker autumn"></div>
+            <div class="timeline-content">
+              <h3>第三年：爆发期</h3>
+              <p>温室全部种远古种子，批量酿酒。养猪收集松露。</p>
+              <ul class="info-list">
+                <li>目标：日入10万+</li>
+                <li>收入：酿酒+松露+矿</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📚 相关攻略</h2>
+        </div>
+        <div class="card-grid">
+          <a href="seasons.html" class="nav-card animate-on-scroll">
+            <img src="images/seasons-card.jpg" alt="季节" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">📅</div>
+            <h3 class="nav-card-title">季节攻略</h3>
+            <p class="nav-card-desc">各季节作物推荐</p>
+          </a>
+          <a href="ginger-island.html" class="nav-card animate-on-scroll">
+            <img src="images/ginger_0.jpg" alt="姜岛" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🏝️</div>
+            <h3 class="nav-card-title">姜岛攻略</h3>
+            <p class="nav-card-desc">热带赚钱途径</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

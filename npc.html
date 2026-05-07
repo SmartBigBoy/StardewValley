@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="npc">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPC攻略 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语NPC攻略，包含可结婚对象、礼物喜好表、生日时间、好感度提升技巧">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span>星露谷攻略站</span>
+      </a>
+      
+      <ul class="navbar-nav">
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link">季节攻略</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html">季节攻略</a>
+            <a href="beginner.html">新手入门</a>
+            <a href="community-center.html">社区中心</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link">技能系统</a>
+          <div class="dropdown-menu">
+            <a href="skills.html">技能系统</a>
+            <a href="combat.html">战斗指南</a>
+            <a href="fishing.html">钓鱼指南</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link active">NPC攻略</a>
+          <div class="dropdown-menu">
+            <a href="npc.html">NPC攻略</a>
+            <a href="community-center.html">社区中心</a>
+            <a href="ginger-island.html">姜岛探索</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link">农场规划</a>
+          <div class="dropdown-menu">
+            <a href="farm.html">农场规划</a>
+            <a href="crafting.html">合成系统</a>
+            <a href="money.html">赚钱攻略</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link">矿洞探险</a>
+          <div class="dropdown-menu">
+            <a href="mines.html">矿洞探险</a>
+            <a href="desert.html">沙漠商队</a>
+            <a href="ginger-island.html">姜岛探索</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">更多</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html">合成系统</a>
+            <a href="beginner.html">新手入门</a>
+            <a href="community-center.html">社区中心</a>
+            <a href="ginger-island.html">姜岛探索</a>
+            <a href="money.html">赚钱攻略</a>
+            <a href="achievements.html">成就系统</a>
+            <a href="mods.html">模组推荐</a>
+            <a href="multiplayer.html">多人联机</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="切换主题">🌙</button>
+        <button class="menu-toggle" aria-label="菜单">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <!-- 页面横幅 -->
+    <div class="page-banner">
+      <img src="https://stardewvalleywiki.com/mediawiki/images/3/37/Villagers.png" alt="NPC Banner" loading="lazy">
+      <div class="page-banner-overlay"></div>
+      <div class="page-banner-title">
+        <h1>🎭 NPC 攻略</h1>
+        <p>了解每一位居民的喜好与故事</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding: 48px 24px;">
+      
+      <!-- 可攻略男性 -->
+      <div class="npc-section">
+        <h2>🧑 可攻略男性（6人）</h2>
+        <div class="npc-grid">
+          
+          <!-- 亚历克斯 Alex -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_alex.png" alt="Alex" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🏈</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">亚历克斯 Alex</div>
+              <div class="npc-location">📍 鹈鹕镇 · 广场</div>
+              <div class="npc-birthday">🎂 生日：夏14</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、煎蛋、华夫饼</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 埃利奥特 Elliott -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_elliott.png" alt="Elliott" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">📚</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">埃利奥特 Elliott</div>
+              <div class="npc-location">📍 鹈鹕镇 · 沙滩小屋</div>
+              <div class="npc-birthday">🎂 生日：秋5</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：螃蟹、鸭毛、龙虾</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 艾米莱尔 Harvey -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_harvey.png" alt="Harvey" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🩺</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">艾米莱尔 Harvey</div>
+              <div class="npc-location">📍 鹈鹕镇 · 诊所</div>
+              <div class="npc-birthday">🎂 生日：冬14</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：咖啡、葡萄酒、酸萝卜</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 塞巴斯蒂安 Sebastian -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_sebastian.png" alt="Sebastian" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">💻</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">塞巴斯蒂安 Sebastian</div>
+              <div class="npc-location">📍 鹈鹕镇 · 矿洞上方小屋</div>
+              <div class="npc-birthday">🎂 生日：冬10</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：冰泪石、史莱姆泥、汤</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 山姆 Sam -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_sam.png" alt="Sam" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎸</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">山姆 Sam</div>
+              <div class="npc-location">📍 鹈鹕镇 · 柳巷3号</div>
+              <div class="npc-birthday">🎂 生日：夏17</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、披萨、钙奶</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 肖恩 Shane -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_shane.png" alt="Shane" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🍺</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">肖恩 Shane</div>
+              <div class="npc-location">📍 鹈鹕镇 · 牧场</div>
+              <div class="npc-birthday">🎂 生日：春20</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：辣酱、热辣墨西哥酒</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- 可攻略女性 -->
+      <div class="npc-section">
+        <h2>👩 可攻略女性（6人）</h2>
+        <div class="npc-grid">
+          
+          <!-- 阿比盖尔 Abigail -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_abigail.png" alt="Abigail" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎮</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">阿比盖尔 Abigail</div>
+              <div class="npc-location">📍 鹈鹕镇 · 皮埃尔杂货店</div>
+              <div class="npc-birthday">🎂 生日：秋13</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：恶魔之餐、椰汁、宝石</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 艾米莉 Emily -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_emily.png" alt="Emily" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">�🦜</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">艾米莉 Emily</div>
+              <div class="npc-location">📍 鹈鹕镇 · 柳巷2号</div>
+              <div class="npc-birthday">🎂 生日：春27</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、宝石、沙拉</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 海莉 Haley -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_haley.png" alt="Haley" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">📷</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">海莉 Haley</div>
+              <div class="npc-location">📍 鹈鹕镇 · 柳巷2号</div>
+              <div class="npc-birthday">🎂 生日：春14</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、太阳帽、蛋糕</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 莉亚 Leah -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_leah.png" alt="Leah" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎨</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">莉亚 Leah</div>
+              <div class="npc-location">📍 鹈鹕镇 · 森林小屋</div>
+              <div class="npc-birthday">🎂 生日：冬23</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：山羊奶酪、炒蘑菇、葡萄酒</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 玛丽 Maru -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_maru.png" alt="Maru" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🔧</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">玛丽 Maru</div>
+              <div class="npc-location">📍 鹈鹕镇 · 铁匠铺上方</div>
+              <div class="npc-birthday">🎂 生日：夏10</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：宝石、铱洒水器、草莓</span>
+                <span class="badge-hate">💔 讨厌：蒜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 彭妮 Penny -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_penny.png" alt="Penny" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">📖</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">彭妮 Penny</div>
+              <div class="npc-location">📍 鹈鹕镇 · 房车/牧场</div>
+              <div class="npc-birthday">🎂 生日：Fall 2</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：珊瑚、粉红蛋糕、蒜</span>
+                <span class="badge-hate">💔 讨厌：石英</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- 镇居民 -->
+      <div class="npc-section">
+        <h2>🏠 镇居民（约24人）</h2>
+        <div class="npc-grid">
+          
+          <!-- 皮埃尔 Pierre -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_pierre.png" alt="Pierre" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🏪</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">皮埃尔 Pierre</div>
+              <div class="npc-location">📍 皮埃尔杂货店</div>
+              <div class="npc-birthday">🎂 生日：春26</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、果汁</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 卡罗琳 Caroline -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_caroline.png" alt="Caroline" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🌿</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">卡罗琳 Caroline</div>
+              <div class="npc-location">📍 皮埃尔杂货店/温室</div>
+              <div class="npc-birthday">🎂 生日：冬8</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、茶叶</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 刘易斯 Lewis -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_lewis.png" alt="Lewis" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎩</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">刘易斯 Lewis</div>
+              <div class="npc-location">📍 鹈鹕镇镇长</div>
+              <div class="npc-birthday">🎂 生日：春7</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、蛋黄酱、烘焙</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 玛妮 Marnie -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_marnie.png" alt="Marnie" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🐴</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">玛妮 Marnie</div>
+              <div class="npc-location">📍 牧场</div>
+              <div class="npc-birthday">🎂 生日：秋24</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、钻石</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 罗宾 Robin -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_robin.png" alt="Robin" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🔨</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">罗宾 Robin</div>
+              <div class="npc-location">📍  carpenter's shop</div>
+              <div class="npc-birthday">🎂 生日：Fall 21</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、 barbarian_blade</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 德米特里厄斯 Demetrius -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_demetrius.png" alt="Demetrius" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🔬</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">德米特里厄斯 Demetrius</div>
+              <div class="npc-location">📍 木匠商店楼上</div>
+              <div class="npc-birthday">🎂 生日：夏19</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、草莓</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 伊芙琳 Evelyn -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_evelyn.png" alt="Evelyn" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🌷</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">伊芙琳 Evelyn</div>
+              <div class="npc-location">📍 柳巷1号</div>
+              <div class="npc-birthday">🎂 生日：冬20</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、甜栗</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 乔治 George -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_george.png" alt="George" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🧓</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">乔治 George</div>
+              <div class="npc-location">📍 柳巷1号</div>
+              <div class="npc-birthday">🎂 生日：Winter 8</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、蒜、韭菜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 贾斯 Jas -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_jas.png" alt="Jas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">👧</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">贾斯 Jas</div>
+              <div class="npc-location">📍 牧场</div>
+              <div class="npc-birthday">🎂 生日：夏4</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、宝石</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 文森特 Vincent -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_vincent.png" alt="Vincent" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">👦</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">文森特 Vincent</div>
+              <div class="npc-location">📍 柳巷/牧场</div>
+              <div class="npc-birthday">🎂 生日：春10</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、葡萄</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 乔迪 Jodi -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_jodi.png" alt="Jodi" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">👩</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">乔迪 Jodi</div>
+              <div class="npc-location">📍 柳巷1号</div>
+              <div class="npc-birthday">🎂 生日：Fall 26</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、钻石</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 肯特 Kent -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_kent.png" alt="Kent" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎖️</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">肯特 Kent</div>
+              <div class="npc-location">📍 柳巷1号</div>
+              <div class="npc-birthday">🎂 生日：春4</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、烤棉花糖</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 威利 Willy -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_willy.png" alt="Willy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🎣</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">威利 Willy</div>
+              <div class="npc-location">📍 沙滩</div>
+              <div class="npc-birthday">🎂 生日：夏24</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、传说鱼</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 加斯 Gus -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_gus.png" alt="Gus" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🍳</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">加斯 Gus</div>
+              <div class="npc-location">📍 星际酒吧</div>
+              <div class="npc-birthday">🎂 生日：夏28</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、披萨</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 帕姆 Pam -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_pam.png" alt="Pam" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🚌</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">帕姆 Pam</div>
+              <div class="npc-location">📍 沙漠巴士/房车</div>
+              <div class="npc-birthday">🎂 生日：春18</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、啤酒</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 莱纳斯 Linus -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_linus.png" alt="Linus" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🏕️</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">莱纳斯 Linus</div>
+              <div class="npc-location">📍 鹈鹕镇各处</div>
+              <div class="npc-birthday">🎂 生日：冬3</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、椰子</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 克林特 Clint -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_clint.png" alt="Clint" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">⚒️</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">克林特 Clint</div>
+              <div class="npc-location">📍 铁匠铺</div>
+              <div class="npc-birthday">🎂 生日：Winter 26</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、铱锭</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 格斯 Gunther -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_gunther.png" alt="Gunther" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🏛️</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">格斯 Gunther</div>
+              <div class="npc-location">📍 博物馆</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、矿物</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- 特殊人物 -->
+      <div class="npc-section">
+        <h2>✨ 特殊人物</h2>
+        <div class="npc-grid">
+          
+          <!-- 巫师 Wizard -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_wizard.png" alt="Wizard" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🧙</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">巫师 Wizard</div>
+              <div class="npc-location">📍 女巫小屋/魔法森林</div>
+              <div class="npc-birthday">🎂 生日：Winter 17</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、虚空精华</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 矮人 Dwarf -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_dwarf.png" alt="Dwarf" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">💎</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">矮人 Dwarf</div>
+              <div class="npc-location">📍 矿井（40层+）</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、矿洞萝卜</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 科罗布斯 Krobus -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_krobus.png" alt="Krobus" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">👤</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">科罗布斯 Krobus</div>
+              <div class="npc-location">📍 矿井下水道</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、史莱姆泥</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 桑迪 Sandy -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_sandy.png" alt="Sandy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🌵</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">桑迪 Sandy</div>
+              <div class="npc-location">📍 沙漠 oasis</div>
+              <div class="npc-birthday">🎂 生日：Summer 15</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、玫瑰</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 莱奥 Leo -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_leo.png" alt="Leo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🦜</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">莱奥 Leo</div>
+              <div class="npc-location">📍 姜岛</div>
+              <div class="npc-birthday">🎂 生日：Summer 6</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、香蕉</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mr. Qi -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_mrqi.png" alt="Mr. Qi" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">💰</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">Qi扩展挑战</div>
+              <div class="npc-location">📍 多处（赌场、姜岛等）</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、电池组</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 马龙 Marlon -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_marlon.png" alt="Marlon" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">⚔️</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">马龙 Marlon</div>
+              <div class="npc-location">📍 矿洞入口</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁、萤火虫</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 莫里斯 Morris -->
+          <div class="npc-card">
+            <div class="npc-avatar">
+              <img src="images/npc/npc_morris.png" alt="Morris" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span style="display:none;">🛒</span>
+            </div>
+            <div class="npc-info">
+              <div class="npc-name">莫里斯 Morris</div>
+              <div class="npc-location">📍 乔家超市</div>
+              <div class="npc-birthday">🎂 生日：N/A</div>
+              <div class="npc-gifts">
+                <span class="badge-love">❤️ 最爱：椰汁</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- 礼物系统说明 -->
+      <div class="npc-section" style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 32px; margin-top: 48px;">
+        <h2 style="margin-top: 0;">🎁 礼物系统说明</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-top: 20px;">
+          <div style="text-align: center;">
+            <div style="font-size: 2rem;">❤️</div>
+            <div style="font-weight: 600; color: #d44;">最爱 (Loved)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">好感度 +45</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2rem;">💚</div>
+            <div style="font-weight: 600; color: #4a4;">喜欢 (Liked)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">好感度 +20</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2rem;">💛</div>
+            <div style="font-weight: 600; color: #da0;">中性 (Neutral)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">好感度 +0</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 2rem;">💔</div>
+            <div style="font-weight: 600; color: #666;">讨厌 (Hated)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">好感度 -10</div>
+          </div>
+        </div>
+        <p style="margin-top: 24px; color: var(--text-secondary); font-size: 0.9rem;">
+          💡 小贴士：每周给同一NPC送礼物只能增加一次好感度，选择生日或节日送礼效果更佳！
+        </p>
+      </div>
+      
+    </div>
+  </main>
+  
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 星露谷物语攻略站 | Stardew Valley Guide</p>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">
+        本网站与ConcernedApe无关，仅为玩家社区资源共享
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

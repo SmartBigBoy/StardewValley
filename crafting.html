@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-page="crafting">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制造与烹饪 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语制造与烹饪指南，包含重要配方、设备使用、产物加工">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#furnace">🔥 熔炉与矿石加工</a></li>
+              <li class="sidebar-item"><a href="#machines">⚙️ 生产设备</a></li>
+              <li class="sidebar-item"><a href="#crafting">🔨 制造配方</a></li>
+              <li class="sidebar-item"><a href="#cooking">🍳 烹饪食谱</a></li>
+              <li class="sidebar-item"><a href="#tips">💡 加工技巧</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/crafting-banner.jpg" alt="制造与烹饪" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">🔨 制造与烹饪</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>制造与烹饪</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">🔨 制造与烹饪</h1>
+            <p class="page-subtitle">利用制造和烹饪系统，将原材料转化为高价值产品！</p>
+          </div>
+
+          <!-- 熔炉与矿石加工 -->
+          <section id="furnace" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🔥 熔炉与矿石加工</h2>
+
+            <div class="info-card" style="border-left: 4px solid #ff5722; margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>熔炉 Furnace</strong></p>
+                <p style="margin-top: 8px;">矿石加工的基础设备，用于将矿石冶炼成金属锭。</p>
+                <p style="margin-top: 8px;"><strong>解锁方式：</strong>采矿Lv.3配方 / 或煤矿森林的熔炉</p>
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>矿石</th>
+                  <th>×数量</th>
+                  <th>→</th>
+                  <th>金属锭</th>
+                  <th>烧制时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🪨 铜矿石</td><td>5</td><td>→</td><td>🔶 铜锭</td><td>30秒</td></tr>
+                <tr><td>🪨 铁矿石</td><td>5</td><td>→</td><td>⬜ 铁锭</td><td>60秒</td></tr>
+                <tr><td>🪨 金矿石</td><td>5</td><td>→</td><td>⭐ 金锭</td><td>90秒</td></tr>
+                <tr><td>🪨 铱矿石</td><td>5</td><td>→</td><td>💜 铱锭</td><td>120秒</td></tr>
+                <tr><td>🪨 煤炭</td><td>1</td><td>→</td><td>无产物</td><td>作为燃料使用</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 生产设备 -->
+          <section id="machines" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⚙️ 生产设备</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍯</span>
+                  <h3 class="info-card-title">酿造桶 Preserves Jar</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>水果→果酱/果酒</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>果酱：约2倍售价</li>
+                    <li>果酒：约3倍售价（含工匠加成）</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×25 + 石材×10 + 煤炭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧪</span>
+                  <h3 class="info-card-title">小桶 Keg</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>农产品→加工食品</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>啤酒花→啤酒：约2倍</li>
+                    <li>蓝莓→蓝莓酒：约3倍+</li>
+                    <li>蜂蜜→蜂蜜酒：约3倍</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×30 + 石材×30 + 铁锭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧀</span>
+                  <h3 class="info-card-title">压酪机 Cheese Press</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>牛奶→奶酪</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>牛奶(125g) → 奶酪(230g)</li>
+                    <li>山羊奶(225g) → 山羊奶酪(400g)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×45 + 石材×45 + 硬木×10</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🥚</span>
+                  <h3 class="info-card-title">蛋黄酱机 Mayo Machine</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>鸡蛋→蛋黄酱</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>鸡蛋(50g) → 蛋黄酱(215g)</li>
+                    <li>大鸡蛋(95g) → 大份蛋黄酱(385g)</li>
+                    <li>恐龙蛋→恐龙蛋黄酱(800g)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×15 + 石材×15 + 硬木×5</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌱</span>
+                  <h3 class="info-card-title">种子生产器 Seed Maker</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>作物→种子</p>
+                  <p style="margin-top: 8px;"><strong>工作流程：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>放入一个作物</li>
+                    <li>1-2天后获得2-3个同类种子</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×25 + 石材×25 + 煤炭×10 + 金锭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐝</span>
+                  <h3 class="info-card-title">蜂房 Bee House</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>产蜂蜜</p>
+                  <p style="margin-top: 8px;"><strong>工作流程：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>放置后蜜蜂自动采集花蜜</li>
+                    <li>4天后收获蜂蜜</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×40 + 石材×8 + 煤炭×1 + 蜂巢×1</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 制造配方 -->
+          <section id="crafting" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🔨 重要制造配方</h2>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">农业相关</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>物品</th>
+                  <th>材料</th>
+                  <th>功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>💧 洒水器</td><td>铜锭×1 + 铁锭×1</td><td>自动浇水(4格)</td></tr>
+                <tr><td>💧 优质洒水器</td><td>铁锭×1 + 金锭×1</td><td>自动浇水(8格)</td></tr>
+                <tr><td>💧 铱制洒水器</td><td>铱锭×1 + 金锭×1</td><td>自动浇水(24格)</td></tr>
+                <tr><td>🌱 初级肥料</td><td>矿石碎片×2</td><td>提高作物品质概率</td></tr>
+                <tr><td>🌱 高级肥料</td><td>矿石碎片×2</td><td>更高概率高品质作物</td></tr>
+                <tr><td>💧 初级保湿土壤</td><td>石头×2 + 纤维×3</td><td>减少浇水需求</td></tr>
+                <tr><td>📦 宝箱</td><td>木材×50 + 石材×20</td><td>存储物品</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">矿洞相关</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>物品</th>
+                  <th>材料</th>
+                  <th>功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🪜 楼梯</td><td>石头×10</td><td>跳到下一层</td></tr>
+                <tr><td>💣 炸弹</td><td>铁锭×1 + 煤炭×1</td><td>炸毁周围岩石</td></tr>
+                <tr><td>💣 超大炸弹</td><td>金锭×1 + 铱锭×1</td><td>更大范围的炸弹</td></tr>
+                <tr><td>🔮 晶球复制机</td><td>石头×25 + 金属锭×2</td><td>宝石复制</td></tr>
+                <tr><td>🔥 煤炭窑</td><td>木材×20 + 金锭×2</td><td>木材→煤炭</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 烹饪食谱 -->
+          <section id="cooking" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🍳 烹饪食谱</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p>烹饪可以制作恢复体力和生命的食物，部分食谱还有额外加成效果！</p>
+                <p style="margin-top: 8px;"><strong>解锁方式：</strong>阅读电视食谱、村民赠送、NPC教授</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">高价值食谱推荐</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>食谱</th>
+                  <th>英文名</th>
+                  <th>材料</th>
+                  <th>体力</th>
+                  <th>生命</th>
+                  <th>售价</th>
+                  <th>Buff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🍲 椰汁汤</td><td>Coconut Soup</td><td>椰子+虾+蘑菇</td><td>+175</td><td>+78</td><td>175g</td><td>耕种+3</td></tr>
+                <tr><td>🥘 酸辣酱</td><td>Chili Pepper Curry</td><td>番茄+糖</td><td>+115</td><td>+45</td><td>175g</td><td>采矿+3</td></tr>
+                <tr><td>🍕 披萨</td><td>Pizza</td><td>面粉+番茄+奶酪</td><td>+175</td><td>+60</td><td>300g</td><td>无</td></tr>
+                <tr><td>🍜 味噌汤</td><td>Miso Soup</td><td>海藻+豆腐</td><td>+75</td><td>+33</td><td>120g</td><td>钓鱼+2</td></tr>
+                <tr><td>🍗 煎蛋卷</td><td>Egg Drop Soup</td><td>鸡蛋+海藻</td><td>+100</td><td>+45</td><td>125g</td><td>防御+1</td></tr>
+                <tr><td>🥗 蔬菜拼盘</td><td>Vegetable Medley</td><td>番茄+南瓜</td><td>+165</td><td>+74</td><td>120g</td><td>无</td></tr>
+                <tr><td>🍳 枫糖华夫饼</td><td>Maple Bar</td><td>面粉+糖+枫糖</td><td>+90</td><td>+40</td><td>150g</td><td>运气+2</td></tr>
+                <tr><td>🐟 酸橘汁腌鱼</td><td>Ceviche</td><td>任何鱼+椰子</td><td>+75</td><td>+33</td><td>125g</td><td>钓鱼+2</td></tr>
+                <tr><td>🥘 三文鱼晚餐</td><td>Salmon Dinner</td><td>三文鱼+菠菜+药草</td><td>+125</td><td>+56</td><td>175g</td><td>防御+3</td></tr>
+                <tr><td>🍲 蟹黄焗饭</td><td>Crab Cakes</td><td>螃蟹+蛋+面粉</td><td>+275</td><td>+112</td><td>300g</td><td>采矿+4</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">高效能量食谱（采矿推荐）</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>食谱</th>
+                  <th>材料</th>
+                  <th>体力</th>
+                  <th>生命</th>
+                  <th>采矿Buff</th>
+                  <th>持续</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🥘 酸辣酱</td><td>番茄+糖</td><td>+115</td><td>+45</td><td>+3</td><td>5分钟</td></tr>
+                <tr><td>🍲 蟹黄焗饭</td><td>螃蟹+蛋+面粉</td><td>+275</td><td>+112</td><td>+4</td><td>7分钟</td></tr>
+                <tr><td>🍲 椰汁汤</td><td>椰子+虾+蘑菇</td><td>+175</td><td>+78</td><td>+3</td><td>30分钟</td></tr>
+                <tr><td>🍲 矿工特供</td><td>洞穴萝卜×2+糖+牛奶</td><td>+125</td><td>+50</td><td>+3</td><td>5分钟</td></tr>
+              </tbody>
+            </table>
+
+            <div class="card-grid" style="margin-top: 24px;">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍲</span>
+                  <h3 class="info-card-title">椰汁汤</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>椰子 + 虾 + 普通蘑菇</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>体力 +175</li>
+                    <li>生命 +78</li>
+                    <li>耕种技能+3 (30分钟)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>教授NPC：</strong>艾米丽(7心后)</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🥘</span>
+                  <h3 class="info-card-title">酸辣酱</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>番茄 + 糖</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>体力 +115</li>
+                    <li>生命 +45</li>
+                    <li>采矿技能+3 (5分钟)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>获取：</strong>松尾的食谱</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍕</span>
+                  <h3 class="info-card-title">披萨</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>面粉 + 番茄 + 奶酪</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>体力 +175</li>
+                    <li>生命 +60</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>300g</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍯</span>
+                  <h3 class="info-card-title">矿工特供</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>洞穴胡萝卜×2 + 糖×1 + 牛奶×1</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>体力 +125</li>
+                    <li>生命 +50</li>
+                    <li>采矿技能+3 (5分钟)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 加工技巧 -->
+          <section id="tips">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💡 加工技巧</h2>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">💰</span>
+              <div class="tip-box-content">
+                <strong>最高收益加工链：</strong>蓝莓 → 小桶 → 蓝莓酒 → 酿造桶 → 起泡酒（工匠加成后约4倍收益）
+              </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 24px;">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍇</span>
+                  <h3 class="info-card-title">酿酒收益排名</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>用小桶酿酒的利润排名（工匠加成后）：</p>
+                  <ol style="padding-left: 20px; margin-top: 8px;">
+                    <li>杨桃酒 - 3960g/份</li>
+                    <li>蓝莓酒 - 2310g/份</li>
+                    <li>蔓越莓酒 - 1890g/份</li>
+                    <li>葡萄果酒 - 1650g/份</li>
+                  </ol>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏭</span>
+                  <h3 class="info-card-title">农场布局建议</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>建议在农场中规划专门的加工区：</p>
+                  <ul style="padding-left: 20px; margin-top: 8px;">
+                    <li>多个小桶集中放置（靠近出货箱）</li>
+                    <li>酿造桶放置在稍远位置（制作时间长）</li>
+                    <li>保证美观的同时方便收获</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-box warning" style="margin-top: 24px;">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <strong>注意：</strong>小桶和酿造桶制作完成后需要玩家手动取走产物才能继续生产。记得每天检查！
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

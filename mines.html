@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-page="mines">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>矿洞探险 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语矿洞探险攻略，包含矿洞楼层、矿石分布、Boss攻略">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link active" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title">📑 目录</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview">矿洞概览</a></li>
+              <li class="sidebar-item"><a href="#floors">📊 楼层解析</a></li>
+              <li class="sidebar-item"><a href="#ores">💎 矿石分布</a></li>
+              <li class="sidebar-item"><a href="#monsters">👾 怪物图鉴</a></li>
+              <li class="sidebar-item"><a href="#weapons">⚔️ 武器获取</a></li>
+              <li class="sidebar-item"><a href="#floor-guide">📍 每10层攻略</a></li>
+              <li class="sidebar-item"><a href="#bosses">👹 Boss攻略</a></li>
+              <li class="sidebar-item"><a href="#tips">💡 采矿技巧</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/mines-banner.jpg" alt="矿洞探险" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title">⛏️ 矿洞探险</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>矿洞探险</span>
+          </div>
+
+          <div class="page-header" style="display: none;">
+            <h1 class="page-title">⛏️ 矿洞探险</h1>
+            <p class="page-subtitle">深入矿洞，挖掘珍贵矿石，获取升级工具和装备的材料！</p>
+          </div>
+
+          <!-- 矿洞概览 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🗺️ 矿洞概览</h2>
+
+            <div class="info-card" style="border-left: 4px solid #795548; margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>矿洞入口：</strong>位于农场北部的山区（矿工休息站附近）</p>
+                <p style="margin-top: 8px;"><strong>开放时间：</strong>每天6:00 AM后可进入</p>
+                <p style="margin-top: 8px;"><strong>最大深度：</strong>矿洞共有120层</p>
+              </div>
+            </div>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏔️</span>
+                  <h3 class="info-card-title">普通矿洞 (1-80层)</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>电梯解锁条件：</p>
+                  <ul style="padding-left: 20px; margin-top: 8px;">
+                    <li>15层 - 电梯解锁</li>
+                    <li>25层 - 电梯升级 Lv.2</li>
+                    <li>50层 - 电梯升级 Lv.3</li>
+                    <li>75层 - 电梯升级 Lv.4</li>
+                    <li>80层 - 普通矿洞底部</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🔥</span>
+                  <h3 class="info-card-title"> Skull Cavern 骷髅洞 (81-120层)</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>位置：沙漠地区</p>
+                  <p style="margin-top: 8px;">特点：</p>
+                  <ul style="padding-left: 20px;">
+                    <li>怪物更强</li>
+                    <li>矿石更丰富</li>
+                    <li>需要楼梯或炸药</li>
+                    <li>可获得铱矿石</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 楼层解析 -->
+          <section id="floors" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📊 楼层解析</h2>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>楼层范围</th>
+                  <th>主要矿物</th>
+                  <th>特殊内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1-10</td><td>石头、铜矿石</td><td>教学区域，怪物较少</td></tr>
+                <tr><td>11-40</td><td>铜矿石、铁矿石</td><td>开始出现金矿石</td></tr>
+                <tr><td>41-79</td><td>铁矿石、金矿石</td><td>开始出现晶球、铱矿石</td></tr>
+                <tr><td>80</td><td>各种矿石</td><td>⛏️ 矿洞底部，电梯起始点</td></tr>
+                <tr><td>81-100</td><td>金矿石、铱矿石</td><td>骷髅洞，怪物密集</td></tr>
+                <tr><td>101-120</td><td>铱矿石为主</td><td>高难度，高收益</td></tr>
+              </tbody>
+            </table>
+
+            <div class="tip-box" style="margin-top: 20px;">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>电梯系统：</strong>解锁电梯后，可以直接从任何已解锁的层数开始，不用每次从入口爬起！
+              </div>
+            </div>
+          </section>
+
+          <!-- 矿石分布 -->
+          <section id="ores" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💎 矿石分布</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟠</span>
+                  <h3 class="info-card-title">铜矿石 Copper</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>出现层数：</strong>1-40层</p>
+                  <p style="margin-top: 8px;"><strong>用途：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>铜锭 ×5 → 熔炉升级</li>
+                    <li>工具升级材料</li>
+                    <li>制作配方</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>5g/个</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⬜</span>
+                  <h3 class="info-card-title">铁矿石 Iron</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>出现层数：</strong>15-80层</p>
+                  <p style="margin-top: 8px;"><strong>用途：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>铁锭 ×5 → 工具升级</li>
+                    <li>洒水器制作</li>
+                    <li>装备制作</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>10g/个</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⭐</span>
+                  <h3 class="info-card-title">金矿石 Gold</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>出现层数：</strong>40-120层</p>
+                  <p style="margin-top: 8px;"><strong>用途：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>金锭 ×5 → 高级工具</li>
+                    <li>洒水器升级</li>
+                    <li>戒指制作</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>25g/个</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💜</span>
+                  <h3 class="info-card-title">铱矿石 Iridium</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>出现层数：</strong>50-120层 / 骷髅洞</p>
+                  <p style="margin-top: 8px;"><strong>用途：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>铱锭 ×5 → 终极工具</li>
+                    <li>铱制洒水器</li>
+                    <li>最高级装备</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>100g/个</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">完整矿石数据表</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>矿石</th>
+                  <th>英文名</th>
+                  <th>出现层数</th>
+                  <th>售价</th>
+                  <th>锭需数量</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🪨 石头</td><td>Stone</td><td>全层</td><td>1g</td><td>-</td><td>基础资源</td></tr>
+                <tr><td>🔶 铜矿石</td><td>Copper Ore</td><td>1-40</td><td>5g</td><td>5个</td><td>熔炉升级Lv.2</td></tr>
+                <tr><td>⬜ 铁矿石</td><td>Iron Ore</td><td>15-80</td><td>10g</td><td>5个</td><td>洒水器/工具</td></tr>
+                <tr><td>⭐ 金矿石</td><td>Gold Ore</td><td>40-120</td><td>25g</td><td>5个</td><td>高级装备</td></tr>
+                <tr><td>💜 铱矿石</td><td>Iridium Ore</td><td>50-120</td><td>100g</td><td>5个</td><td>终极装备</td></tr>
+                <tr><td>💎 煤炭</td><td>Coal</td><td>全层</td><td>50g</td><td>-</td><td>冶炼必需品</td></tr>
+                <tr><td>🪙 金锭</td><td>Gold Bar</td><td>熔炼</td><td>250g</td><td>-</td><td>高级制作</td></tr>
+                <tr><td>💜 铱锭</td><td>Iridium Bar</td><td>熔炼</td><td>1000g</td><td>-</td><td>顶级装备</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;">宝石价值表</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>宝石</th>
+                  <th>英文名</th>
+                  <th>基础售价</th>
+                  <th>含铱矿售价</th>
+                  <th>出现层数</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>💎 钻石</td><td>Diamond</td><td>750g</td><td>1500g</td><td>50层+</td></tr>
+                <tr><td>💎 绿宝石</td><td>Emerald</td><td>250g</td><td>500g</td><td>任意</td></tr>
+                <tr><td>💎 红宝石</td><td>Ruby</td><td>150g</td><td>300g</td><td>任意</td></tr>
+                <tr><td>💎 紫水晶</td><td>Amethyst</td><td>100g</td><td>200g</td><td>任意</td></tr>
+                <tr><td>💎 黄玉</td><td>Topaz</td><td>100g</td><td>200g</td><td>任意</td></tr>
+                <tr><td>💎 碧玉</td><td>Jade</td><td>80g</td><td>160g</td><td>任意</td></tr>
+                <tr><td>💎 祖母绿</td><td>Aquamarine</td><td>380g</td><td>760g</td><td>任意</td></tr>
+                <tr><td>🔮 晶球</td><td>Geode</td><td>需开矿</td><td>-</td><td>任意</td></tr>
+                <tr><td>🔥 岩浆晶球</td><td>Magma Geode</td><td>需开矿</td><td>-</td><td>骷髅洞</td></tr>
+                <tr><td>❄️ Omni晶球</td><td>Omni Geode</td><td>需开矿</td><td>-</td><td>骷髅洞</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 怪物图鉴 -->
+          <section id="monsters" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">👾 矿洞怪物图鉴</h2>
+            
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>怪物</th>
+                  <th>英文名</th>
+                  <th>出现层数</th>
+                  <th>血量</th>
+                  <th>伤害</th>
+                  <th>掉落物品</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🪱 绿虫</td><td>Green Slime</td><td>1-29</td><td>30</td><td>4</td><td>绿果冻×1</td></tr>
+                <tr><td>🔵 蓝虫</td><td>Blue Slime</td><td>30-59</td><td>50</td><td>6</td><td>蓝果冻×1</td></tr>
+                <tr><td>🔴 红虫</td><td>Red Slime</td><td>60+</td><td>80</td><td>8</td><td>红果冻×1</td></tr>
+                <tr><td>⬛ 黑虫</td><td>Black Slime</td><td>骷髅洞</td><td>120</td><td>10</td><td>果冻×2</td></tr>
+                <tr><td>💀 骷髅</td><td>Skeleton</td><td>20+</td><td>60</td><td>8</td><td>骨头×1</td></tr>
+                <tr><td>🧙 骷髅法师</td><td>Skeleton Mage</td><td>50+</td><td>80</td><td>12</td><td>骨头×2,魔杖</td></tr>
+                <tr><td>🗡️ 武器怪</td><td>Metal Head</td><td>40+</td><td>100</td><td>15</td><td>电池×1</td></tr>
+                <tr><td>👹 飞蛇</td><td>Serpent</td><td>骷髅洞</td><td>150</td><td>15</td><td>蛇皮×1</td></tr>
+                <tr><td>🦇 蝙蝠</td><td>Cave Bat</td><td>任意</td><td>25</td><td>3</td><td>无</td></tr>
+                <tr><td>🕷️ 蜘蛛</td><td>Sparker</td><td>任意</td><td>40</td><td>6</td><td>蜘蛛窝×1</td></tr>
+                <tr><td>🌊 史莱姆鲟</td><td>Slimejack</td><td>骷髅洞</td><td>30</td><td>4</td><td>果冻×1</td></tr>
+                <tr><td>🔥 岩浆蝙蝠</td><td>Lava Bat</td><td>骷髅洞</td><td>50</td><td>8</td><td>无</td></tr>
+              </tbody>
+            </table>
+
+            <div class="tip-box" style="margin-top: 20px;">
+              <span class="tip-box-icon">💡</span>
+              <div class="tip-box-content">
+                <strong>击杀技巧：</strong>骷髅法师需要先击破护盾才能造成伤害；金属头怪物有无敌时间，用光标卡准时机攻击！
+              </div>
+            </div>
+          </section>
+
+          <!-- 武器获取表 -->
+          <section id="weapons" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⚔️ 矿洞武器获取</h2>
+            
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>武器</th>
+                  <th>英文名</th>
+                  <th>伤害</th>
+                  <th>攻速</th>
+                  <th>暴击</th>
+                  <th>获取方式</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>🗡️ 短剑</td><td>Rusty Sword</td><td>2</td><td>快</td><td>2%</td><td>初始装备</td></tr>
+                <tr><td>🗡️ 银短剑</td><td>Silver Saber</td><td>7</td><td>中</td><td>5%</td><td>矿洞40层</td></tr>
+                <tr><td>🗡️ 变态刃</td><td>Rapster Sword</td><td>10</td><td>快</td><td>8%</td><td>矿洞70层</td></tr>
+                <tr><td>🗡️ 黑暗之剑</td><td>Dark Sword</td><td>12</td><td>慢</td><td>0%</td><td>骷髅洞任务</td></tr>
+                <tr><td>🗡️ 玻璃弯刀</td><td>Blade of Grass</td><td>15</td><td>快</td><td>10%</td><td>骷髅洞25层</td></tr>
+                <tr><td>🗡️ 疾风之刃</td><td>Steel Smallsword</td><td>9</td><td>极快</td><td>3%</td><td>矿洞55层</td></tr>
+                <tr><td>🗡️ 符文大剑</td><td>Bone Sword</td><td>6</td><td>中</td><td>15%</td><td>击杀骷髅掉落</td></tr>
+                <tr><td>🗡️ 伊莱克斯</td><td>Elf Blade</td><td>18</td><td>快</td><td>8%</td><td>矿洞85层</td></tr>
+                <tr><td>🗡️ 地球之剑</td><td>Earth Smasher</td><td>22</td><td>慢</td><td>5%</td><td>骷髅洞95层</td></tr>
+                <tr><td>🗡️ 归来之刃</td><td>Return Scepter</td><td>0</td><td>-</td><td>-</td><td>完成齐先生挑战</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 每10层攻略 -->
+          <section id="floor-guide" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📍 每10层详细攻略</h2>
+            
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">1-10</span>
+                  <h3 class="info-card-title">新手教学区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>石头、铜矿石(5%)</p>
+                  <p><strong>怪物：</strong>绿虫、蝙蝠</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>熟悉操作和战斗</li>
+                    <li>收集铜矿石和煤炭</li>
+                    <li>目标是10层找电梯入口</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">11-20</span>
+                  <h3 class="info-card-title">铜矿密集区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>铜矿(20%)、铁矿(5%)</p>
+                  <p><strong>怪物：</strong>绿虫、蝙蝠、骷髅</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>铜矿石开始增多</li>
+                    <li>15层解锁电梯！</li>
+                    <li>开始收集煤炭</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">21-30</span>
+                  <h3 class="info-card-title">第一Boss区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>铜矿、铁矿(15%)</p>
+                  <p><strong>怪物：</strong>骷髅、蓝虫</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>25层Boss：果冻(100HP)</li>
+                    <li>蓝虫开始出现</li>
+                    <li>准备好武器</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">31-40</span>
+                  <h3 class="info-card-title">铁矿升级区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>铁矿(25%)、金矿(5%)</p>
+                  <p><strong>怪物：</strong>骷髅、金属头</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>25层电梯升级Lv.2</li>
+                    <li>铁矿是主要目标</li>
+                    <li>制作铁锭升级工具</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">41-50</span>
+                  <h3 class="info-card-title">金矿出现区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>金矿(15%)、铱矿(2%)</p>
+                  <p><strong>怪物：</strong>骷髅法师、金属头</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>40层开始有金矿</li>
+                    <li>50层Boss：骷髅王(150HP)</li>
+                    <li>50层电梯升级Lv.3</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">51-70</span>
+                  <h3 class="info-card-title">高级矿区</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>金矿(20%)、铱矿(8%)</p>
+                  <p><strong>怪物：</strong>骷髅法师、金属头</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>铱矿开始出现</li>
+                    <li>可获得晶球</li>
+                    <li>带足炸弹快速推进</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">71-80</span>
+                  <h3 class="info-card-title">矿洞终点</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>金矿(25%)、铱矿(12%)</p>
+                  <p><strong>怪物：</strong>各类高级怪物</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>75层电梯升级Lv.4</li>
+                    <li>80层矿洞底部</li>
+                    <li>进入骷髅洞的入口</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">81-120</span>
+                  <h3 class="info-card-title">骷髅洞</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>主要矿石：</strong>铱矿(15%)、金矿(25%)</p>
+                  <p><strong>怪物：</strong>飞蛇、黑虫、岩浆蝙蝠</p>
+                  <p><strong>要点：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>需要楼梯或炸弹</li>
+                    <li>100层Boss：齐先生(500HP)</li>
+                    <li>带足食物和炸弹</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Boss攻略 -->
+          <section id="bosses" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">👹 Boss攻略</h2>
+
+            <div class="npc-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+              <div class="npc-card">
+                <div class="npc-avatar">👾</div>
+                <div class="npc-info">
+                  <div class="npc-name">果冻 Jellie</div>
+                  <div class="npc-location">📍 矿洞第25层</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>血量：</strong>100 HP<br>
+                    <strong>特点：</strong>会分裂成小果冻<br>
+                    <strong>建议：</strong>用武器击打，等待分裂后逐个消灭
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🦴</div>
+                <div class="npc-info">
+                  <div class="npc-name">骷髅王 Skeleton Mage</div>
+                  <div class="npc-location">📍 矿洞第50层</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>血量：</strong>150 HP<br>
+                    <strong>特点：</strong>会远程攻击<br>
+                    <strong>建议：</strong>快速接近输出，注意躲避魔法弹
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">👹</div>
+                <div class="npc-info">
+                  <div class="npc-name">死亡之鹤 Serpent</div>
+                  <div class="npc-location">📍 骷髅洞</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>血量：</strong>200 HP<br>
+                    <strong>特点：</strong>移动速度快<br>
+                    <strong>建议：</strong>保持距离，准备充足的食物
+                  </div>
+                </div>
+              </div>
+              
+              <div class="npc-card">
+                <div class="npc-avatar">🗿</div>
+                <div class="npc-info">
+                  <div class="npc-name">齐先生 Mr. Qi</div>
+                  <div class="npc-location">📍 骷髅洞第100层</div>
+                  <div class="npc-gifts" style="margin-top: 8px;">
+                    <strong>血量：</strong>500 HP<br>
+                    <strong>特点：</strong>多种攻击模式<br>
+                    <strong>建议：</strong>带满食物和炸弹，准备好金戒指
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 采矿技巧 -->
+          <section id="tips">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">💡 采矿技巧</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💣</span>
+                  <h3 class="info-card-title">使用炸弹</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>炸弹可以快速炸开大量岩石，是采矿效率的关键！</p>
+                  <p style="margin-top: 8px;"><strong>获取方式：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>矿洞内击杀怪物掉落</li>
+                    <li>商店购买</li>
+                    <li>制作配方 (采矿Lv.4)</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪜</span>
+                  <h3 class="info-card-title">使用楼梯</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>楼梯可以跳过不需要的层，直接到达目标深度。</p>
+                  <p style="margin-top: 8px;"><strong>获取方式：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>矿洞内击杀怪物掉落</li>
+                    <li>制作配方</li>
+                    <li>沙漠商人购买</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍖</span>
+                  <h3 class="info-card-title">准备食物</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>采矿消耗体力，务必准备足够的回血食物！</p>
+                  <p style="margin-top: 8px;"><strong>推荐食物：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li>生命药水 - 恢复一般</li>
+                    <li>酸辣酱 - 恢复较好</li>
+                    <li>椰汁汤 - 恢复高</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💡</span>
+                  <h3 class="info-card-title">矿工戒指</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>矿工戒指可以让你在矿洞中发光照亮周围！</p>
+                  <p style="margin-top: 8px;"><strong>获取：</strong>博物馆捐赠15件物品</p>
+                  <p style="margin-top: 4px;"><strong>效果：</strong>照亮周围3格范围</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-box warning" style="margin-top: 24px;">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <strong>骷髅洞注意事项：</strong>骷髅洞位于沙漠，需要修复公交车或拥有船票才能进入。建议携带大量炸弹、楼梯和食物！
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

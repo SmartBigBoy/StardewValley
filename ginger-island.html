@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-page="gingerIsland">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语姜岛攻略 - 热带岛屿探索、火山地牢、金核桃收集、西部农场开发完整指南">
+  <meta name="keywords" content="星露谷物语, 姜岛, 火山地牢, 金核桃, 热带, Stardew Valley">
+  <title>姜岛攻略 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/ginger_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>姜岛</span>
+      </div>
+      <h1 class="page-title">🏝️ 姜岛探索指南</h1>
+      <p class="page-subtitle">热带岛屿的冒险 - 火山地牢、金核桃收集、西部农场建设</p>
+      <div class="page-header-tags">
+        <span class="tag tag-summer">🌴 热带岛屿</span>
+        <span class="tag tag-rare">⭐ 后期内容</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 姜岛概述 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📖 姜岛概述</h2>
+          <p class="section-subtitle">解锁条件与岛屿特点</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🔓</span>
+              <h3>解锁条件</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>完成社区中心所有献祭包</li>
+                <li>拥有500g船费</li>
+                <li>在海滩找到威洛船长对话</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🏝️</span>
+              <h3>岛屿特点</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>热带气候，冬季也能种植</li>
+                <li>独特的火山地牢</li>
+                <li>金核桃收集任务</li>
+                <li>西部农场开发区域</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 岛屿区域 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🗺️ 岛屿区域详解</h2>
+          <p class="section-subtitle">姜岛各个区域一览</p>
+        </div>
+        
+        <div class="region-cards">
+          <div class="region-card animate-on-scroll">
+            <div class="region-image">
+              <img src="images/ginger_1.jpg" alt="海滩码头" loading="lazy">
+            </div>
+            <div class="region-content">
+              <h3>🌊 海滩码头</h3>
+              <p>乘坐渡轮到达的地方。有小超市可以购买热带种子。</p>
+              <ul class="info-list">
+                <li>购买椰子、杨桃种子</li>
+                <li>遇到岛民NPC</li>
+                <li>每日渡轮往返</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="region-card animate-on-scroll">
+            <div class="region-image">
+              <img src="images/ginger_2.jpg" alt="火山地牢" loading="lazy">
+            </div>
+            <div class="region-content">
+              <h3>🌋 火山地牢</h3>
+              <p>挑战性的地牢区域，产出珍贵矿物。</p>
+              <ul class="info-list">
+                <li>需要10级战斗技能</li>
+                <li>击败怪物收集矿物</li>
+                <li>稀有宝箱和文物</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="region-card animate-on-scroll">
+            <div class="region-image">
+              <img src="images/ginger_3.jpg" alt="西部农场" loading="lazy">
+            </div>
+            <div class="region-content">
+              <h3>🌾 西部农场</h3>
+              <p>可以建造小屋，种植热带作物。</p>
+              <ul class="info-list">
+                <li>建造岛屿小屋</li>
+                <li>种植香蕉、菠萝等</li>
+                <li>无限生长周期</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="region-card animate-on-scroll">
+            <div class="region-image">
+              <img src="images/ginger_4.jpg" alt="山顶天文台" loading="lazy">
+            </div>
+            <div class="region-content">
+              <h3>🔭 山顶天文台</h3>
+              <p>解锁后可以免费查看幸运数值。</p>
+              <ul class="info-list">
+                <li>需要收集金核桃</li>
+                <li>每日免费幸运查看</li>
+                <li>特殊事件触发</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 金核桃收集 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">🥜 金核桃收集</h2>
+          <p class="section-subtitle">共130个金核桃，分布在岛屿各处</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <div class="info-card-header">
+            <span class="info-card-icon">📍</span>
+            <h3>主要获取方式</h3>
+          </div>
+          <div class="info-card-content">
+            <table class="data-table">
+              <tr><th>地点</th><th>数量</th><th>获取方法</th></tr>
+              <tr><td>岛屿各区域</td><td>~50</td><td>翻开草丛、挖掘</td></tr>
+              <tr><td>火山地牢</td><td>~30</td><td>击败怪物、挖掘</td></tr>
+              <tr><td>化石挖掘点</td><td>~20</td><td>使用锄头挖掘</td></tr>
+              <tr><td>完成谜题</td><td>~15</td><td>解决岛上谜题</td></tr>
+              <tr><td>NPC赠送</td><td>~15</td><td>与岛上NPC建立友谊</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="margin-top: 20px;">
+          <div class="info-card-content">
+            <h4>🏆 金核桃里程碑奖励</h4>
+            <ul class="info-list">
+              <li><strong>5个</strong> - 解锁渡轮码头</li>
+              <li><strong>10个</strong> - 解锁海滩超市</li>
+              <li><strong>15个</strong> - 解锁岛屿东部小路</li>
+              <li><strong>20个</strong> - 解锁山地小路</li>
+              <li><strong>30个</strong> - 解锁山顶小路</li>
+              <li><strong>55个</strong> - 解锁山顶天文台</li>
+              <li><strong>130个</strong> - 全部完成！</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 火山地牢 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🌋 火山地牢攻略</h2>
+          <p class="section-subtitle">挑战高难度地牢，获得珍贵奖励</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">⚔️</span>
+              <h3>进入条件</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>解锁姜岛后自动开放</li>
+                <li>建议10级战斗以上</li>
+                <li>准备充足的食物和药水</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">💎</span>
+              <h3>可获得物品</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li>铱矿石 - 最珍贵的矿物</li>
+                <li>铱锭 - 制作顶级装备</li>
+                <li>稀有文物和宝石</li>
+                <li>金核桃</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 热带作物 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">🌴 姜岛特色作物</h2>
+          <p class="section-subtitle">热带气候下的特殊种植</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll" style="max-width: 800px;">
+          <div class="info-card-content">
+            <table class="data-table">
+              <tr><th>作物</th><th>种子价格</th><th>生长天数</th><th>售价</th><th>备注</th></tr>
+              <tr><td>🥥 椰子</td><td>100g</td><td>24天</td><td>150g</td><td>可在岛屿西部种植</td></tr>
+              <tr><td>🍌 香蕉</td><td>200g</td><td>28天</td><td>150g</td><td>热带水果</td></tr>
+              <tr><td>🍍 菠萝</td><td>900g</td><td>14天</td><td>300g</td><td>高价值作物</td></tr>
+              <tr><td>🥭 芒果</td><td>500g</td><td>14天</td><td>250g</td><td>需要岛屿小屋</td></tr>
+              <tr><td>🌺 花</td><td>特殊</td><td>7天</td><td>可做染料</td><td>只开花不结果</td></tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📚 相关攻略</h2>
+        </div>
+        <div class="card-grid">
+          <a href="mines.html" class="nav-card animate-on-scroll">
+            <img src="images/mines-banner.jpg" alt="矿洞" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">⛏️</div>
+            <h3 class="nav-card-title">矿洞探险</h3>
+            <p class="nav-card-desc">地牢战斗攻略</p>
+          </a>
+          <a href="update16.html" class="nav-card animate-on-scroll">
+            <img src="images/update16_0.jpg" alt="1.6版本" class="nav-card-image" loading="lazy">
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">🎮</div>
+            <h3 class="nav-card-title">1.6版本</h3>
+            <p class="nav-card-desc">最新更新内容</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>

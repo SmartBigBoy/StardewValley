@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-page="achievements">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语成就系统攻略 - 所有成就达成条件与完成指南">
+  <meta name="keywords" content="星露谷物语, 成就, 奖杯, 全成就, Stardew Valley">
+  <title>成就系统 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🌾</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/achievement_0.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>成就系统</span>
+      </div>
+      <h1 class="page-title">🏆 成就系统</h1>
+      <p class="page-subtitle">达成所有成就，成为星露谷的传奇</p>
+      <div class="page-header-tags">
+        <span class="tag tag-rare">⭐ 全成就挑战</span>
+        <span class="tag tag-summer">🎯 成就达成</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- 成就概述 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">📖 成就概览</h2>
+          <p class="section-subtitle">共39个成就等你解锁</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <div class="info-card-content" style="text-align: center;">
+            <p style="font-size: 1.2rem; margin-bottom: 12px;">
+              完成所有成就可获得特殊奖励，包括专属游戏内容！
+            </p>
+            <p>成就分为多个类别：农业、采矿、钓鱼、社交、冒险等。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 农业成就 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🌾 农业成就</h2>
+          <p class="section-subtitle">成为星露谷最出色的农民</p>
+        </div>
+        
+        <div class="achievement-grid">
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌱</div>
+            <div class="achievement-content">
+              <h4>第一次收获</h4>
+              <p>收获你的第一批作物</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🏡</div>
+            <div class="achievement-content">
+              <h4>自给自足</h4>
+              <p>通过出售作物赚取50,000金</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🏭</div>
+            <div class="achievement-content">
+              <h4>创业者</h4>
+              <p>通过销售 artisan 产品赚取250,000金</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌳</div>
+            <div class="achievement-content">
+              <h4>果园</h4>
+              <p>拥有6棵不同类型的果树</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🏠</div>
+            <div class="achievement-content">
+              <h4>农场主</h4>
+              <p>收获价值1,000,000金的作物</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🎨</div>
+            <div class="achievement-content">
+              <h4>景观设计师</h4>
+              <p>拥有50件家具或20件室外家具</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 采矿成就 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">⛏️ 采矿成就</h2>
+          <p class="section-subtitle">深入地底，探索无尽宝藏</p>
+        </div>
+        
+        <div class="achievement-grid">
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🪨</div>
+            <div class="achievement-content">
+              <h4>第一块矿石</h4>
+              <p>在矿洞中挖掘你的第一块矿石</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">💎</div>
+            <div class="achievement-content">
+              <h4>宝石发现者</h4>
+              <p>找到25种不同类型的宝石</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🗺️</div>
+            <div class="achievement-content">
+              <h4>深入地下</h4>
+              <p>到达矿洞第100层</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌀</div>
+            <div class="achievement-content">
+              <h4>星际矿工</h4>
+              <p>到达矿洞第120层</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">⚡</div>
+            <div class="achievement-content">
+              <h4>矿工传奇</h4>
+              <p>采矿技能达到10级</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌈</div>
+            <div class="achievement-content">
+              <h4>宝石收藏家</h4>
+              <p>收集所有类型的宝石</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 钓鱼成就 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">🎣 钓鱼成就</h2>
+          <p class="section-subtitle">成为星露谷最厉害的渔夫</p>
+        </div>
+        
+        <div class="achievement-grid">
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🐟</div>
+            <div class="achievement-content">
+              <h4>第一次钓鱼</h4>
+              <p>捕获你的第一条鱼</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🦈</div>
+            <div class="achievement-content">
+              <h4>捕鱼大师</h4>
+              <p>捕获所有类型的鱼（共65种）</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">👑</div>
+            <div class="achievement-content">
+              <h4>钓鱼大师</h4>
+              <p>钓鱼技能达到10级</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🎯</div>
+            <div class="achievement-content">
+              <h4>完美捕手</h4>
+              <p>以完美评价钓到一条鱼</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌙</div>
+            <div class="achievement-content">
+              <h4>夜猫子</h4>
+              <p>在午夜后钓鱼</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+              <h4>钓鱼传奇</h4>
+              <p>钓到传说中的鱼</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 社交成就 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">💝 社交成就</h2>
+          <p class="section-subtitle">成为星露谷最受欢迎的人</p>
+        </div>
+        
+        <div class="achievement-grid">
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">👋</div>
+            <div class="achievement-content">
+              <h4>新面孔</h4>
+              <p>与10个不同的人交谈</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🌟</div>
+            <div class="achievement-content">
+              <h4>人气王</h4>
+              <p>与镇上所有人成为朋友</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">💒</div>
+            <div class="achievement-content">
+              <h4>亲密关系</h4>
+              <p>与某人约会（4心以上）</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">💍</div>
+            <div class="achievement-content">
+              <h4>婚姻生活</h4>
+              <p>与某人结婚</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">👨‍👩‍👧</div>
+            <div class="achievement-content">
+              <h4>有了孩子</h4>
+              <p>收养或生育一个孩子</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card animate-on-scroll">
+            <div class="achievement-icon">🏠</div>
+            <div class="achievement-content">
+              <h4>满屋</h4>
+              <p>拥有最大规模的家庭（2个孩子）</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 特殊成就 -->
+      <section class="content-section" style="background: var(--bg-warm);">
+        <div class="section-header">
+          <h2 class="section-title">⭐ 特殊成就</h2>
+          <p class="section-subtitle">达成特殊里程碑</p>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">📊</span>
+              <h3>传说级成就</h3>
+            </div>
+            <div class="info-card-content">
+              <ul class="info-list">
+                <li><strong>Legend</strong> - 达成所有目标（最难成就）</li>
+                <li><strong>完美主义</strong> - 达成所有目标（Switch/手机）</li>
+                <li><strong>全金</strong> - 获得所有金石化石</li>
+                <li><strong>Complete Collection</strong> - 完成博物馆捐赠</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="info-card animate-on-scroll">
+            <div class="info-card-header">
+              <span class="info-card-icon">🎮</span>
+              <h3>全成就奖励</h3>
+            </div>
+            <div class="info-card-content">
+              <p>完成所有成就后：</p>
+              <ul class="info-list">
+                <li>解锁成就展示柜</li>
+                <li>获得独特的绿色雨衣</li>
+                <li>解锁隐藏结局</li>
+                <li>解锁"传说"游戏模式</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 成就提示 -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">💡 全成就小贴士</h2>
+        </div>
+        
+        <div class="tips-grid">
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">📅</div>
+            <div class="tip-content">
+              <h4>记录生日</h4>
+              <p>记住每个NPC的生日，生日送礼好感度翻倍！</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">📝</div>
+            <div class="tip-content">
+              <h4>使用攻略</h4>
+              <p>遇到找不到的物品时，参考攻略网站会很有帮助。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">⏰</div>
+            <div class="tip-content">
+              <h4>规划时间</h4>
+              <p>部分成就需要特定季节/时间触发，提前规划很重要。</p>
+            </div>
+          </div>
+          
+          <div class="tip-card animate-on-scroll">
+            <div class="tip-icon">🛒</div>
+            <div class="tip-content">
+              <h4>合理消费</h4>
+              <p>不要乱花钱，把资源留给最需要的成就。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 星露谷物语攻略站 | Stardew Valley攻略</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9727a8fd57b94546a2e320c1f8cf5616"}'></script>
+</body>
+</html>
