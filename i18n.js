@@ -89,6 +89,7 @@ const i18n = {
     // 姜岛探索页面翻译
     'ginger.breadcrumb.home': '首页',
     'ginger.breadcrumb.current': '姜岛探索',
+    'ginger.page_title': '🏝️ 姜岛探索指南',
     'ginger.sidebar.title': '📖 目录',
     'ginger.sidebar.overview': '🗺️ 姜岛概述',
     'ginger.sidebar.regions': '🏝️ 岛屿区域',
@@ -452,6 +453,7 @@ const i18n = {
     // Ginger Island page translations
     'ginger.breadcrumb.home': 'Home',
     'ginger.breadcrumb.current': 'Ginger Island',
+    'ginger.page_title': '🏝️ Ginger Island Guide',
     'ginger.sidebar.title': '📖 Contents',
     'ginger.sidebar.overview': '🗺️ Island Overview',
     'ginger.sidebar.regions': '🏝️ Island Regions',
