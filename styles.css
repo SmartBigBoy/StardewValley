@@ -1693,3 +1693,65 @@ a:hover {
 .npc-gifts { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
 .badge-love { background: rgba(255,100,100,0.15); color: #d44; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem; }
 .badge-hate { background: rgba(100,100,100,0.1); color: #666; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem; }
+
+/* 岛屿区域卡片样式 */
+.region-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.region-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.region-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.region-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.region-content {
+  padding: 16px;
+}
+
+.region-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.region-content p {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.region-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.region-content li {
+  margin: 4px 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
