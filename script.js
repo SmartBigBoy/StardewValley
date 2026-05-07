@@ -22,7 +22,12 @@ function initLangToggle() {
   
   // 从 localStorage 读取语言设置
   const savedLang = localStorage.getItem('language');
-  const currentLang = savedLang || 'en';
+  const currentLang = savedLang || 'zh-CN'; // 默认中文
+  
+  // 应用保存的语言
+  if (savedLang) {
+    applyLanguage(currentLang);
+  }
   
   // 更新按钮文本
   langToggle.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';

@@ -392,6 +392,7 @@ const i18n = {
     'ginger.volcano_dungeon_subtitle': 'Challenge the high-difficulty dungeon for rare rewards',
     'ginger.special_crops': '🌴 Ginger Island Special Crops',
     'ginger.special_crops_subtitle': 'Special farming in tropical climate',
+    'ginger.related': '📚 Related Guides',
 
     // Community Center page translations
     'community.overview': '🏛️ Community Center Overview',
