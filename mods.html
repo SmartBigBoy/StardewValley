@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/icon/Animals_Icon.png"
+  <link rel="icon" href="images/icon/Animals_Icon.png">
 </head>
 <body>
   <!-- 导航栏 -->
@@ -96,168 +96,167 @@
       </div>
     </div>
   </nav>
-    </div>
-  </nav>
 
-  <!-- 页面头部 -->
-  <header class="page-header">
-    <div class="page-header-bg" style="background-image: url('images/mods/mods_0.jpg');"></div>
-    <div class="page-header-overlay"></div>
-    <div class="page-header-content">
-      <div class="breadcrumb">
-        <a href="index.html">首页</a> / <span>Mod教程</span>
-      </div>
-      <h1 class="page-title">🔧 Mod安装教程</h1>
-      <p class="page-subtitle">扩展游戏内容，体验无限可能</p>
-      <div class="page-header-tags">
-        <span class="tag tag-summer">🔧 Mod</span>
-        <span class="tag tag-rare">🎮 扩展内容</span>
-      </div>
-    </div>
+  <!-- 页面头部 (隐藏，用于SEO) -->
+  <header class="page-header" style="display: none;">
+    <h1>Mod教程</h1>
   </header>
 
   <!-- 主内容 -->
-  <main class="main-content">
+  <main style="padding-top: 84px;">
     <div class="container">
-      
-      <!-- 安装前准备 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">📦 Mod安装前准备</h2>
-          <p class="section-subtitle">Steam/GOG版本通用教程</p>
-        </div>
+      <div class="content-grid">
         
-        <div class="info-grid">
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">📁</span>
-              <h3>安装位置</h3>
-            </div>
-            <div class="info-card-content">
-              <p><strong>Steam版：</strong></p>
-              <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px; margin: 8px 0;">
-                C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods
-              </code>
-              <p><strong>GOG版：</strong></p>
-              <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px;">
-                C:\GOG Games\Stardew Valley\Mods
-              </code>
-            </div>
-          </div>
-          
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">⚙️</span>
-              <h3>必要前置Mod</h3>
-            </div>
-            <div class="info-card-content">
-              <ul class="info-list">
-                <li><strong>SMAPI</strong> - Mod加载器，必装</li>
-                <li><strong>Content Patcher</strong> - 框架Mod</li>
-                <li><strong>SpaceCore</strong> - 兼容性框架</li>
-              </ul>
-              <p style="margin-top: 12px;">下载：<a href="https://smapi.io/" target="_blank">smapi.io</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 热门Mod推荐 -->
-      <section class="content-section" style="background: var(--bg-warm);">
-        <div class="section-header">
-          <h2 class="section-title">⭐ 热门Mod推荐</h2>
-          <p class="section-subtitle">玩家中最受欢迎的Mod</p>
-        </div>
-        
-        <div class="mod-grid">
-          <div class="mod-card animate-on-scroll">
-            <h4>Stardew Valley Expanded</h4>
-            <p>全新地图、NPC、事件和对话</p>
-            <span class="mod-tag">剧情扩展</span>
-          </div>
-          
-          <div class="mod-card animate-on-scroll">
-            <h4>Automate</h4>
-            <p>自动收集和加工机器产物</p>
-            <span class="mod-tag">生活质量</span>
-          </div>
-          
-          <div class="mod-card animate-on-scroll">
-            <h4>UI Info Suite</h4>
-            <p>显示NPC位置、矿层、天气等</p>
-            <span class="mod-tag">信息增强</span>
-          </div>
-          
-          <div class="mod-card animate-on-scroll">
-            <h4>LookUp Anything</h4>
-            <p>悬停查看物品和NPC信息</p>
-            <span class="mod-tag">攻略辅助</span>
-          </div>
-          
-          <div class="mod-card animate-on-scroll">
-            <h4>Tractor Mod</h4>
-            <p>购买拖拉机，自动耕种收获</p>
-            <span class="mod-tag">农业辅助</span>
-          </div>
-          
-          <div class="mod-card animate-on-scroll">
-            <h4> elle's Mods</h4>
-            <p>新家具、装饰和服装</p>
-            <span class="mod-tag">装饰美化</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Mod冲突 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">⚠️ Mod冲突与兼容性</h2>
-        </div>
-        
-        <div class="info-card animate-on-scroll" style="max-width: 800px;">
-          <div class="info-card-content">
-            <h4>常见冲突原因：</h4>
-            <ul class="info-list">
-              <li>多个Mod修改同一文件</li>
-              <li>SMAPI版本不兼容</li>
-              <li>Mod之间的依赖缺失</li>
-              <li>修改了过期的游戏文件</li>
+        <!-- 侧边栏目录 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <h3 class="sidebar-title">📖 目录</h3>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#preparation">🔧 安装前准备</a></li>
+              <li class="sidebar-item"><a href="#hot-mods">⭐ 热门Mod推荐</a></li>
+              <li class="sidebar-item"><a href="#conflict">⚠️ Mod冲突解决</a></li>
+              <li class="sidebar-item"><a href="#related">📚 相关攻略</a></li>
             </ul>
+          </div>
+        </aside>
+        
+        <!-- 主内容区域 -->
+        <div class="main-content">
+          
+          <!-- 安装前准备 -->
+          <section id="preparation" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🔧 Mod安装前准备</h2>
             
-            <h4 style="margin-top: 16px;">解决方法：</h4>
-            <ul class="info-list">
-              <li>使用Mod管理器查看冲突</li>
-              <li>确保SMAPI是最新版本</li>
-              <li>阅读Mod说明的兼容性列表</li>
-              <li>一次只安装少量Mod测试</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+            <div class="info-grid">
+              <div class="info-card animate-on-scroll">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📁</span>
+                  <h3>安装位置</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>Steam版：</strong></p>
+                  <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px; margin: 8px 0;">
+                    C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods
+                  </code>
+                  <p><strong>GOG版：</strong></p>
+                  <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px;">
+                    C:\GOG Games\Stardew Valley\Mods
+                  </code>
+                </div>
+              </div>
+              
+              <div class="info-card animate-on-scroll">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚙️</span>
+                  <h3>必要前置Mod</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li><strong>SMAPI</strong> - Mod加载器，必装</li>
+                    <li><strong>Content Patcher</strong> - 框架Mod</li>
+                    <li><strong>SpaceCore</strong> - 兼容性框架</li>
+                  </ul>
+                  <p style="margin-top: 12px;">下载：<a href="https://smapi.io/" target="_blank">smapi.io</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <!-- 相关推荐 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">📚 相关攻略</h2>
-        </div>
-        <div class="card-grid">
-          <a href="beginner.html" class="nav-card animate-on-scroll">
-            <img src="images/beginner/beginner_0.jpg" alt="新手" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">📖</div>
-            <h3 class="nav-card-title">新手入门</h3>
-            <p class="nav-card-desc">基础游戏教程</p>
-          </a>
-          <a href="multiplayer.html" class="nav-card animate-on-scroll">
-            <img src="images/multiplayer/multiplayer_0.jpg" alt="联机" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">👥</div>
-            <h3 class="nav-card-title">联机教程</h3>
-            <p class="nav-card-desc">多人合作玩法</p>
-          </a>
-        </div>
-      </section>
+          <!-- 热门Mod推荐 -->
+          <section id="hot-mods" style="margin-bottom: 48px; background: var(--bg-warm); padding: 24px; border-radius: 12px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⭐ 热门Mod推荐</h2>
+            
+            <div class="mod-grid">
+              <div class="mod-card animate-on-scroll">
+                <h4>Stardew Valley Expanded</h4>
+                <p>全新地图、NPC、事件和对话</p>
+                <span class="mod-tag">剧情扩展</span>
+              </div>
+              
+              <div class="mod-card animate-on-scroll">
+                <h4>Automate</h4>
+                <p>自动收集和加工机器产物</p>
+                <span class="mod-tag">生活质量</span>
+              </div>
+              
+              <div class="mod-card animate-on-scroll">
+                <h4>UI Info Suite</h4>
+                <p>显示NPC位置、矿层、天气等</p>
+                <span class="mod-tag">信息增强</span>
+              </div>
+              
+              <div class="mod-card animate-on-scroll">
+                <h4>LookUp Anything</h4>
+                <p>悬停查看物品和NPC信息</p>
+                <span class="mod-tag">攻略辅助</span>
+              </div>
+              
+              <div class="mod-card animate-on-scroll">
+                <h4>Tractor Mod</h4>
+                <p>购买拖拉机，自动耕种收获</p>
+                <span class="mod-tag">农业辅助</span>
+              </div>
+              
+              <div class="mod-card animate-on-scroll">
+                <h4> elle's Mods</h4>
+                <p>新家具、装饰和服装</p>
+                <span class="mod-tag">装饰美化</span>
+              </div>
+            </div>
+          </section>
 
+          <!-- Mod冲突 -->
+          <section id="conflict" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">⚠️ Mod冲突与兼容性</h2>
+            
+            <div class="info-card animate-on-scroll" style="max-width: 800px;">
+              <div class="info-card-content">
+                <h4>常见冲突原因：</h4>
+                <ul class="info-list">
+                  <li>多个Mod修改同一文件</li>
+                  <li>SMAPI版本不兼容</li>
+                  <li>Mod之间的依赖缺失</li>
+                  <li>修改了过期的游戏文件</li>
+                </ul>
+                
+                <h4 style="margin-top: 16px;">解决方法：</h4>
+                <ul class="info-list">
+                  <li>使用Mod管理器查看冲突</li>
+                  <li>确保SMAPI是最新版本</li>
+                  <li>阅读Mod说明的兼容性列表</li>
+                  <li>一次只安装少量Mod测试</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- 相关攻略 -->
+          <section id="related" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📚 相关攻略</h2>
+            <div class="info-grid">
+              <a href="beginner.html" class="info-card animate-on-scroll" style="text-decoration: none; color: inherit;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📖</span>
+                  <h3>新手入门</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>基础游戏教程，从零开始了解星露谷</p>
+                </div>
+              </a>
+              <a href="multiplayer.html" class="info-card animate-on-scroll" style="text-decoration: none; color: inherit;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👥</span>
+                  <h3>联机教程</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>多人合作玩法，与朋友一起经营农场</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          
+        </div>
+      </div>
     </div>
   </main>
 

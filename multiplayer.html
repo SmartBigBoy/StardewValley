@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/icon/Animals_Icon.png"
+  <link rel="icon" href="images/icon/Animals_Icon.png">
 </head>
 <body>
   <!-- 导航栏 -->
@@ -96,161 +96,160 @@
       </div>
     </div>
   </nav>
-    </div>
-  </nav>
 
-  <!-- 页面头部 -->
-  <header class="page-header">
-    <div class="page-header-bg" style="background-image: url('images/multiplayer/multiplayer_0.jpg');"></div>
-    <div class="page-header-overlay"></div>
-    <div class="page-header-content">
-      <div class="breadcrumb">
-        <a href="index.html">首页</a> / <span>联机教程</span>
-      </div>
-      <h1 class="page-title">👥 多人联机指南</h1>
-      <p class="page-subtitle">与朋友一起经营农场，享受合作乐趣</p>
-      <div class="page-header-tags">
-        <span class="tag tag-spring">👥 联机</span>
-        <span class="tag tag-rare">🎮 多人合作</span>
-      </div>
-    </div>
+  <!-- 页面头部 (隐藏，用于SEO) -->
+  <header class="page-header" style="display: none;">
+    <h1>联机教程</h1>
   </header>
 
   <!-- 主内容 -->
-  <main class="main-content">
+  <main style="padding-top: 84px;">
     <div class="container">
-      
-      <!-- 联机方式 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">🎮 联机方式</h2>
-          <p class="section-subtitle">选择最适合你的联机方式</p>
-        </div>
+      <div class="content-grid">
         
-        <div class="info-grid">
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">🌐</span>
-              <h3>局域网联机</h3>
-            </div>
-            <div class="info-card-content">
-              <p>同一网络下的玩家可以直连：</p>
-              <ul class="info-list">
-                <li>主机选择"邀请"</li>
-                <li>加入者选择"加入"</li>
-                <li>选择同一网络的主机</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="info-card animate-on-scroll">
-            <div class="info-card-header">
-              <span class="info-card-icon">💻</span>
-              <h3>互联网联机</h3>
-            </div>
-            <div class="info-card-content">
-              <p>使用VPN或Steam好友功能：</p>
-              <ul class="info-list">
-                <li>Steam邀请好友</li>
-                <li>使用Hamachi等VPN</li>
-                <li>端口转发设置</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 联机分工 -->
-      <section class="content-section" style="background: var(--bg-warm);">
-        <div class="section-header">
-          <h2 class="section-title">🤝 联机分工建议</h2>
-          <p class="section-subtitle">合理的分工让农场更高效</p>
-        </div>
-        
-        <div class="tips-grid">
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">🌱</div>
-            <div class="tip-content">
-              <h4>农民</h4>
-              <p>专注于种植和收获作物，管理温室。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">⛏️</div>
-            <div class="tip-content">
-              <h4>矿工</h4>
-              <p>专注挖矿，获取资源和升级材料。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">🎣</div>
-            <div class="tip-content">
-              <h4>渔夫</h4>
-              <p>钓鱼收集鱼类，完成社区中心献祭。</p>
-            </div>
-          </div>
-          
-          <div class="tip-card animate-on-scroll">
-            <div class="tip-icon">💝</div>
-            <div class="tip-content">
-              <h4>社交官</h4>
-              <p>与NPC交流，提升好感度，获取任务。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 联机规则 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">📋 联机注意事项</h2>
-        </div>
-        
-        <div class="info-card animate-on-scroll" style="max-width: 800px;">
-          <div class="info-card-content">
-            <h4>共享资源：</h4>
-            <ul class="info-list">
-              <li>金币共享（可设置独立钱包）</li>
-              <li>物品可以互相交易</li>
-              <li>出货箱收入共享</li>
+        <!-- 侧边栏目录 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <h3 class="sidebar-title">📖 目录</h3>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#methods">🎮 联机方式</a></li>
+              <li class="sidebar-item"><a href="#teamwork">🤝 联机分工</a></li>
+              <li class="sidebar-item"><a href="#notes">📋 注意事项</a></li>
+              <li class="sidebar-item"><a href="#related">📚 相关攻略</a></li>
             </ul>
+          </div>
+        </aside>
+        
+        <!-- 主内容区域 -->
+        <div class="main-content">
+          
+          <!-- 联机方式 -->
+          <section id="methods" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🎮 联机方式</h2>
             
-            <h4 style="margin-top: 16px;">独立资源：</h4>
-            <ul class="info-list">
-              <li>每个玩家有独立背包</li>
-              <li>每个玩家有独立工具</li>
-              <li>独立的小屋（额外小屋）</li>
-              <li>独立的好感度进度</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+            <div class="info-grid">
+              <div class="info-card animate-on-scroll">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌐</span>
+                  <h3>局域网联机</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>同一网络下的玩家可以直连：</p>
+                  <ul class="info-list">
+                    <li>主机选择"邀请"</li>
+                    <li>加入者选择"加入"</li>
+                    <li>选择同一网络的主机</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card animate-on-scroll">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💻</span>
+                  <h3>互联网联机</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>使用VPN或Steam好友功能：</p>
+                  <ul class="info-list">
+                    <li>Steam邀请好友</li>
+                    <li>使用Hamachi等VPN</li>
+                    <li>端口转发设置</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <!-- 相关推荐 -->
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">📚 相关攻略</h2>
-        </div>
-        <div class="card-grid">
-          <a href="farm.html" class="nav-card animate-on-scroll">
-            <img src="images/farm/farm-banner.jpg" alt="农场" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">🏡</div>
-            <h3 class="nav-card-title">农场规划</h3>
-            <p class="nav-card-desc">联机农场设计</p>
-          </a>
-          <a href="community-center.html" class="nav-card animate-on-scroll">
-            <img src="images/community-center/community_0.jpg" alt="社区中心" class="nav-card-image" loading="lazy">
-            <div class="nav-card-overlay"></div>
-            <div class="nav-card-icon">🏛️</div>
-            <h3 class="nav-card-title">社区中心</h3>
-            <p class="nav-card-desc">联机献祭攻略</p>
-          </a>
-        </div>
-      </section>
+          <!-- 联机分工 -->
+          <section id="teamwork" style="margin-bottom: 48px; background: var(--bg-warm); padding: 24px; border-radius: 12px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">🤝 联机分工建议</h2>
+            
+            <div class="tips-grid">
+              <div class="tip-card animate-on-scroll">
+                <div class="tip-icon">🌱</div>
+                <div class="tip-content">
+                  <h4>农民</h4>
+                  <p>专注于种植和收获作物，管理温室。</p>
+                </div>
+              </div>
+              
+              <div class="tip-card animate-on-scroll">
+                <div class="tip-icon">⛏️</div>
+                <div class="tip-content">
+                  <h4>矿工</h4>
+                  <p>专注挖矿，获取资源和升级材料。</p>
+                </div>
+              </div>
+              
+              <div class="tip-card animate-on-scroll">
+                <div class="tip-icon">🎣</div>
+                <div class="tip-content">
+                  <h4>渔夫</h4>
+                  <p>钓鱼收集鱼类，完成社区中心献祭。</p>
+                </div>
+              </div>
+              
+              <div class="tip-card animate-on-scroll">
+                <div class="tip-icon">💝</div>
+                <div class="tip-content">
+                  <h4>社交官</h4>
+                  <p>与NPC交流，提升好感度，获取任务。</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <!-- 联机规则 -->
+          <section id="notes" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📋 联机注意事项</h2>
+            
+            <div class="info-card animate-on-scroll" style="max-width: 800px;">
+              <div class="info-card-content">
+                <h4>共享资源：</h4>
+                <ul class="info-list">
+                  <li>金币共享（可设置独立钱包）</li>
+                  <li>物品可以互相交易</li>
+                  <li>出货箱收入共享</li>
+                </ul>
+                
+                <h4 style="margin-top: 16px;">独立资源：</h4>
+                <ul class="info-list">
+                  <li>每个玩家有独立背包</li>
+                  <li>每个玩家有独立工具</li>
+                  <li>独立的小屋（额外小屋）</li>
+                  <li>独立的好感度进度</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- 相关攻略 -->
+          <section id="related" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;">📚 相关攻略</h2>
+            <div class="info-grid">
+              <a href="farm.html" class="info-card animate-on-scroll" style="text-decoration: none; color: inherit;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏡</span>
+                  <h3>农场规划</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>联机农场设计，合理的布局让合作更高效</p>
+                </div>
+              </a>
+              <a href="community-center.html" class="info-card animate-on-scroll" style="text-decoration: none; color: inherit;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏛️</span>
+                  <h3>社区中心</h3>
+                </div>
+                <div class="info-card-content">
+                  <p>联机献祭攻略，共同完成社区中心</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          
+        </div>
+      </div>
     </div>
   </main>
 
