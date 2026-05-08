@@ -338,6 +338,7 @@ const i18n = {
     'footer.nav.title': '🌾 攻略分类',
     'footer.advanced.title': '🎣 进阶内容',
     'footer.resources.title': '🔗 参考资源',
+    'footer.resources.wiki': 'Stardew Wiki',
     'footer.about.title': '📝 关于本站',
     'footer.links.seasons': '季节攻略',
     'footer.links.skills': '技能系统',

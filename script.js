@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initNavbar();
   initThemeToggle();
   initLangToggle();
+  applyLanguage();
   initScrollEffects();
   initSearch();
   initBackToTop();
