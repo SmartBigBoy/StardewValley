@@ -6,8 +6,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   initNavbar();
   initThemeToggle();
-  initLangToggle();
-  applyLanguage();
+  initLangToggle(); // i18n.js 已初始化语言，这里只绑定按钮
   initScrollEffects();
   initSearch();
   initBackToTop();
@@ -15,27 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
- * 语言切换功能
+ * 语言切换功能 - 只绑定事件，实际切换由 i18n.js 处理
  */
 function initLangToggle() {
   const langToggle = document.querySelector('.lang-toggle');
   if (!langToggle) return;
   
-  // 从 localStorage 读取语言设置
-  const savedLang = localStorage.getItem('language');
-  const currentLang = savedLang || 'zh-CN'; // 默认中文
-  
-  // 应用保存的语言
-  if (savedLang) {
-    applyLanguage(currentLang);
-  }
-  
-  // 更新按钮文本
-  langToggle.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
-  
-  // 点击切换语言
+  // 按钮点击事件由 i18n.js 的 toggleLanguage() 处理
+  // 这里只确保按钮状态正确
   langToggle.addEventListener('click', function() {
-    toggleLanguage(); // 使用 i18n.js 中的函数，不刷新页面
+    if (typeof toggleLanguage === 'function') {
+      toggleLanguage();
+    }
   });
 }
 

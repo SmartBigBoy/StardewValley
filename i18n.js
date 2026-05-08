@@ -1105,8 +1105,8 @@ const i18n = {
   }
 };
 
-// 当前语言 - 默认为 English
-let currentLang = 'en';
+// 当前语言 - 默认为中文
+let currentLang = 'zh-CN';
 
 /**
  * 初始化语言设置
@@ -1117,8 +1117,8 @@ function initI18n() {
   if (savedLang && i18n[savedLang]) {
     currentLang = savedLang;
   } else {
-    // 默认使用 English
-    currentLang = 'en';
+    // 默认使用中文
+    currentLang = 'zh-CN';
   }
 
   // 应用语言
