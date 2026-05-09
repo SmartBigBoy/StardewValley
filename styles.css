@@ -1,58 +1,58 @@
 /**
- * 星露谷物语攻略站 - 主样式文件
- * 主题：温暖田园风，贴合游戏主题
- * 配色：绿色/棕色/暖黄为主色调
+ * Stardew Valley Guide - Main Stylesheet
+ * Theme: Warm countryside style, matching game theme
+ * Colors: Green, brown, warm yellow as main colors
  */
 
 :root {
-  /* 主色调 */
+  /* Main Colors */
   --primary-green: #4a7c59;
   --primary-green-dark: #3d6b4a;
   --primary-green-light: #5a9c6d;
   
-  /* 次要色 */
+  /* Secondary Colors */
   --secondary-brown: #8b5a2b;
   --secondary-brown-light: #a67c52;
   --secondary-warm: #c4a35a;
   
-  /* 背景色 */
+  /* Background Colors */
   --bg-cream: #faf8f0;
   --bg-warm: #f5efe0;
   --bg-card: #ffffff;
   --bg-dark: #2d3a2e;
   
-  /* 文字色 */
+  /* Text Colors */
   --text-primary: #2d2d2d;
   --text-secondary: #5a5a5a;
   --text-light: #f8f8f8;
   --text-muted: #888888;
   
-  /* 边框色 */
+  /* Border Colors */
   --border-light: #e0dcc8;
   --border-green: #4a7c59;
   
-  /* 特殊色 */
+  /* Special Colors */
   --spring: #7cb342;
   --summer: #ffb300;
   --autumn: #e65100;
   --winter: #5c6bc0;
   
-  /* 阴影 */
+  /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
   --shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
   
-  /* 圆角 */
+  /* Border Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   
-  /* 过渡 */
+  /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
 
-/* 暗色模式变量 */
+/* Dark Mode Variables */
 [data-theme="dark"] {
   --bg-cream: #1a1f1a;
   --bg-warm: #252b25;
@@ -68,7 +68,7 @@
   --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-/* 基础样式 */
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +97,7 @@ a:hover {
   color: var(--primary-green-dark);
 }
 
-/* 容器 */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -110,7 +110,7 @@ a:hover {
   padding: 0 20px;
 }
 
-/* 顶部导航栏 */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -177,7 +177,7 @@ a:hover {
   color: white;
 }
 
-/* 主题切换按钮 */
+/* Theme Toggle Button */
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* 语言切换按钮 */
+/* Language Toggle Button */
 .lang-toggle {
   display: flex;
   align-items: center;
@@ -219,7 +219,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* 移动端菜单 */
+/* Mobile Menu */
 .menu-toggle {
   display: none;
   width: 40px;
@@ -237,7 +237,7 @@ a:hover {
   gap: 12px;
 }
 
-/* 下拉菜单 */
+/* Dropdown Menu */
 .nav-dropdown {
   position: relative;
 }
@@ -302,7 +302,7 @@ a:hover {
     justify-content: center;
   }
   
-  /* 移动端侧滑菜单 */
+  /* Mobile Slide Menu */
   .navbar-nav {
     position: fixed;
     top: 64px;
@@ -340,7 +340,7 @@ a:hover {
     justify-content: flex-start;
   }
   
-  /* 移动端下拉菜单 */
+  /* Mobile Dropdown Menu */
   .nav-dropdown > .nav-link::after {
     float: right;
     margin-top: 4px;
@@ -373,7 +373,7 @@ a:hover {
   }
 }
 
-/* ==================== 英雄区域升级 ==================== */
+/* ==================== Hero Section Upgrade ==================== */
 .hero {
   position: relative;
   min-height: 85vh;
@@ -385,7 +385,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* Hero背景图片 */
+/* Hero Background Image */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -420,7 +420,7 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-/* 飘落粒子效果 */
+/* Falling Particles Effect */
 .hero-particles {
   position: absolute;
   inset: 0;
@@ -459,7 +459,7 @@ a:hover {
   }
 }
 
-/* 花瓣粒子 */
+/* Petal Particles */
 .particle.petal {
   width: 12px;
   height: 8px;
@@ -516,7 +516,7 @@ a:hover {
   animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
-/* 按钮样式 */
+/* Button Styles */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -553,7 +553,7 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* 搜索区域 */
+/* Search Area */
 .search-section {
   max-width: 600px;
   margin: 40px auto 0;
@@ -605,7 +605,7 @@ a:hover {
   background: var(--primary-green-dark);
 }
 
-/* ==================== 导航卡片升级 ==================== */
+/* ==================== Nav Card Upgrade ==================== */
 .quick-nav {
   padding: 80px 0;
   background: var(--bg-warm);
@@ -634,7 +634,7 @@ a:hover {
   gap: 24px;
 }
 
-/* 导航卡片图片样式 */
+/* Nav Card Image Styles */
 .nav-card {
   position: relative;
   display: flex;
@@ -712,7 +712,7 @@ a:hover {
   line-height: 1.6;
 }
 
-/* 内容区域 */
+/* Content Area */
 .content-section {
   padding: 80px 0;
 }
@@ -729,7 +729,7 @@ a:hover {
   }
 }
 
-/* 侧边栏 */
+/* Sidebar */
 .sidebar {
   position: sticky;
   top: 84px;
@@ -777,7 +777,7 @@ a:hover {
   color: var(--primary-green);
 }
 
-/* 主内容区 */
+/* Main Content Section */
 .main-content {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
@@ -791,7 +791,7 @@ a:hover {
   }
 }
 
-/* 页面标题 */
+/* Page Title */
 .page-header {
   margin-bottom: 32px;
   padding-bottom: 24px;
@@ -810,7 +810,7 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* ==================== 页面横幅样式 ==================== */
+/* ==================== Page Banner Styles ==================== */
 .page-banner {
   position: relative;
   height: 250px;
@@ -841,7 +841,7 @@ a:hover {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
-/* 表格样式 */
+/* Table Styles */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -864,7 +864,7 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* 表格行悬浮效果增强 */
+/* Table Row Hover Effect */
 .data-table tbody tr {
   transition: all 0.2s ease;
   cursor: pointer;
@@ -880,7 +880,7 @@ a:hover {
   margin-right: 8px;
 }
 
-/* 表格图片列 */
+/* Table Image Column */
 .table-image {
   width: 40px;
   height: 40px;
@@ -889,7 +889,7 @@ a:hover {
   vertical-align: middle;
 }
 
-/* 标签徽章 */
+/* Label Badges */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -924,7 +924,7 @@ a:hover {
   color: #9c27b0;
 }
 
-/* 卡片网格 */
+/* Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -967,7 +967,7 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* 信息卡片图片 */
+/* Info Card Image */
 .info-card-image {
   width: 100%;
   height: 160px;
@@ -976,7 +976,7 @@ a:hover {
   margin: -24px -24px 16px -24px;
 }
 
-/* 技巧提示框 */
+/* Tips Box */
 .tip-box {
   display: flex;
   gap: 12px;
@@ -1001,7 +1001,7 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* 技能树样式 */
+/* Skill Tree Styles */
 .skill-tree {
   display: flex;
   flex-wrap: wrap;
@@ -1037,7 +1037,7 @@ a:hover {
   font-weight: 600;
 }
 
-/* 技能卡片配图 */
+/* Skill Card Images */
 .skill-card-image {
   width: 100%;
   height: 180px;
@@ -1047,7 +1047,7 @@ a:hover {
   box-shadow: var(--shadow-md);
 }
 
-/* NPC卡片 */
+/* NPCCard */
 .npc-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1074,7 +1074,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* NPC头像样式 */
+/* NPC Avatar Styles */
 .npc-avatar-img {
   width: 80px;
   height: 80px;
@@ -1112,7 +1112,7 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* 底部区域 */
+/* Bottom Area */
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -1163,7 +1163,7 @@ a:hover {
   color: rgba(255,255,255,0.8);
 }
 
-/* 返回顶部 */
+/* Back to Top */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -1193,7 +1193,7 @@ a:hover {
   transform: translateY(-4px);
 }
 
-/* ==================== 动画 ==================== */
+/* ==================== Animations ==================== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1221,7 +1221,7 @@ a:hover {
   transform: translateY(0);
 }
 
-/* 滚动淡入动画增强 */
+/* Scroll Fade-in Animations */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
@@ -1233,7 +1233,7 @@ a:hover {
   transform: translateY(0);
 }
 
-/* 悬浮高亮动画 */
+/* Hover Highlight Animations */
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(74, 124, 89, 0.4); }
   50% { box-shadow: 0 0 0 10px rgba(74, 124, 89, 0); }
@@ -1243,7 +1243,7 @@ a:hover {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* 页面加载动画 */
+/* Page Load Animations */
 .loading {
   display: flex;
   align-items: center;
@@ -1264,9 +1264,9 @@ a:hover {
   to { transform: rotate(360deg); }
 }
 
-/* ==================== 装饰元素 ==================== */
+/* ==================== Decorative Elements ==================== */
 
-/* 装饰性分隔线 */
+/* Decorative Dividers */
 .stardew-divider {
   display: flex;
   align-items: center;
@@ -1288,7 +1288,7 @@ a:hover {
   font-size: 1.5rem;
 }
 
-/* 游戏风格边框装饰 */
+/* Game-style Border Decorations */
 .game-border {
   position: relative;
   padding: 20px;
@@ -1313,7 +1313,7 @@ a:hover {
   right: 20px;
 }
 
-/* 装饰角标 */
+/* Decorative Corners */
 .corner-decoration {
   position: absolute;
   width: 40px;
@@ -1350,7 +1350,7 @@ a:hover {
   border-top: none;
 }
 
-/* 面包屑导航 */
+/* Breadcrumb Navigation */
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -1372,14 +1372,14 @@ a:hover {
   color: var(--border-light);
 }
 
-/* 季节图标 */
+/* Season Icons */
 .season-icon {
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
 
-/* 季节标签配图 */
+/* Season Label Images */
 .season-visual {
   display: flex;
   gap: 8px;
@@ -1398,7 +1398,7 @@ a:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-/* 工具提示 */
+/* Tooltips */
 .tooltip {
   position: relative;
   cursor: help;
@@ -1427,7 +1427,7 @@ a:hover {
   bottom: calc(100% + 8px);
 }
 
-/* 空状态 */
+/* Empty States */
 .empty-state {
   text-align: center;
   padding: 60px 20px;
@@ -1444,7 +1444,7 @@ a:hover {
   font-size: 1.1rem;
 }
 
-/* 加载占位动画 */
+/* Loading Placeholder Animations */
 .image-loading {
   background: linear-gradient(90deg, var(--bg-warm) 25%, var(--bg-card) 50%, var(--bg-warm) 75%);
   background-size: 200% 100%;
@@ -1456,7 +1456,7 @@ a:hover {
   100% { background-position: -200% 0; }
 }
 
-/* ==================== 暗色模式增强 ==================== */
+/* ==================== Dark Mode Enhancements ==================== */
 [data-theme="dark"] .hero::before {
   background: linear-gradient(135deg, rgba(45, 58, 46, 0.9) 0%, rgba(30, 40, 30, 0.85) 50%, rgba(60, 50, 35, 0.85) 100%);
 }
@@ -1469,7 +1469,7 @@ a:hover {
   border-color: var(--primary-green-light);
 }
 
-/* ==================== 响应式调整 ==================== */
+/* ==================== Responsive Adjustments ==================== */
 @media (max-width: 600px) {
   .hero {
     min-height: 70vh;
@@ -1518,7 +1518,7 @@ a:hover {
   }
 }
 
-/* ==================== 搜索结果样式 ==================== */
+/* ==================== Search Results Styles ==================== */
 #search-results {
   position: absolute;
   top: 100%;
@@ -1581,7 +1581,7 @@ a:hover {
   font-size: 0.85rem;
 }
 
-/* 暗色模式下搜索结果样式 */
+/* Dark Mode Search Results Styles */
 [data-theme="dark"] #search-results {
   background: #2d352d;
   border-color: var(--primary-green-light);
@@ -1612,7 +1612,7 @@ a:hover {
   color: #808080;
 }
 
-/* ==================== 文章图片统一样式 ==================== */
+/* ==================== Article Image Styles ==================== */
 .article-img {
   width: 100%;
   max-width: 800px;
@@ -1633,7 +1633,7 @@ a:hover {
   margin: 16px 0;
 }
 
-/* 表格内图片 */
+/* Images in Tables */
 .table-image {
   width: 40px;
   height: 40px;
@@ -1642,7 +1642,7 @@ a:hover {
   vertical-align: middle;
 }
 
-/* NPC头像样式 */
+/* NPC Avatar Styles */
 .npc-card .npc-avatar {
   width: 60px;
   height: 60px;
@@ -1661,7 +1661,7 @@ a:hover {
   object-fit: cover;
 }
 
-/* ==================== 页面横幅图片样式 ==================== */
+/* ==================== Page Banner Image Styles ==================== */
 .page-banner {
   position: relative;
   width: 100%;
@@ -1683,7 +1683,7 @@ a:hover {
   }
 }
 
-/* ==================== NPC 页面专属样式 ==================== */
+/* ==================== NPC Page Styles ==================== */
 .npc-section { margin-bottom: 64px; }
 .npc-section h2 { font-size: 1.6rem; margin-bottom: 24px; color: var(--text-primary); }
 .npc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
@@ -1699,7 +1699,7 @@ a:hover {
 .badge-love { background: rgba(255,100,100,0.15); color: #d44; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem; }
 .badge-hate { background: rgba(100,100,100,0.1); color: #666; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem; }
 
-/* 岛屿区域卡片样式 */
+/* Island Region Card Styles */
 .region-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
