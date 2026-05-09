@@ -768,7 +768,8 @@ a:hover {
   color: var(--text-secondary);
   font-size: 0.95rem;
   transition: all var(--transition-fast);
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .sidebar-item a:hover,
