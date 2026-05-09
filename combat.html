@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="combat">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语战斗系统攻略 - 武器选择、技能树、职业进阶、怪物图鉴">
+  <meta name="keywords" content="星露谷物语, 战斗, 武器, 矿洞, 怪物, Stardew Valley">
+  <title>战斗系统 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png"
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="combat.auto55">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#profession" data-i18n="combat.auto56">⚔️ Combat Classes</a></li>
+              <li class="sidebar-item"><a href="#weapons" data-i18n="combat.auto57">️ Weapon Recommended</a></li>
+              <li class="sidebar-item"><a href="#monsters" data-i18n="combat.auto58">Monster Bestiary</a></li>
+              <li class="sidebar-item"><a href="#tips" data-i18n="combat.auto59">Combat Tips</a></li>
+              <li class="sidebar-item"><a href="#related" data-i18n="combat.auto60">📌 Related Recommendations</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/combat/combat-detail.jpg" alt="战斗系统" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="combat.auto0">⚔ ️ Combat SystemGuide</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="combat.auto61">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="combat.auto54">Combat System</span>
+          </div>
+
+          <!-- 页面标题 -->
+
+          <!-- 战斗职业 -->
+          <section id="profession" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="combat.auto1">⚔ ️ Combat Profession Skills</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="combat.auto10">Reach level 5 before choosing career branch</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🗡️</span>
+                  <h3 class="info-card-title" data-i18n="combat.stats.combat">Combat (Combat)</h3>
+                </div>
+                <div class="info-card-content">
+                  <div style="margin-bottom: 16px;">
+                    <h4 style="color: var(--primary);" data-i18n="combat.auto6">⬆️ Knight (Fighter)</h4>
+                    <p data-i18n="combat.auto11">15%mage, 1 Defense</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="combat.auto12">Suitable for beginners, stable melee route</p>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--summer);" data-i18n="combat.auto7">⚔ ️ Swordsman (Berserker)</h4>
+                    <p data-i18n="combat.auto13">50%mage, -2 Defense</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="combat.auto14">High risk high reward, suitable for veterans</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏹</span>
+                  <h3 class="info-card-title" data-i18n="combat.stats.agility"Agility (Agility)</h3>
+                </div>
+                <div class="info-card-content">
+                  <div style="margin-bottom: 16px;">
+                    <h4 style="color: var(--primary);" data-i18n="combat.auto8">🥷 Assassin (Scout)</h4>
+                    <p data-i18n="combat.auto15">25% movement speed</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="combat.auto16">Escape danger faster</p>
+                  </div>
+                  <div>
+                    <h4 style="color: var(--summer);" data-i18n="combat.auto9">⚡ Ballistics (Desperado)</h4>
+                    <p data-i18n="combat.auto17">Melee has a chance to cause a critical hit</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="combat.auto18">Projectile weapon critical hit damage doubled</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 武器推荐 -->
+          <section id="weapons" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="combat.auto2">️ Weapon Recommended</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="combat.auto19">Overview of the strongest weapons at each rank</p>
+            
+            <div class="info-card">
+              <div class="info-card-content">
+                <table class="data-table">
+                  <tr>
+                    <th data-i18n="combat.auto49">Weapon</th>
+                    <th data-i18n="combat.auto50">Damage</th>
+                    <th data-i18n="combat.auto51">Speed</th>
+                    <th data-i18n="combat.auto52">Obtain Method</th>
+                    <th data-i18n="combat.auto53">Recommendation Level</th>
+                  </tr>
+                  <tr>
+                    <td data-i18n="combat.auto36">🗡 ️ Iron Sword</td>
+                    <td>16-22</td>
+                    <td>快</td>
+                    <td data-i18n="combat.auto37">The Mines 40th Floor</td>
+                    <td>⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="combat.auto38">⚔ ️ Silver River Sword</td>
+                    <td>26-42</td>
+                    <td data-i18n="combat.auto39">Medium</td>
+                    <td data-i18n="combat.auto40">Quest Reward</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="combat.auto41"> Dwarf’s Axe</td>
+                    <td>34-50</td>
+                    <td>慢</td>
+                    <td data-i18n="combat.auto42">The Mines 100th Floor</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="combat.auto43">🌟 Iridium Short Sword</td>
+                    <td>44-66</td>
+                    <td data-i18n="combat.auto44">Extremely Fast</td>
+                    <td data-i18n="combat.auto45">The Mines 110th Floor</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="combat.auto46">🔱 Trident</td>
+                    <td>21-31</td>
+                    <td data-i18n="combat.auto47">Medium</td>
+                    <td data-i18n="combat.auto48">FishingExpert</td>
+                    <td>⭐⭐⭐</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- 怪物图鉴 -->
+          <section id="monsters" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="combat.auto3">Monster Bestiary</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="combat.auto20">Dangerous creatures in The Mines</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟢</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.slime_green"GreenSlime</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto21">Weakest monsters, beginner practice targets</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 30 | DMG: 0-2</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🔵</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.slime_blue"BlueSlime</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto22">Relatively common slimes</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 45 | DMG: 0-4</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟡</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.bat">🟡 Bat</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto23">Flying enemies with large attack range</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 20 | DMG: 0-6</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪨</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.rock_golem"Rock Crab</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto24">High defense monsters, require multiple attacks</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 80 | DMG: 0-8</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💀</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.skeleton">💀 Skeleton</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto25">Monsters common in late game, attack quickly</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 60 | DMG: 0-10</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🟣</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.slime_purple"PurpleSlime</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto26">Drops slime egg</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 100 | DMG: 0-15</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌟</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.meteor">🌟 Meteor</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto27">Drops iridium ore, extremely difficult to deal with</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 150 | DMG: 0-20</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👹</span>
+                  <h4 class="info-card-title" data-i18n="combat.monster.ghost">👹 Ghost</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto28">Terrifying presence in deep floors</p>
+                  <p style="margin-top: 8px; color: var(--text-secondary);">HP: 80 | DMG: 0-25</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 战斗技巧 -->
+          <section id="tips" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="combat.auto4">Combat Tips</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🛡️</span>
+                  <h3 class="info-card-title" data-i18n="combat.tips.keep_moving">Keep Moving/h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto29">Keep moving in combat to avoid being surrounded. Use arrow keys to circle around.</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍖</span>
+                  <h3 class="info-card-title" data-i18n="combat.tips.food">Bring Food/h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto30">Always carry enough food, you can RestoreHealth in critical moments.</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💍</span>
+                  <h3 class="info-card-title" data-i18n="combat.tips.rings">Ring Selection/h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto31">CombatRing greatly Boosts survival ability, PrioritizeObtaining it.</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📍</span>
+                  <h3 class="info-card-title" data-i18n="combat.tips.terrain">Familiarize with Terrain/h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto32">Remember the Mines layout, use terrain to trap Monsters.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 相关推荐 -->
+          <section id="related" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="combat.auto5">📚 Related Guide</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <a href="mines.html" class="info-card" style="text-decoration: none;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⛏️</span>
+                  <h3 class="info-card-title" data-i18n="combat.tips.mines">Mines Adventure</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto33">Deep Underground Exploration</p>
+                </div>
+              </a>
+              <a href="skills.html" class="info-card" style="text-decoration: none;">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚔️</span>
+                  <h3 class="info-card-title" data-i18n="combat.skill_system">Skills System</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="combat.auto34">Full Skill Analysis</p>
+                </div>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="combat.auto35">© 2026 Stardew Valley Guide Site | Stardew Valley Guide</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

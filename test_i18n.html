@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试 i18n</title>
+</head>
+<body>
+  <h1>测试 i18n.js 加载</h1>
+  <p id="status">正在检查...</p>
+  <script>
+    // 简单测试 i18n.js 是否有语法错误
+    window.onerror = function(msg, url, line, col, err) {
+      document.getElementById('status').innerHTML = 
+        '<strong style="color: red;">错误:</strong> ' + msg + 
+        '<br>Line: ' + line + ', Col: ' + col;
+      document.getElementById('status').style.color = 'red';
+    }
+  </script>
+  <script src="i18n.js"></script>
+  <script>
+    setTimeout(function() {
+      try {
+        if (typeof i18n !== 'undefined' && typeof i18n['zh-CN'] !== 'undefined') {
+          document.getElementById('status').innerHTML = 
+            '<strong style="color: green;">✓ i18n.js 加载成功!</strong>' +
+            '<br>中文翻译键数: ' + Object.keys(i18n['zh-CN']).length +
+            '<br>英文翻译键数: ' + Object.keys(i18n['en']).length;
+          document.getElementById('status').style.color = 'green';
+        } else {
+          document.getElementById('status').innerHTML = 
+            '<strong style="color: red;">✗ i18n.js 加载失败!</strong>';
+          document.getElementById('status').style.color = 'red';
+        }
+      } catch(e) {
+        document.getElementById('status').innerHTML = 
+          '<strong style="color: red;">错误:</strong> ' + e.message;
+        document.getElementById('status').style.color = 'red';
+      }
+    }, 100);
+  </script>
+</body>
+</html>

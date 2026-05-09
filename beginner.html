@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="beginner">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stardew Valley Beginner Guide - From character creation to the perfect first year start, detailed guide helps you get started quickly">
+  <meta name="keywords" content="Stardew Valley, Beginner Guide, New Player Guide, First Year, Perfect Start, Stardew Valley">
+  <title>Beginner Guide | Stardew Valley Guide</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="beginner.sidebar.title">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview" data-i18n="beginner.section.overview">👤 Character Creation</a></li>
+              <li class="sidebar-item"><a href="#day1" data-i18n="beginner.section.day1">📅 Day 1 Must-Do</a></li>
+              <li class="sidebar-item"><a href="#energy" data-i18n="beginner.section.energy">⚡ Energy Management</a></li>
+              <li class="sidebar-item"><a href="#tools" data-i18n="beginner.section.tools">🔧 Tool Upgrades</a></li>
+              <li class="sidebar-item"><a href="#planning" data-i18n="beginner.section.planning">Early Game Planning</a></li>
+              <li class="sidebar-item"><a href="#tips" data-i18n="beginner.section.tips">💡 Useful Tips</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/beginner/beginner_0.jpg" alt="新手入门" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="beginner.banner.title">👤 Beginner Guide</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="beginner.breadcrumb.home">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="beginner.breadcrumb.current">Beginner Guide</span>
+          </div>
+
+          <!-- 页面标题 -->
+
+          <!-- 创建角色 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.section.overview">👤 Character Creation</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="beginner.overview.subtitle">Choose the best farm type for beginners</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌾</span>
+                  <h3 class="info-card-title" data-i18n="beginner.overview.standard.title">Standard Farm</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="beginner.overview.standard.rating">Rating: ⭐⭐⭐⭐⭐</p>
+                  <p data-i18n="beginner.overview.standard.desc">Standard Farm has the most usable farmland, perfect for learning the planting system.</p>
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto48">Max Tillable Soil Area</li>
+                    <li data-i18n="beginner.auto49">BeginnerBest choice</li>
+                    <li data-i18n="beginner.auto50">Late Game can transition to other types</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍃</span>
+                  <h3 class="info-card-title" data-i18n="beginner.forest_farm">Forest Farm</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong data-i18n="beginner.rating">Recommendation: ⭐⭐⭐⭐</strong></p>
+                  <p data-i18n="beginner.auto5">Special seeds and foraged items are abundant, suitable for players who like to explore.</p>
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto51">Abundant wild forage items</li>
+                    <li data-i18n="beginner.auto52">Unique seed refresh</li>
+                    <li data-i18n="beginner.auto53">Suitable for casual gameplay</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 第一天必做 -->
+          <section id="day1" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.auto0">📅 FirstDaysMust-Do</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="beginner.auto6">Properly arrangeDay time，to build a foundation for late game development</p>
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">⏰</span>
+                <h3 class="info-card-title" data-i18n="beginner.time_table">Time Planning Table</h3>
+              </div>
+              <div class="info-card-content">
+                <table class="data-table">
+                  <tr>
+                    <th data-i18n="beginner.auto38">Time Period</th>
+                    <th data-i18n="beginner.auto39">Quest</th>
+                    <th data-i18n="beginner.auto40">Description</th>
+                  </tr>
+                  <tr>
+                    <td data-i18n="beginner.auto11">Morning</td>
+                    <td data-i18n="beginner.auto12">Start after waking up, go toThe Mines</td>
+                    <td data-i18n="beginner.auto13">CollectOreandWood</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="beginner.auto14">Morning</td>
+                    <td data-i18n="beginner.auto15">Chop Trees/Smash Stones</td>
+                    <td data-i18n="beginner.auto16">Obtain Wood and Stone</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="beginner.auto17">Afternoon</td>
+                    <td data-i18n="beginner.auto18">Complete Museum Donation</td>
+                    <td data-i18n="beginner.auto19">Get Iron Axe and Hay</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="beginner.auto20">Evening</td>
+                    <td data-i18n="beginner.auto21">Go to Bar to Meet NPC</td>
+                    <td data-i18n="beginner.auto22">Unlock TV and Mining Area</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="beginner.auto23">Before Bed</td>
+                    <td data-i18n="beginner.auto24">Watch TV</td>
+                    <td data-i18n="beginner.auto25">Get dailyweather and luck info</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            
+            <div class="info-card" style="margin-top: 20px;">
+              <div class="info-card-header">
+                <span class="info-card-icon">🎯</span>
+                <h3 class="info-card-title" data-i18n="beginner.first_year_goals">Beginner First Year Goal</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li><strong data-i18n="beginner.spring">Spring</strong>: <span data-i18n="beginner.spring.task">Complete first bundle in Community Center</span></li>
+                  <li><strong data-i18n="beginner.summer">Summer</strong>: <span data-i18n="beginner.summer.task">Build sprinklers, plant blueberries</span></li>
+                  <li><strong data-i18n="beginner.fall">Fall</strong>: <span data-i18n="beginner.fall.task">Complete Community Center, skip Winter</span></li>
+                  <li><strong data-i18n="beginner.winter">Winter</strong>: <span data-i18n="beginner.winter.task">Mining, fishing, socializing</span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- 体力管理 -->
+          <section id="energy" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.auto1">⚡ Energy ManagementTips</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="beginner.auto7">Good energy management iskey to efficient gaming</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍖</span>
+                  <h3 class="info-card-title" data-i18n="beginner.energy.food">Energy-Restoring Food</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li><strong data-i18n="beginner.energy.salad">Salad</strong>: <span data-i18n="beginner.energy.salad.desc">Restore 35 points, sold at Bar</span></li>
+                    <li><strong data-i18n="beginner.energy.pizza">Pizza</strong>: <span data-i18n="beginner.energy.pizza.desc">Restore 75 points, sold at Bar</span></li>
+                    <li><strong data-i18n="beginner.energy.cave_turnip">Cave Turnip</strong>: <span data-i18n="beginner.energy.cave_turnip.desc">Foraging, restore 60 points</span></li>
+                    <li><strong data-i18n="beginner.energy.coconut">Coconut</strong>: <span data-i18n="beginner.energy.coconut.desc">Get from Ginger Island, restore 75 points</span></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧃</span>
+                  <h3 class="info-card-title" data-i18n="beginner.stamina_max">Permanently Increase Max</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li><strong data-i18n="beginner.stamina.delicious_fish">Delicious Fish</strong>: <span data-i18n="beginner.stamina.delicious_fish.desc">Probability +34 max</span></li>
+                    <li><strong data-i18n="beginner.stamina.qi_quest">Complete Qi Quest</strong>: <span data-i18n="beginner.stamina.qi_quest.desc">+1 permanent max</span></li>
+                    <li><strong data-i18n="beginner.stamina.pearl">Pearl</strong>: <span data-i18n="beginner.stamina.pearl.desc">Restore 150 +34 max</span></li>
+                    <li><strong data-i18n="beginner.stamina.shrimp_chip">Shrimp Chip</strong>: <span data-i18n="beginner.stamina.shrimp_chip.desc">Restore 35 +34 max</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-card" style="margin-top: 20px;">
+              <div class="info-card-header">
+                <span class="info-card-icon">💡</span>
+                <h3 class="info-card-title" data-i18n="beginner.energy.tips">Energy-Saving Tips</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li data-i18n="beginner.auto54">Drinking water is cheaper than eating food (but does not restore maximum energy)</li>
+                  <li data-i18n="beginner.auto55">Craft Spicy Eel，Always bring when going out</li>
+                  <li data-i18n="beginner.auto56">Winter sap gathering is more energy efficient than chopping trees</li>
+                  <li data-i18n="beginner.auto57">Bringing a hoe for mining saves energy</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- 工具升级 -->
+          <section id="tools" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.auto2">🔧 ToolLevel UpOrder</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="beginner.auto8">Reasonably distribute gold，Prioritize upgrading the most used tools</p>
+            
+            <div class="info-card">
+              <div class="info-card-content">
+                <table class="data-table">
+                  <tr>
+                    <th data-i18n="beginner.auto41">Priority</th>
+                    <th data-i18n="beginner.auto42">Tool</th>
+                    <th data-i18n="beginner.auto43">CopperLevel</th>
+                    <th data-i18n="beginner.auto44">IronLevel</th>
+                    <th data-i18n="beginner.auto45">GoldLevel</th>
+                    <th data-i18n="beginner.auto46">Iridium Level</th>
+                    <th data-i18n="beginner.auto47">RecommendedReason</th>
+                  </tr>
+                  <tr>
+                    <td>🥇</td>
+                    <td data-i18n="beginner.auto26">⛏ ️  Hoe Head</td>
+                    <td>200g</td>
+                    <td>500g</td>
+                    <td>1000g</td>
+                    <td>2000g</td>
+                    <td data-i18n="beginner.auto27">Required Tool to Unlock Sprinkler</td>
+                  </tr>
+                  <tr>
+                    <td>🥈</td>
+                    <td data-i18n="beginner.auto28">🚿 Sprinkler</td>
+                    <td colspan="4" data-i18n="beginner.auto29">Level 1 covers 2 tiles, Level 2 covers 5 tiles, Level 3 covers 9 tiles</td>
+                    <td data-i18n="beginner.auto30">Free Your Hands, automatic watering</td>
+                  </tr>
+                  <tr>
+                    <td>🥉</td>
+                    <td data-i18n="beginner.tools.axe">🪓 Axe</td>
+                    <td>200g</td>
+                    <td>500g</td>
+                    <td>1000g</td>
+                    <td>2000g</td>
+                    <td data-i18n="beginner.tools.axe.reason">More Efficient Woodcutting</td>
+                  </tr>
+                  <tr>
+                    <td>4️⃣</td>
+                    <td data-i18n="beginner.tools.pickaxe">🔧 Hammer</td>
+                    <td>200g</td>
+                    <td>500g</td>
+                    <td>1000g</td>
+                    <td>2000g</td>
+                    <td data-i18n="beginner.tools.pickaxe.reason">More Efficient Mining</td>
+                  </tr>
+                  <tr>
+                    <td>5️⃣</td>
+                    <td data-i18n="beginner.tools.rod">🎣 Fishing Rod</td>
+                    <td colspan="4" data-i18n="beginner.tools.rod.desc">Respectively1800 g、2500 g、4000 g、6000 g</td>
+                    <td data-i18n="beginner.tools.rod.reason">Late Game Upgrade</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- 前期规划 -->
+          <section id="planning" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.auto3">📆 FirstYearPlanning</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="beginner.auto9">Reasonably arrange activities by season</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card" style="border-left: 4px solid var(--spring);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌸</span>
+                  <h3 class="info-card-title" data-i18n="beginner.planning.spring">Spring (Year 1)</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto58">Plant Parsnip and Strawberry</li>
+                    <li data-i18n="beginner.auto59">Complete Museum Donation Quest</li>
+                    <li data-i18n="beginner.auto60">Unlock Mines</li>
+                    <li data-i18n="beginner.auto61">Meet All NPCs</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--summer);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">☀️</span>
+                  <h3 class="info-card-title" data-i18n="beginner.planning.summer">Summer (Year 1)</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto62">Plant Blueberry (Key)</li>
+                    <li data-i18n="beginner.auto63">Build Sprinkler</li>
+                    <li data-i18n="beginner.auto64">Chop Trees to Obtain Wood</li>
+                    <li data-i18n="beginner.auto65">Complete The 40th Floor in the Mines</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--autumn);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍂</span>
+                  <h3 class="info-card-title" data-i18n="beginner.planning.autumn">Fall (Year 1)</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto66">Plant Cranberry</li>
+                    <li data-i18n="beginner.auto67">Complete Community Center</li>
+                    <li data-i18n="beginner.auto68">Level Up Tools to Iron Level</li>
+                    <li data-i18n="beginner.auto69">Prepare Gold for Winter</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--winter);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">❄️</span>
+                  <h3 class="info-card-title" data-i18n="beginner.planning.winter">Winter (Year 1)</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto70">Mining (Key)</li>
+                    <li data-i18n="beginner.auto71">Fishing to Earn Money</li>
+                    <li data-i18n="beginner.auto72">Social Boost Hearts</li>
+                    <li data-i18n="beginner.auto73">Prepare 2-Year Seeds</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 实用技巧 -->
+          <section id="tips" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="beginner.auto4">💡 BeginnerTipsTips</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📍</span>
+                  <h3 class="info-card-title" data-i18n="beginner.teleport_tips">Teleport TipTips</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto74">Hold Shift and click the edge of the map to teleport quickly</li>
+                    <li data-i18n="beginner.auto75">Use a feather fan to teleport to any mine entrance</li>
+                    <li data-i18n="beginner.auto76">The Guide needle in your backpack can teleport you home</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎁</span>
+                  <h3 class="info-card-title" data-i18n="beginner.gift_guide">Gift GivingGuide</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto77">Remember items that NPCs hate to avoid giving the wrong gift</li>
+                    <li data-i18n="beginner.auto78">Each NPC birthday gift gives double Hearts</li>
+                    <li data-i18n="beginner.auto79">You can check the Guide for each NPC’s liked items</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⛏️</span>
+                  <h3 class="info-card-title" data-i18n="beginner.mining_tips">Mines Tips</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto80">Bring enough food and weapons</li>
+                    <li data-i18n="beginner.auto81">Elevator appears once every 5 floors</li>
+                    <li data-i18n="beginner.auto82">The Mines at 30/80/120 floors have treasure chests</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💰</span>
+                  <h3 class="info-card-title" data-i18n="beginner.save_money_tips">Save MoneyTips</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li data-i18n="beginner.auto83">Don’t buy chickens yet; First Year crops are more cost-effective</li>
+                    <li data-i18n="beginner.auto84">Make a sieve with branches; it’s cheaper than buying</li>
+                    <li data-i18n="beginner.auto85">Completing Community Center Quests can get you a lot of items</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p data-i18n="beginner.auto10">© 2026 Stardew ValleyGuide | Stardew ValleyGuide</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

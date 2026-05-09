@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="gingerIsland">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语姜岛攻略 - 热带岛屿探索、火山地牢、金核桃收集、西部农场开发完整指南">
+  <meta name="keywords" content="星露谷物语, 姜岛, 火山地牢, 金核桃, 热带, Stardew Valley">
+  <title>姜岛攻略 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png"
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主内容区域 -->
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏目录 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="ginger.sidebar.title">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview" data-i18n="ginger.sidebar.overview">🗺️ Island Overview</a></li>
+              <li class="sidebar-item"><a href="#regions" data-i18n="ginger.sidebar.regions">🏝️ Island Regions</a></li>
+              <li class="sidebar-item"><a href="#golden-walnut" data-i18n="ginger.sidebar.walnut">🥜 Golden Walnut Collection</a></li>
+              <li class="sidebar-item"><a href="#volcano" data-i18n="ginger.sidebar.volcano">🌋 Volcano Dungeon</a></li>
+              <li class="sidebar-item"><a href="#crops" data-i18n="ginger.sidebar.crops">🌴 Tropical Crops</a></li>
+              <li class="sidebar-item"><a href="#related" data-i18n="ginger.sidebar.related">📌 Related Guides</a></li>
+            </ul>
+          </div>
+        </aside>
+        
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/ginger-island/ginger_0.jpg" alt="姜岛探索" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="ginger.page_title">🏝️ Ginger Island Guide</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="ginger.breadcrumb.home">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="ginger.breadcrumb.current">Ginger Island</span>
+          </div>
+
+          <!-- 页面标题 -->
+
+        <!-- 姜岛概述 -->
+        <section id="overview" class="content-section">
+          <h2 class="section-title" data-i18n="ginger.island_overview">🗺️ Island Overview</h2>
+          <p class="section-subtitle" data-i18n="ginger.island_overview_subtitle">Unlock conditions and island features</p>
+          
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🔓</span>
+                <h3 data-i18n="ginger.unlock_title">Unlock Conditions</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li data-i18n="ginger.unlock_1">Complete all Community Center bundles</li>
+                  <li data-i18n="ginger.unlock_2">Have 500g for ferry fare</li>
+                  <li data-i18n="ginger.unlock_3">Talk to Captain Wilford at the Beach</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🏝️</span>
+                <h3 data-i18n="ginger.features_title">Island Features</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li data-i18n="ginger.feature_1">Tropical climate, can grow crops in winter</li>
+                  <li data-i18n="ginger.feature_2">Unique Volcano Dungeon</li>
+                  <li data-i18n="ginger.feature_3">Golden Walnut collection quest</li>
+                  <li data-i18n="ginger.feature_4">West Island Farm area</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          <!-- 岛屿区域 -->
+        <section id="regions" class="content-section">
+          <h2 class="section-title" data-i18n="ginger.regions_title">️ 岛屿区域详解</h2>
+          <p class="section-subtitle" data-i18n="ginger.regions_subtitle"Ginger Island All Areas Overview</p>
+          
+          <div class="region-cards">
+            <div class="region-card">
+              <div class="region-image">
+                <img src="images/ginger-island/Ginger_Island_South.png" alt="海滩码头" loading="lazy">
+              </div>
+              <div class="region-content">
+                <h3 data-i18n="ginger.beach_name">Beach Dock</h3>
+                <p data-i18n="ginger.beach_desc">Where the ferry arrives. Has a small supermarket.</p>
+                <ul class="info-list">
+                  <li data-i18n="ginger.beach_1">Buy Coconuts and Starfruit Seeds/li></li>
+                  <li data-i18n="ginger.beach_2">Meet Island NPCs</li></li>
+                  <li data-i18n="ginger.beach_3">Ferry往返 daily</li></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="region-card">
+              <div class="region-image">
+                <img src="images/ginger-island/VolcanoDungeon_Entryway.png" alt="火山地牢" loading="lazy">
+              </div>
+              <div class="region-content">
+                <h3 data-i18n="ginger.volcano_name">Volcano Dungeon</h3>
+                <p data-i18n="ginger.volcano_desc">Challenging dungeon area with valuable mineral rewards.</p>
+                <ul class="info-list">
+                  <li data-i18n="ginger.volcano_1">Requires 10级Combat Skills</li></li>
+                  <li data-i18n="ginger.volcano_2">DefeatMonster收集矿物</li></li>
+                  <li data-i18n="ginger.volcano_3">Rare Chests and Artifacts/li></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="region-card">
+              <div class="region-image">
+                <img src="images/ginger-island/Beach_Farm.jpg" alt="西部农场" loading="lazy">
+              </div>
+              <div class="region-content">
+                <h3 data-i18n="ginger.westfarm_name">WestFarm</h3>
+                <p data-i18n="ginger.westfarm_desc">Can以建造小屋，种植热带Crop。</p>
+                <ul class="info-list">
+                  <li data-i18n="ginger.westfarm_1">Build Island Hut/li></li>
+                  <li data-i18n="ginger.westfarm_2">Planting香蕉、菠萝等</li></li>
+                  <li data-i18n="ginger.westfarm_3">Infinite Growth Cycle/li></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="region-card">
+              <div class="region-image">
+                <img src="images/ginger-island/Ginger_Island.png" alt="山顶天文台" loading="lazy">
+              </div>
+              <div class="region-content">
+                <h3 data-i18n="ginger.observatory_name">Mountain TopDays文台</h3>
+                <p data-i18n="ginger.observatory_desc">View luck stats for free after unlocking.</p>
+                <ul class="info-list">
+                  <li data-i18n="ginger.observatory_1">Requires收集Gold核桃</li></li>
+                  <li data-i18n="ginger.observatory_2">EveryDay免费幸运查看</li></li>
+                  <li data-i18n="ginger.observatory_3">Special Event Trigger/li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 金核桃收集 -->
+        <section id="golden-walnut" class="content-section">
+          <h2 class="section-title" data-i18n="ginger.walnut_title">Gold核桃收集</h2>
+          <p class="section-subtitle" data-i18n="ginger.walnut_subtitle">Total130个Gold核桃，Distribution在岛屿各处</p>
+          
+          <div class="info-card">
+            <div class="info-card-header">
+              <span class="info-card-icon">📍</span>
+              <h3 data-i18n="ginger.walnut_methods">MainlyAcquisition方式</h3>
+            </div>
+            <div class="info-card-content">
+              <table class="data-table">
+                <tr><th data-i18n="ginger.table_location">Location</th><th data-i18n="ginger.table_count">Count</th><th data-i18n="ginger.table_method">Acquisition Method</th></tr>
+                <tr><td data-i18n="ginger.walnut_loc_1">Various island areas</td><td>~50</td><td data-i18n="ginger-island.auto1">Flip Grass、挖掘</td></tr>
+                <tr><td data-i18n="ginger.walnut_loc_2">Volcano Dungeon</td><td>~30</td><td data-i18n="ginger-island.auto2">Defeat monsters & dig soil</td></tr>
+                <tr><td data-i18n="ginger.walnut_loc_3">Fossil excavation sites</td><td>~20</td><td data-i18n="ginger-island.auto3">Use锄头挖掘</td></tr>
+                <tr><td data-i18n="ginger.walnut_loc_4">Complete puzzles</td><td>~15</td><td data-i18n="ginger-island.auto4">Solve island puzzles</td></tr>
+                <tr><td data-i18n="ginger.walnut_loc_5">NPC gifts</td><td>~15</td><td data-i18n="ginger-island.auto5">With IslandNPC建立友谊</td></tr>
+              </table>
+            </div>
+          </div>
+          
+          <div class="info-card" style="margin-top: 20px;">
+            <div class="info-card-content">
+              <h4 data-i18n="ginger.walnut_milestone">Gold核桃里程碑Reward</h4>
+              <ul class="info-list">
+                <li data-i18n="ginger.walnut_5"><strong>5个</strong> - 解锁渡轮码头</li>
+                <li data-i18n="ginger.walnut_10"><strong>10个</strong> - 解锁海滩超市</li>
+                <li data-i18n="ginger.walnut_15"><strong>15个</strong> - 解锁岛屿东部小路</li>
+                <li data-i18n="ginger.walnut_20"><strong>20个</strong> - 解锁山地小路</li>
+                <li data-i18n="ginger.walnut_30"><strong>30个</strong> - 解锁山顶小路</li>
+                <li data-i18n="ginger.walnut_55"><strong>55个</strong> - 解锁山顶天文台</li>
+                <li data-i18n="ginger.walnut_130"><strong>130个</strong> - 全部完成！</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 火山地牢 -->
+        <section id="volcano" class="content-section">
+          <h2 class="section-title" data-i18n="ginger.volcano_title">Volcano Dungeon Guide</h2>
+          <p class="section-subtitle" data-i18n="ginger.volcano_subtitle">Challenge high-difficulty dungeon, get precious rewards</p>
+          
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">⚔️</span>
+                <h3 data-i18n="ginger.volcano_req">Entry Conditions</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li data-i18n="ginger.volcano_req_1">Automatically unlocked after unlocking Ginger Island</li>
+                  <li data-i18n="ginger.volcano_req_2">Recommended Combat level 10+</li>
+                  <li data-i18n="ginger.volcano_req_3">Prepare enough food and potions</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">💎</span>
+                <h3 data-i18n="ginger.volcano_items">Items You Can Get</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li data-i18n="ginger.volcano_item_1">Iridium Ore - Most precious mineral</li>
+                  <li data-i18n="ginger.volcano_item_2">Iridium Bar - Craft top-tier equipment</li>
+                  <li data-i18n="ginger.volcano_item_3">Rare artifacts and gems</li>
+                  <li data-i18n="ginger.volcano_item_4">Golden Walnuts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 热带作物 -->
+        <section id="crops" class="content-section">
+          <h2 class="section-title" data-i18n="ginger.crops_title">Ginger Island Features Crop</h2>
+          <p class="section-subtitle" data-i18n="ginger.crops_subtitle">Special planting in tropical climate</p>
+          
+          <div class="info-card">
+            <div class="info-card-content">
+              <table class="data-table">
+                <tr><th data-i18n="ginger.table_crop">Crop</th><th data-i18n="ginger.table_seed_price">Seed Price</th><th data-i18n="ginger.table_grow_days">Growth Days</th><th data-i18n="ginger.table_sell_price">Sell Price</th><th data-i18n="ginger.table_remark">Remarks</th></tr>
+                <tr><td data-i18n="ginger.crop_coconut">🥥 Coconut</td><td>100g</td><td data-i18n="ginger-island.auto6">24 Days</td><td>150g</td><td data-i18n="ginger-island.auto7">Plantable on the west side of the island</td></tr>
+                <tr><td data-i18n="ginger.crop_banana">🍌 Banana</td><td>200g</td><td data-i18n="ginger-island.auto8">28 Days</td><td>150g</td><td data-i18n="ginger-island.auto9">Tropical Fruit</td></tr>
+                <tr><td data-i18n="ginger.crop_pineapple">🍍 Pineapple</td><td>900g</td><td data-i18n="ginger-island.auto10">14 Days</td><td>300g</td><td data-i18n="ginger-island.auto11">High-value Crop</td></tr>
+                <tr><td data-i18n="ginger.crop_mango">🥭 Mango</td><td>500g</td><td data-i18n="ginger-island.auto12">14 Days</td><td>250g</td><td data-i18n="ginger-island.auto13">Requires Island Farmhouse</td></tr>
+                <tr><td data-i18n="ginger.crop_flower">🌺 Flower</td><td data-i18n="ginger-island.auto14">Special</td><td data-i18n="ginger-island.auto15">7 Days</td><td data-i18n="ginger-island.auto16">Can be used for dyeing</td><td data-i18n="ginger-island.auto17">Blooms but bears no fruit</td></tr>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关攻略 -->
+        <section style="margin-bottom: 48px;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="ginger.related_title">Related Guides</h2>
+          <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <a href="mines.html" class="info-card" style="text-decoration: none;">
+              <div class="info-card-header">
+                <span class="info-card-icon">⛏️</span>
+                <h3 class="info-card-title" data-i18n="ginger.related_mines">Mines Adventure</h3>
+              </div>
+              <div class="info-card-content">
+                <p data-i18n="ginger.related_mines_desc">Dungeon Combat Guide</p>
+              </div>
+            </a>
+            <a href="update16.html" class="info-card" style="text-decoration: none;">
+              <div class="info-card-header">
+                <span class="info-card-icon">🎮</span>
+                <h3 class="info-card-title" data-i18n="ginger.related_update">1.6 Version</h3>
+              </div>
+              <div class="info-card-content">
+                <p data-i18n="ginger.related_update_desc">Latest Update Content</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="ginger-island.auto0">© 2026 星露谷物语Guide站 | Stardew Valley Guide</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

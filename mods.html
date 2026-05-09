@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="mods">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语Mod教程 - 安装指南、热门Mod推荐、Mod冲突解决方法">
+  <meta name="keywords" content="星露谷物语, Mod, 安装, Stardew Valley, SMAPI">
+  <title>Mod教程 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主内容区域 -->
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏目录 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="mods.auto29">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#preparation" data-i18n="mods.auto30">🔧 Pre-install Preparation</a></li>
+              <li class="sidebar-item"><a href="#hot-mods" data-i18n="mods.auto31">⭐ Popular Recommended Mods</a></li>
+              <li class="sidebar-item"><a href="#conflict" data-i18n="mods.auto32">⚠️ Mod Conflict Solutions</a></li>
+              <li class="sidebar-item"><a href="#related" data-i18n="mods.auto33">📚 Related Guides</a></li>
+            </ul>
+          </div>
+        </aside>
+        
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/mods/mods_0.jpg" alt="Mod教程" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="mods.auto0">Mod Install Tutorial</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="mods.auto34">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="mods.auto22">Mod Tutorial</span>
+          </div>
+
+          <!-- 页面标题 -->
+
+        <!-- 安装前准备 -->
+        <section id="preparation" class="content-section">
+          <h2 class="section-title" data-i18n="mods.prep">📦 Pre-Installation Setup</h2>
+          <p class="section-subtitle" data-i18n="mods.auto2">StartInstall Mod前的准备工作</p>
+            
+          <div class="info-grid">
+            <div class="info-card animate-on-scroll">
+              <div class="info-card-header">
+                <span class="info-card-icon">📁</span>
+                <h3 data-i18n="mods.location">Installation Location</h3>
+              </div>
+              <div class="info-card-content">
+                <p><strong>Steam版：</strong></p>
+                <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px; margin: 8px 0;">
+                  C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods
+                </code>
+                <p><strong>GOG版：</strong></p>
+                <code style="display: block; background: var(--bg-warm); padding: 8px; border-radius: 4px;">
+                  C:\GOG Games\Stardew Valley\Mods
+                </code>
+              </div>
+            </div>
+            
+            <div class="info-card animate-on-scroll">
+              <div class="info-card-header">
+                <span class="info-card-icon">⚙️</span>
+                <h3 data-i18n="mods.dependencies">Required Dependencies</h3>
+              </div>
+              <div class="info-card-content">
+                <ul class="info-list">
+                  <li><strong>SMAPI</strong> - Mod加载器，必装</li>
+                  <li><strong>Content Patcher</strong> - 框架Mod</li>
+                  <li><strong>SpaceCore</strong> - 兼容性框架</li>
+                </ul>
+                <p style="margin-top: 12px;">下载：<a href="https://smapi.io/" target="_blank">smapi.io</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 热门Mod推荐 -->
+        <section id="hot-mods" class="content-section">
+          <h2 class="section-title" data-i18n="mods.recommend">⭐ Popular Mods</h2>
+          <p class="section-subtitle" data-i18n="mods.auto3">Featured QualityMod Recommended</p>
+          
+          <div class="mod-grid">
+            <div class="mod-card animate-on-scroll">
+              <h4>Stardew Valley Expanded</h4>
+              <p data-i18n="mods.auto4">New maps, NPCs, events and dialogues</p>
+              <span class="mod-tag" data-i18n="mods.auto23">Story Expansion</span>
+            </div>
+            
+            <div class="mod-card animate-on-scroll">
+              <h4>Automate</h4>
+              <p data-i18n="mods.auto5">Auto-collect machine outputs and NPC data</p>
+              <span class="mod-tag" data-i18n="mods.auto24">Quality of Life</span>
+            </div>
+            
+            <div class="mod-card animate-on-scroll">
+              <h4>UI Info Suite</h4>
+              <p data-i18n="mods.auto6">Show NPC positions, Mining Level, Weather and more</p>
+              <span class="mod-tag" data-i18n="mods.auto25">Info Overlay</span>
+            </div>
+            
+            <div class="mod-card animate-on-scroll">
+              <h4>LookUp Anything</h4>
+              <p data-i18n="mods.auto7">Hover to view items andNPC信息</p>
+              <span class="mod-tag" data-i18n="mods.auto26">Helper Guides</span>
+            </div>
+            
+            <div class="mod-card animate-on-scroll">
+              <h4>Tractor Mod</h4>
+              <p data-i18n="mods.auto8">Buy tractors for auto farming & harvesting</p>
+              <span class="mod-tag" data-i18n="mods.auto27">Farming Assistance</span>
+            </div>
+            
+            <div class="mod-card animate-on-scroll">
+              <h4>elle's Mods</h4>
+              <p data-i18n="mods.auto9">New furniture, decorations and clothing</p>
+              <span class="mod-tag" data-i18n="mods.auto28">Decoration & Cosmetics</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mod冲突 -->
+        <section id="conflict" class="content-section">
+          <h2 class="section-title" data-i18n="mods.conflicts">⚠️ Resolving Mod Conflicts</h2>
+          <p class="section-subtitle" data-i18n="mods.auto10">Solve common mod conflict issues</p>
+          
+          <div class="info-card">
+            <div class="info-card-content">
+              <h4 data-i18n="mods.conflict_reason">Common Conflict Causes</h4>
+              <ul class="info-list">
+                <li data-i18n="mods.auto14">Multiple mods editing the same file</li>
+                <li data-i18n="mods.auto15">SMAPI version incompatibility</li>
+                <li data-i18n="mods.auto16">Missing mod dependencies</li>
+                <li data-i18n="mods.auto17">Modifying outdated game files</li>
+              </ul>
+              
+              <h4 style="margin-top: 16px;" data-i18n="mods.conflict_solution">Solutions</h4>
+              <ul class="info-list">
+                <li data-i18n="mods.auto18">Use mod manager to check conflicts</li>
+                <li data-i18n="mods.auto19">Make sure SMAPI is the latest version</li>
+                <li data-i18n="mods.auto20">Check compatibility list in mod description</li>
+                <li data-i18n="mods.auto21">Install only a few mods at a time for testing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关攻略 -->
+        <section style="margin-bottom: 48px;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="mods.auto1">📚 Related Guides</h2>
+          <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <a href="beginner.html" class="info-card" style="text-decoration: none;">
+              <div class="info-card-header">
+                <span class="info-card-icon">📖</span>
+                <h3 class="info-card-title" data-i18n="mods.related_beginner">Beginner Guide</h3>
+              </div>
+              <div class="info-card-content">
+                <p data-i18n="mods.auto11">Basic game tutorial, learn Stardew Valley from scratch</p>
+              </div>
+            </a>
+            <a href="multiplayer.html" class="info-card" style="text-decoration: none;">
+              <div class="info-card-header">
+                <span class="info-card-icon">👥</span>
+                <h3 class="info-card-title" data-i18n="mods.related_multiplayer">Multiplayer Tutorial</h3>
+              </div>
+              <div class="info-card-content">
+                <p data-i18n="mods.auto12">Co-op gameplay, run the farm with friends</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="mods.auto13">© 2026 星露谷物语Guide站 | Stardew Valley Guide</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

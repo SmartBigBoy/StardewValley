@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page="achievements">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="星露谷物语成就系统攻略 - 所有成就达成条件与完成指南">
+  <meta name="keywords" content="星露谷物语, 成就, 奖杯, 全成就, Stardew Valley">
+  <title>成就系统 | 星露谷物语攻略站</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png"
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language">EN</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="achievements.sidebar.title">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#overview" data-i18n="achievements.section.overview">Achievement Overview</a></li>
+              <li class="sidebar-item"><a href="#farming" data-i18n="achievements.section.farming">Farming Achievement</a></li>
+              <li class="sidebar-item"><a href="#mining" data-i18n="achievements.section.mining">⛏️ Mining Achievement</a></li>
+              <li class="sidebar-item"><a href="#fishing" data-i18n="achievements.section.fishing">Fishing Achievement</a></li>
+              <li class="sidebar-item"><a href="#social" data-i18n="achievements.section.social">💬 Social Achievements</a></li>
+              <li class="sidebar-item"><a href="#special" data-i18n="achievements.section.special">⭐ Special Achievements</a></li>
+              <li class="sidebar-item"><a href="#tips" data-i18n="achievements.section.tips">💡 Completion Tips</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/achievements/achievement_0.jpg" alt="成就系统" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="achievements.banner.title">🏆 Achievements Guide</h1>
+            </div>
+          </div>
+          
+          <!-- 面包屑 -->
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="achievements.breadcrumb.home">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="achievements.breadcrumb.current">Achievement System</span>
+          </div>
+
+          <!-- 页面标题 -->
+
+          <!-- 成就概述 -->
+          <section id="overview" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.section.overview">Achievement Overview</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card" style="border-left: 4px solid var(--primary);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏆</span>
+                  <h3 class="info-card-title" data-i18n="achievements.overview.system.title">Achievement System</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.overview.system.desc1">Stardew Valley has 39 achievements. Completing all achievements unlocks special rewards including exclusive content!</p>
+                  <ul class="info-list">
+                    <li data-i18n="achievements.overview.system.desc2">Achievements are divided into categories: Farming, Mining, Fishing, Social, Adventure, etc.</li>
+                    <li data-i18n="achievements.overview.system.desc3">Completing achievements unlocks hidden content and rewards</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card" style="border-left: 4px solid var(--summer);">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎯</span>
+                  <h3 class="info-card-title" data-i18n="achievements.overview.reward.title">Achievement Rewards</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.overview.reward.desc1">After completing all achievements:</p>
+                  <ul class="info-list">
+                    <li data-i18n="achievements.overview.reward.item1">Unlock the Achievement Showcase</li>
+                    <li data-i18n="achievements.overview.reward.item2">Get the unique Green Rain Jacket</li>
+                    <li data-i18n="achievements.overview.reward.item3">Unlock the hidden ending</li>
+                    <li data-i18n="achievements.overview.reward.item4">Unlock "Legendary" difficulty mode</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 农业成就 -->
+          <section id="farming" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.section.farming">Farming Achievement</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="achievements.farming.subtitle">Become the best farmer in Stardew Valley</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌱</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.harvest.title">First Harvest</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.farming.harvest.desc">Harvest your first crop</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏡</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.self-sufficient.title">Self-Sufficient</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.farming.self-sufficient.desc">Earn 50,000g from selling crops</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏭</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.e1">Entrepreneur</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto5">Earn 250,000 Gold by selling artisan products</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌳</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.e2">Orchard</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto6">Have 6 Different Types of Fruit Trees</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏠</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.h3">Master Farmer</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto7">Harvest Crops Worth 1,000,000 Gold</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎨</span>
+                  <h4 class="info-card-title" data-i18n="achievements.farming.e3">Landscape Designer</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto8">Have50Furniture or 20OutdoorFurniture</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 采矿成就 -->
+          <section id="mining" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.auto0">⛏️ Mining Achievement</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="achievements.auto9">DeepUnderground，ExploreNoneEndlessTreasure</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🪨</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h1">Miner\</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto10">Mine your first block of ore in The Mines</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💎</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h2">Gemologist</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto11">Find 25 Different Types of Gem</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🗺️</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h3">Father\</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto12">ReachThe Mines100Floor</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌀</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h4">A New Friend</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto13">ReachThe Mines120Floor</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⚡</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h5">Mining Master</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto14">MiningSkillReach10Level</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌈</span>
+                  <h4 class="info-card-title" data-i18n="achievements.mining.h6">Gem Collector</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto15">Collect all types of gems</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 钓鱼成就 -->
+          <section id="fishing" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.auto1">Fishing Achievement</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="achievements.auto16">Become the best fisherman in Stardew Valley</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐟</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h1">Fishy Business</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto17">CatchYourFirstFish</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🦈</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h2">Master Angler</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto18">Fish of CatchAllType (a total of 65 types)</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👑</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h3">Fishing Master</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto19">FishingSkillReach10Level</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎯</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h4">Perfect</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto20">Catch a Fish with a Perfect rating</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌙</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h5">Night Owl</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto21">At After Midnight Fishing</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏆</span>
+                  <h4 class="info-card-title" data-i18n="achievements.fishing.h6">Legendary Fisher</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto22">Catch a Legendary Fish</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 社交成就 -->
+          <section id="social" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.auto2">💬 Social Achievement</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="achievements.auto23">Become Stardew Valley Most Popular Person</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👋</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h1">Hello, Old Friend</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto24">Talk to 10 Different People</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌟</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h2">Networking</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto25">Become Friends with Everyone in Town</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💒</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h3">First Date</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto26">Have approximately 4 Hearts with a Person</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">💍</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h4">Movin\</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto27">Marry a Person</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">👨‍👩‍👧</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h5">Do You Come Here Often?</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto28">Adopt or Have一Children</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏠</span>
+                  <h4 class="info-card-title" data-i18n="achievements.social.h6">Full House</h4>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto29">HaveMaxSize Family (2 Children)</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 特殊成就 -->
+          <section id="special" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.auto3">⭐ SpecialAchievement</h2>
+            <p style="margin-bottom: 24px; color: var(--text-secondary);" data-i18n="achievements.auto30">AchieveSpecialMilestone</p>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📊</span>
+                  <h3 class="info-card-title" data-i18n="achievements.special.legend">Legendary Achievements</h3>
+                </div>
+                <div class="info-card-content">
+                  <ul class="info-list">
+                    <li>
+  <span data-i18n="achievements.special.legend1">Legend</span> 
+
+
+                    </li>
+                    
+<li><span data-i18n="achievements.special.legend2">Perfectionism</span> 
+</li>
+                    <li><span data-i18n="achievements.special.legend3">Full Collection</span> - </li>
+                    <li><span data-i18n="achievements.special.legend4">Complete Collection</span> - </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🎮</span>
+                  <h3 class="info-card-title" data-i18n="achievements.special.rewards">Achievement Rewards</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto31">Complete AllAchievementAfter:</p>
+                  <ul class="info-list">
+                    <li data-i18n="achievements.auto37">Achievements Unlocked Display Case</li>
+                    <li data-i18n="achievements.auto38">GetUniqueGreen Rain Coat</li>
+                    <li data-i18n="achievements.auto39">UnlockHidden Ending</li>
+                    <li data-i18n="achievements.auto40">Unlock"Legendary"Game Mode</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 全成就小贴士 -->
+          <section id="tips" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="achievements.auto4">💡 All Achievement Tips</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📅</span>
+                  <h3 class="info-card-title" data-i18n="achievements.tips.birthday">Track Birthdays</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto32">Remember EachNPC Birthday，Birthday gift gives double Hearts！</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">📝</span>
+                  <h3 class="info-card-title" data-i18n="achievements.tips.guide">Use Guide</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto33">When you cannot find an item，referencing the guide website is very helpful。</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">⏰</span>
+                  <h3 class="info-card-title" data-i18n="achievements.tips.planning">Planning Time</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto34">Some achievements require specific seasons//Time to trigger，Planning ahead is important。</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🛒</span>
+                  <h3 class="info-card-title" data-i18n="achievements.tips.save">Save Money</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="achievements.auto35">Do not waste money，Save resources for the most needed achievements。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="achievements.auto36">© 2026 Stardew ValleyGuide | Stardew ValleyGuide</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" data-page="crafting">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制造与烹饪 | 星露谷物语攻略站</title>
+  <meta name="description" content="星露谷物语制造与烹饪指南，包含重要配方、设备使用、产物加工">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon/Animals_Icon.png"
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo">🍁</span>
+        <span data-i18n="nav.home">Stardew Valley Guide</span>
+      </a>
+      
+      <ul class="navbar-nav"><!-- 季节攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="seasons.html" class="nav-link" data-i18n="nav.seasons">Seasons</a>
+          <div class="dropdown-menu">
+            <a href="seasons.html" data-i18n="nav.seasons">Seasons</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+          </div>
+        </li>
+        
+        <!-- 技能系统下拉 -->
+        <li class="nav-dropdown">
+          <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <div class="dropdown-menu">
+            <a href="skills.html" data-i18n="nav.skills">Skills</a>
+            <a href="combat.html" data-i18n="nav.combat">Combat</a>
+            <a href="fishing.html" data-i18n="nav.fishing">Fishing</a>
+          </div>
+        </li>
+        
+        <!-- NPC攻略下拉 -->
+        <li class="nav-dropdown">
+          <a href="npc.html" class="nav-link" data-i18n="nav.npc">NPC Guide</a>
+          <div class="dropdown-menu">
+            <a href="npc.html" data-i18n="nav.npc">NPC Guide</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 农场规划下拉 -->
+        <li class="nav-dropdown">
+          <a href="farm.html" class="nav-link" data-i18n="nav.farm">Farm Layout</a>
+          <div class="dropdown-menu">
+            <a href="farm.html" data-i18n="nav.farm">Farm Layout</a>
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+          </div>
+        </li>
+        
+        <!-- 矿洞探险下拉 -->
+        <li class="nav-dropdown">
+          <a href="mines.html" class="nav-link" data-i18n="nav.mines">Mining</a>
+          <div class="dropdown-menu">
+            <a href="mines.html" data-i18n="nav.mines">Mining</a>
+            <a href="desert.html" data-i18n="nav.desert">Desert</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+          </div>
+        </li>
+        
+        <!-- 更多下拉 -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link" data-i18n="nav.group.more">More</a>
+          <div class="dropdown-menu">
+            <a href="crafting.html" data-i18n="nav.crafting">Crafting</a>
+            <a href="beginner.html" data-i18n="nav.beginner">Beginner</a>
+            <a href="community-center.html" data-i18n="nav.community">Community Center</a>
+            <a href="ginger-island.html" data-i18n="nav.gingerIsland">Ginger Island</a>
+            <a href="money.html" data-i18n="nav.money">Money Guide</a>
+            <a href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+            <a href="mods.html" data-i18n="nav.mods">Mods</a>
+            <a href="multiplayer.html" data-i18n="nav.multiplayer">Multiplayer</a>
+            <a href="update16.html" data-i18n="nav.update16">Version 1.6</a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="lang-toggle" aria-label="Switch language" title="Switch Language" >中文</button>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+    </div>
+  </nav>
+
+  <main style="padding-top: 84px;">
+    <div class="container">
+      <div class="content-grid">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-title" data-i18n="crafting.auto161">Table of Contents</div>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="#furnace" data-i18n="crafting.auto162">🔥 Furnace and Ore Processing</a></li>
+              <li class="sidebar-item"><a href="#machines" data-i18n="crafting.auto163">⚙ Production Equipment</a></li>
+              <li class="sidebar-item"><a href="#crafting" data-i18n="crafting.auto164">Crafting Formula</a></li>
+              <li class="sidebar-item"><a href="#cooking" data-i18n="crafting.auto165">Cooking Recipe</a></li>
+              <li class="sidebar-item"><a href="#tips" data-i18n="crafting.auto166">💡 Processing Tips</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <div class="main-content">
+          <!-- 页面横幅 -->
+          <div class="page-banner">
+            <img src="images/crafting/crafting-banner.jpg" alt="制造与烹饪" loading="lazy">
+            <div class="page-banner-overlay">
+              <h1 class="page-banner-title" data-i18n="crafting.auto0">🔨 Manufacturing and Cooking</h1>
+            </div>
+          </div>
+          
+          <div class="breadcrumb">
+            <a href="index.html" data-i18n="crafting.auto167">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span data-i18n="crafting.auto160">Crafting and Cooking</span>
+          </div>
+
+
+          <!-- 熔炉与矿石加工 -->
+          <section id="furnace" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="crafting.auto1">🔥 Furnace and Ore Processing</h2>
+
+            <div class="info-card" style="border-left: 4px solid #ff5722; margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p><strong>熔炉 Furnace</strong></p>
+                <p style="margin-top: 8px;" data-i18n="crafting.auto10">Basic Ore Processing equipment, used to smelt Ore into Bars.</p>
+                <p style="margin-top: 8px;"><strong>解锁方式：</strong>采矿Lv.3配方 / 或煤矿森林的熔炉</p>
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-i18n="crafting.auto106">Ore</th>
+                  <th data-i18n="crafting.auto107">× Quantity</th>
+                  <th>→</th>
+                  <th data-i18n="crafting.auto108">Bar</th>
+                  <th data-i18n="crafting.auto109">Firing Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="crafting.auto15">🪨 Copper Ore</td><td>5</td><td>→</td><td data-i18n="crafting.auto16">Copper Ingot</td><td data-i18n="crafting.auto17">30 Seconds</td></tr>
+                <tr><td data-i18n="crafting.auto18">🪨 Iron Ore</td><td>5</td><td>→</td><td data-i18n="crafting.auto19">⬜ Iron Ingot</td><td data-i18n="crafting.auto20">60 Seconds</td></tr>
+                <tr><td data-i18n="crafting.auto21">🪨 Gold Ore</td><td>5</td><td>→</td><td data-i18n="crafting.auto22">⭐ Gold Ingot</td><td data-i18n="crafting.auto23">90 Seconds</td></tr>
+                <tr><td data-i18n="crafting.auto24">🪨 Iridium Ore</td><td>5</td><td>→</td><td data-i18n="crafting.auto25">Iridium Ingot</td><td data-i18n="crafting.auto26">120 Seconds</td></tr>
+                <tr><td data-i18n="crafting.auto27">🪨 Coal</td><td>1</td><td>→</td><td data-i18n="crafting.auto28">No product</td><td data-i18n="crafting.auto29">Used as fuel</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 生产设备 -->
+          <section id="machines" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="crafting.auto2">⚙ ️ Production Equipment</h2>
+
+            <div class="card-grid">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍯</span>
+                  <h3 class="info-card-title" data-i18n="crafting.preserves_jar">Preserves Jar</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>水果→果酱/果酒</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto128">Jelly: Approx. 2× Selling Price</li>
+                    <li data-i18n="crafting.auto129">Wine: Approx. 3× Selling Price (including Artisan bonus)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×25 + 石材×10 + 煤炭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧪</span>
+                  <h3 class="info-card-title" data-i18n="crafting.keg">Keg</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>农产品→加工食品</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto130">Hops → Beer: Approx. 2×</li>
+                    <li data-i18n="crafting.auto131">Blueberry → Blueberry Wine: Approx. 3×</li>
+                    <li data-i18n="crafting.auto132">Honey → Honey Wine: Approx. 3×</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×30 + 石材×30 + 铁锭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🧀</span>
+                  <h3 class="info-card-title" data-i18n="crafting.cheese_press">Cheese Press</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>牛奶→奶酪</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto133">Cow Milk (125g) → Cheese (230g)</li>
+                    <li data-i18n="crafting.auto134">Goat Milk (225g) → Goat Cheese (400g)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×45 + 石材×45 + 硬木×10</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🥚</span>
+                  <h3 class="info-card-title" data-i18n="crafting.mayo_machine">Mayonnaise Machine Mayo Machine</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>鸡蛋→蛋黄酱</p>
+                  <p style="margin-top: 8px;"><strong>产物价值：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto135">Chicken Egg (50g) → Mayonnaise (215g)</li>
+                    <li data-i18n="crafting.auto136">Large Chicken Egg (95g) → Large Mayonnaise (385g)</li>
+                    <li data-i18n="crafting.auto137">Dinosaur Egg → Dinosaur Mayonnaise (800g)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×15 + 石材×15 + 硬木×5</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🌱</span>
+                  <h3 class="info-card-title" data-i18n="crafting.seed_maker">Seed生产器 Seed Maker</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>作物→种子</p>
+                  <p style="margin-top: 8px;"><strong>工作流程：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto138">Place a Crop</li>
+                    <li data-i18n="crafting.auto139">1 - 2 Days after get 2 - 3 same Seeds</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×25 + 石材×25 + 煤炭×10 + 金锭×1</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🐝</span>
+                  <h3 class="info-card-title" data-i18n="crafting.bee_house">Bee House Bee House</h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>功能：</strong>产蜂蜜</p>
+                  <p style="margin-top: 8px;"><strong>工作流程：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto140">Place after Bee Auto-Foraging Nectar</li>
+                    <li data-i18n="crafting.auto141">4DaysafterHarvestHoney</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>制作：</strong>木材×40 + 石材×8 + 煤炭×1 + 蜂巢×1</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 制造配方 -->
+          <section id="crafting" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="crafting.auto3">Important Crafting Formula</h2>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;" data-i18n="crafting.auto6">Agriculture Related</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-i18n="crafting.auto110">Item</th>
+                  <th data-i18n="crafting.auto111">Materials</th>
+                  <th data-i18n="crafting.auto112">Features</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="crafting.auto30">💧 Sprinkler</td><td data-i18n="crafting.auto31">Copper Ingot×1 + Iron Ingot×1</td><td data-i18n="crafting.auto32">Automatic watering (4 tiles)</td></tr>
+                <tr><td data-i18n="crafting.auto33">💧 Quality Sprinkler</td><td data-i18n="crafting.auto34">Iron Ingot×1 + Gold Ingot×1</td><td data-i18n="crafting.auto35">Auto Watering (8 Tiles)</td></tr>
+                <tr><td data-i18n="crafting.auto36">💧 Iridium Sprinkler</td><td data-i18n="crafting.auto37">Iridium Ingot×1 + Gold Ingot×1</td><td data-i18n="crafting.auto38">Auto Watering (24 Tiles)</td></tr>
+                <tr><td data-i18n="crafting.auto39">🌱 Basic Fertilizer</td><td data-i18n="crafting.auto40">Ore Shard x2</td><td data-i18n="crafting.auto41">Increase High Crop Quality Probability</td></tr>
+                <tr><td data-i18n="crafting.auto42">🌱 Advanced Fertilizer</td><td data-i18n="crafting.auto43">Ore Shard x2</td><td data-i18n="crafting.auto44">Higher Probability of High Quality Crops</td></tr>
+                <tr><td data-i18n="crafting.auto45">💧 Basic Moisture Soil</td><td data-i18n="crafting.auto46">Stone x2   Fiber x3</td><td data-i18n="crafting.auto47">Decrease Watering Requirement</td></tr>
+                <tr><td data-i18n="crafting.auto48">📦 Chest</td><td data-i18n="crafting.auto49">Wood x50   Stone x20</td><td data-i18n="crafting.auto50">Store Item</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;" data-i18n="crafting.auto7">The Mines Related</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-i18n="crafting.auto113">Item</th>
+                  <th data-i18n="crafting.auto114">Materials</th>
+                  <th data-i18n="crafting.auto115">Features</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="crafting.auto51">🪜 Ladder</td><td data-i18n="crafting.auto52">Stone x10</td><td data-i18n="crafting.auto53">Jump to Next Floor</td></tr>
+                <tr><td data-i18n="crafting.auto54">💣 Bomb</td><td data-i18n="crafting.auto55">Iron Bar x1   Coal x1</td><td data-i18n="crafting.auto56">Blow up Rocks Surrounding Weeks</td></tr>
+                <tr><td data-i18n="crafting.auto57">💣 Super Large Bomb</td><td data-i18n="crafting.auto58">Gold Ingot×1 + Iridium Ingot×1</td><td data-i18n="crafting.auto59">Bomb with Larger Range</td></tr>
+                <tr><td data-i18n="crafting.auto60">🔮 Crystalarium Duplicator</td><td data-i18n="crafting.auto61">Stone x25   Bar x2</td><td data-i18n="crafting.auto62">Gem Replicator</td></tr>
+                <tr><td data-i18n="crafting.auto63">🔥 Coal Kiln</td><td data-i18n="crafting.auto64">Wood x20   Gold Bar x2</td><td data-i18n="crafting.auto65">Wood → Coal</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- 烹饪食谱 -->
+          <section id="cooking" style="margin-bottom: 48px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="crafting.auto4">Cooking Recipe</h2>
+
+            <div class="info-card" style="margin-bottom: 20px;">
+              <div class="info-card-content">
+                <p data-i18n="crafting.auto11">Cooking can CraftingRestoreEnergyandHealth food, some recipes also have additional bonus effects!</p>
+                <p style="margin-top: 8px;"><strong>解锁方式：</strong>阅读电视食谱、村民赠送、NPC教授</p>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;" data-i18n="crafting.auto8">High Value Recipes Recommended</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-i18n="crafting.auto116">Recipe</th>
+                  <th data-i18n="crafting.auto117">EN Name</th>
+                  <th data-i18n="crafting.auto118">Materials</th>
+                  <th data-i18n="crafting.auto119">Energy</th>
+                  <th data-i18n="crafting.auto120">Health</th>
+                  <th data-i18n="crafting.auto121">Sell Price</th>
+                  <th>Buff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="crafting.auto66">🍲 Coconut Soup</td><td>Coconut Soup</td><td data-i18n="crafting.auto67">Coconut Shrimp Mushroom</td><td>+175</td><td>+78</td><td>175g</td><td data-i18n="crafting.auto68">Farming 3</td></tr>
+                <tr><td data-i18n="crafting.auto69">🥘 Sweet and Sour Sauce</td><td>Chili Pepper Curry</td><td data-i18n="crafting.auto70">Tomato Sugar</td><td>+115</td><td>+45</td><td>175g</td><td data-i18n="crafting.auto71">Mining+3</td></tr>
+                <tr><td data-i18n="crafting.auto72">🍕 Pizza</td><td>Pizza</td><td data-i18n="crafting.auto73">Flour Tomato Cheese</td><td>+175</td><td>+60</td><td>300g</td><td>无</td></tr>
+                <tr><td data-i18n="crafting.auto74">🍜 Miso Soup</td><td>Miso Soup</td><td data-i18n="crafting.auto75">Seaweed Tofu</td><td>+75</td><td>+33</td><td>120g</td><td data-i18n="crafting.auto76">Fishing+2</td></tr>
+                <tr><td data-i18n="crafting.auto77">🍗 Omelette</td><td>Egg Drop Soup</td><td data-i18n="crafting.auto78">Chicken Egg Seaweed</td><td>+100</td><td>+45</td><td>125g</td><td data-i18n="crafting.auto79">Defense 1</td></tr>
+                <tr><td data-i18n="crafting.auto80">🥗 Vegetable Platter</td><td>Vegetable Medley</td><td data-i18n="crafting.auto81">Tomato Pumpkin</td><td>+165</td><td>+74</td><td>120g</td><td>无</td></tr>
+                <tr><td data-i18n="crafting.auto82">🍳 Maple Syrup Waffle</td><td>Maple Bar</td><td data-i18n="crafting.auto83">Flour Sugar Maple Syrup</td><td>+90</td><td>+40</td><td>150g</td><td data-i18n="crafting.auto84">Luck 2</td></tr>
+                <tr><td data-i18n="crafting.auto85">🐟 Citrus-Marinated Fish</td><td>Ceviche</td><td data-i18n="crafting.auto86">Any Fish Coconut</td><td>+75</td><td>+33</td><td>125g</td><td data-i18n="crafting.auto87">Fishing+2</td></tr>
+                <tr><td data-i18n="crafting.auto88">🥘 Salmon Fish Dinner</td><td>Salmon Dinner</td><td data-i18n="crafting.auto89">Salmon Fish Spinach Herbs</td><td>+125</td><td>+56</td><td>175g</td><td data-i18n="crafting.auto90">Defense 3</td></tr>
+                <tr><td data-i18n="crafting.auto91">🍲 Crab Roe Baked Rice</td><td>Crab Cakes</td><td data-i18n="crafting.auto92">Crab Egg Flour</td><td>+275</td><td>+112</td><td>300g</td><td data-i18n="crafting.auto93">Mining+4</td></tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size: 1.2rem; margin: 24px 0 16px;" data-i18n="crafting.auto9">High Efficiency Energy Recipes (Mining Recommended)</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-i18n="crafting.auto122">Recipe</th>
+                  <th data-i18n="crafting.auto123">Materials</th>
+                  <th data-i18n="crafting.auto124">Energy</th>
+                  <th data-i18n="crafting.auto125">Health</th>
+                  <th data-i18n="crafting.auto126">Mining Buff</th>
+                  <th data-i18n="crafting.auto127">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="crafting.auto94">🥘 Sweet and Sour Sauce</td><td data-i18n="crafting.auto95">Tomato Sugar</td><td>+115</td><td>+45</td><td>+3</td><td data-i18n="crafting.auto96">5 Minutes</td></tr>
+                <tr><td data-i18n="crafting.auto97">🍲 Crab Roe Baked Rice</td><td data-i18n="crafting.auto98">Crab Egg Flour</td><td>+275</td><td>+112</td><td>+4</td><td data-i18n="crafting.auto99">7 Minutes</td></tr>
+                <tr><td data-i18n="crafting.auto100">🍲 Coconut Soup</td><td data-i18n="crafting.auto101">Coconut Shrimp Mushroom</td><td>+175</td><td>+78</td><td>+3</td><td data-i18n="crafting.auto102">30 Minutes</td></tr>
+                <tr><td data-i18n="crafting.auto103">🍲 Miner’s Special</td><td data-i18n="crafting.auto104">Cave Radish x2 Sugar Cow Milk</td><td>+125</td><td>+50</td><td>+3</td><td data-i18n="crafting.auto105">5 Minutes</td></tr>
+              </tbody>
+            </table>
+
+            <div class="card-grid" style="margin-top: 24px;">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍲</span>
+                  <h3 class="info-card-title" data-i18n="crafting.cooking.coconut_soup">Coconut Soup/h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>椰子 + 虾 + 普通蘑菇</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto142">Energy +175</li>
+                    <li data-i18n="crafting.auto143">Health +78</li>
+                    <li data-i18n="crafting.auto144">FarmingSkill+3 (30Minutes)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>教授NPC：</strong>艾米丽(7心后)</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🥘</span>
+                  <h3 class="info-card-title" data-i18n="crafting.cooking.rice_pudding">Chutney/h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>番茄 + 糖</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto145">Energy +115</li>
+                    <li data-i18n="crafting.auto146">Health +45</li>
+                    <li data-i18n="crafting.auto147">MiningSkill+3 (5Minutes)</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>获取：</strong>松尾的食谱</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍕</span>
+                  <h3 class="info-card-title" data-i18n="crafting.cooking.pizza">Pizza/h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>面粉 + 番茄 + 奶酪</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto148">Energy +175</li>
+                    <li data-i18n="crafting.auto149">Health +60</li>
+                  </ul>
+                  <p style="margin-top: 8px;"><strong>售价：</strong>300g</p>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍯</span>
+                  <h3 class="info-card-title" data-i18n="crafting.cooking.miners_lunch">For Miners/h3>
+                </div>
+                <div class="info-card-content">
+                  <p><strong>材料：</strong>洞穴胡萝卜×2 + 糖×1 + 牛奶×1</p>
+                  <p style="margin-top: 8px;"><strong>效果：</strong></p>
+                  <ul style="padding-left: 20px;">
+                    <li data-i18n="crafting.auto150">Energy +125</li>
+                    <li data-i18n="crafting.auto151">Health +50</li>
+                    <li data-i18n="crafting.auto152">MiningSkill+3 (5Minutes)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 加工技巧 -->
+          <section id="tips">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px;" data-i18n="crafting.auto5">💡 Processing Tips</h2>
+
+            <div class="tip-box">
+              <span class="tip-box-icon">💰</span>
+              <div class="tip-box-content">
+                <span data-i18n="crafting.machines.tip">Best profit chain: Blueberry → Keg → Blueberry Wine → Preserves Jar → Sparkling Wine (~4x profit with Artisan)</span>
+              </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 24px;">
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🍇</span>
+                  <h3 class="info-card-title" data-i18n="crafting.wine_ranking">Wine Profit Ranking/h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="crafting.auto12">Profit ranking using a small bucket of Wine (after Artisan bonus):</p>
+                  <ol style="padding-left: 20px; margin-top: 8px;">
+                    <li data-i18n="crafting.auto153">Starfruit Wine - 3960g/serving</li>
+                    <li data-i18n="crafting.auto154">Blueberry Wine - 2310g/serving</li>
+                    <li data-i18n="crafting.auto155">Cranberry Wine - 1890g/serving</li>
+                    <li data-i18n="crafting.auto156">Grape Wine - 1650g/serving</li>
+                  </ol>
+                </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="info-card-header">
+                  <span class="info-card-icon">🏭</span>
+                  <h3 class="info-card-title" data-i18n="crafting.farm_layout">Farm Layout Suggestion</h3>
+                </div>
+                <div class="info-card-content">
+                  <p data-i18n="crafting.auto13">It is recommended to plan a dedicated Processing area on the Farm:</p>
+                  <ul style="padding-left: 20px; margin-top: 8px;">
+                    <li data-i18n="crafting.auto157">Place multiple small barrels together (near the Shipping Box)</li>
+                    <li data-i18n="crafting.auto158">Place Brewing barrels a bit farther away (longer Crafting time)</li>
+                    <li data-i18n="crafting.auto159">Ensure aesthetics as well as convenient Harvest</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-box warning" style="margin-top: 24px;">
+              <span class="tip-box-icon">⚠️</span>
+              <div class="tip-box-content">
+                <span data-i18n="crafting.keg.tip">Kegs and Preserves Jars need manual collection to continue production. Check daily!</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="crafting.auto14">© 2026 Stardew Valley Guide site | Made with 💚 for Stardew Valley fans</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+<!-- 网站统计分析 - 请访问 https://dash.cloudflare.com/account/analytics 申请免费的 Cloudflare Web Analytics token，替换下面的 data-cf-beacon token 值 -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CLOUDFLARE_TOKEN"}'></script>
+</body>
+</html>
