@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss战指南 | 双人成行攻略站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <div id="particles-bg"></div>
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="logo-text">双人成行<span class="logo-sub">攻略站</span></span>
+            </a>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="chapters.html" class="nav-link">章节攻略</a>
+                <a href="bosses.html" class="nav-link active">Boss战</a>
+                <a href="minigames.html" class="nav-link">小游戏</a>
+                <a href="tips.html" class="nav-link">配合技巧</a>
+            </nav>
+            
+            <button class="search-toggle" id="searchToggle" aria-label="搜索">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+            </button>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" class="search-input" id="searchInput" placeholder="搜索章节、Boss、小游戏..." autocomplete="off">
+                    <button class="search-close" id="searchClose">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="search-body">
+                <div class="search-tags">
+                    <span class="search-tag-label">热门搜索：</span>
+                    <button class="search-tag" data-search="棚屋">棚屋</button>
+                    <button class="search-tag" data-search="蜂后">蜂后</button>
+                    <button class="search-tag" data-search="小游戏">小游戏</button>
+                    <button class="search-tag" data-search="时钟">时钟</button>
+                    <button class="search-tag" data-search="配合">配合技巧</button>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main page-main">
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>Boss战指南</h1>
+                <p>11个Boss完整打法与攻击模式解析</p>
+            </div>
+        </section>
+
+        <section class="bosses-grid-section">
+            <div class="bosses-grid" id="bossesGrid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>双人成行攻略站</span>
+                </div>
+                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>攻略分类</h4>
+                    <a href="chapters.html">章节攻略</a>
+                    <a href="bosses.html">Boss打法</a>
+                    <a href="minigames.html">小游戏</a>
+                    <a href="tips.html">配合技巧</a>
+                </div>
+                <div class="footer-column">
+                    <h4>章节</h4>
+                    <a href="chapters.html#shed">棚屋</a>
+                    <a href="chapters.html#tree">大树</a>
+                    <a href="chapters.html#rose">罗斯的房间</a>
+                    <a href="chapters.html#clock">布谷鸟钟</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 双人成行攻略站. 本网站仅供学习交流使用</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderBosses();
+        });
+        
+        function renderBosses() {
+            const grid = document.getElementById('bossesGrid');
+            grid.innerHTML = gameData.bosses.map(boss => {
+                const typeColors = {
+                    '简单': '#10B981',
+                    '中等': '#F59E0B',
+                    '困难': '#EF4444'
+                };
+                
+                return `
+                    <div class="boss-card" id="${boss.id}">
+                        <div class="boss-header">
+                            <div class="boss-avatar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="boss-info">
+                                <h3>${boss.name}</h3>
+                                <span class="boss-chapter">${boss.chapter}</span>
+                                <span class="boss-difficulty" style="background: ${typeColors[boss.difficulty]}20; color: ${typeColors[boss.difficulty]};">
+                                    ${boss.difficulty}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="boss-phases">
+                            <h4>战斗阶段</h4>
+                            ${boss.phases.map(phase => `
+                                <div class="phase-item">
+                                    <h5>${phase.name}</h5>
+                                    <div class="phase-attacks">
+                                        ${phase.attacks.map(attack => `<span class="attack-tag">${attack}</span>`).join('')}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="boss-strategy">
+                            <h4>攻略要点</h4>
+                            <p>${boss.strategy}</p>
+                        </div>
+                        <div class="boss-tips">
+                            <h4>小技巧</h4>
+                            <p>${boss.tips}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
+</body>
+</html>

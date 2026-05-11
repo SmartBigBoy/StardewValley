@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配合技巧 | 双人成行攻略站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <div id="particles-bg"></div>
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="logo-text">双人成行<span class="logo-sub">攻略站</span></span>
+            </a>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="chapters.html" class="nav-link">章节攻略</a>
+                <a href="bosses.html" class="nav-link">Boss战</a>
+                <a href="minigames.html" class="nav-link">小游戏</a>
+                <a href="tips.html" class="nav-link active">配合技巧</a>
+            </nav>
+            
+            <button class="search-toggle" id="searchToggle" aria-label="搜索">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+            </button>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" class="search-input" id="searchInput" placeholder="搜索章节、Boss、小游戏..." autocomplete="off">
+                    <button class="search-close" id="searchClose">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="search-body">
+                <div class="search-tags">
+                    <span class="search-tag-label">热门搜索：</span>
+                    <button class="search-tag" data-search="棚屋">棚屋</button>
+                    <button class="search-tag" data-search="蜂后">蜂后</button>
+                    <button class="search-tag" data-search="小游戏">小游戏</button>
+                    <button class="search-tag" data-search="时钟">时钟</button>
+                    <button class="search-tag" data-search="配合">配合技巧</button>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main page-main">
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>配合技巧</h1>
+                <p>双人合作核心要点与章节避坑指南，让通关效率提升90%</p>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <div class="tips-categories">
+                <button class="tip-category-btn active" data-category="all">全部</button>
+                <button class="tip-category-btn" data-category="核心技巧">核心技巧</button>
+                <button class="tip-category-btn" data-category="章节避坑">章节避坑</button>
+            </div>
+            
+            <div class="tips-list" id="tipsList"></div>
+        </section>
+
+        <section class="tips-highlight-section">
+            <div class="highlight-container">
+                <h2>四大万能技巧</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 11l18-5v12L3 13v-2z"></path>
+                                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                            </svg>
+                        </div>
+                        <span class="highlight-num">01</span>
+                        <h3>新图技能通报</h3>
+                        <p>进入新章节或获得新技能时，先明确通报各自持有的技能及其功能，再进行操作。</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <span class="highlight-num">02</span>
+                        <h3>跳跃口令同步</h3>
+                        <p>跳跃环节实行口令制，指定一人指挥喊出"1、2、跳"，双方同步按键。</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <span class="highlight-num">03</span>
+                        <h3>Boss战分工轮换</h3>
+                        <p>一人负责拉仇恨，一人负责攻击弱点。每轮结束后互换角色，确保公平与节奏。</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21l-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <span class="highlight-num">04</span>
+                        <h3>解谜试错与兜底</h3>
+                        <p>一人负责动手尝试操作，另一人负责全局观察问题，避免两人同时盲目操作。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>双人成行攻略站</span>
+                </div>
+                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>攻略分类</h4>
+                    <a href="chapters.html">章节攻略</a>
+                    <a href="bosses.html">Boss打法</a>
+                    <a href="minigames.html">小游戏</a>
+                    <a href="tips.html">配合技巧</a>
+                </div>
+                <div class="footer-column">
+                    <h4>章节</h4>
+                    <a href="chapters.html#shed">棚屋</a>
+                    <a href="chapters.html#tree">大树</a>
+                    <a href="chapters.html#rose">罗斯的房间</a>
+                    <a href="chapters.html#clock">布谷鸟钟</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 双人成行攻略站. 本网站仅供学习交流使用</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .tips-highlight-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px 60px;
+        }
+        
+        .highlight-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+        }
+        
+        .highlight-container h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            text-align: center;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        
+        .highlight-card {
+            position: relative;
+            padding: 28px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            transition: var(--transition-normal);
+        }
+        
+        .highlight-card:hover {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+        
+        .highlight-num {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-family: var(--font-en);
+            font-size: 32px;
+            font-weight: 800;
+            color: rgba(139, 92, 246, 0.2);
+        }
+        
+        .highlight-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .highlight-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-container {
+                padding: 24px;
+            }
+        }
+    </style>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTips('all');
+            initTipFilter();
+        });
+        
+        function renderTips(category) {
+            const list = document.getElementById('tipsList');
+            const filtered = category === 'all' 
+                ? gameData.tips 
+                : gameData.tips.filter(t => t.category === category);
+            
+            const icons = {
+                megaphone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-5v12L3 13v-2z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>',
+                users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>',
+                target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle></svg>',
+                search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>',
+                alert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>'
+            };
+            
+            list.innerHTML = filtered.map(tip => `
+                <div class="tip-detail-card">
+                    <div class="tip-detail-header">
+                        <span class="tip-category">${tip.category}</span>
+                        <div class="tip-icon" style="margin-left: auto;">
+                            ${icons[tip.icon] || icons.target}
+                        </div>
+                    </div>
+                    <h3>${tip.title}</h3>
+                    <p>${tip.desc}</p>
+                </div>
+            `).join('');
+        }
+        
+        function initTipFilter() {
+            const btns = document.querySelectorAll('.tip-category-btn');
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderTips(btn.dataset.category);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
