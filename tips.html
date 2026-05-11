@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +13,76 @@
 <body>
     <div id="particles-bg"></div>
     
+    <audio id="bgMusic" loop>
+        <source src="https://images.licensed-game.com/audio/it-takes-two-main-theme.mp3" type="audio/mpeg">
+    </audio>
+    
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <circle cx="14" cy="20" r="6" fill="white"/>
+                        <circle cx="34" cy="20" r="6" fill="white"/>
+                        <path d="M14 28C14 28 10 36 10 40C10 44 12 46 14 46C16 46 18 44 18 40C18 36 14 28 14 28Z" fill="white"/>
+                        <path d="M34 28C34 28 30 36 30 40C30 44 32 46 34 46C36 46 38 44 38 40C38 36 34 28 34 28Z" fill="white"/>
+                        <path d="M20 24C20 24 24 28 24 32C24 36 26 38 28 38C30 38 32 36 32 32C32 28 28 24 28 24" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
                 <span class="logo-text">双人成行<span class="logo-sub">攻略站</span></span>
             </a>
             
             <nav class="nav">
-                <a href="index.html" class="nav-link">首页</a>
-                <a href="chapters.html" class="nav-link">章节攻略</a>
-                <a href="bosses.html" class="nav-link">Boss战</a>
-                <a href="minigames.html" class="nav-link">小游戏</a>
-                <a href="tips.html" class="nav-link active">配合技巧</a>
+                <a href="index.html" class="nav-link">🏠 首页</a>
+                <a href="chapters.html" class="nav-link">📖 章节攻略</a>
+                <a href="bosses.html" class="nav-link">⚔️ Boss战</a>
+                <a href="minigames.html" class="nav-link">🎮 小游戏</a>
+                <a href="tips.html" class="nav-link active">🤝 配合技巧</a>
             </nav>
             
-            <button class="search-toggle" id="searchToggle" aria-label="搜索">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-            </button>
-            
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                    <div class="theme-menu">
+                        <button class="theme-option" data-theme="dark">
+                            <span class="emoji">🌙</span> 黑夜模式
+                        </button>
+                        <button class="theme-option" data-theme="light">
+                            <span class="emoji">☀️</span> 白天模式
+                        </button>
+                        <button class="theme-option" data-theme="eye-care">
+                            <span class="emoji">📖</span> 护眼模式
+                        </button>
+                    </div>
+                </button>
+                
+                <button class="music-toggle" id="musicToggle" aria-label="播放音乐">
+                    <svg class="music-icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <div class="music-bars">
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                    </div>
+                </button>
+                
+                <button class="search-toggle" id="searchToggle" aria-label="搜索">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -66,12 +104,12 @@
             </div>
             <div class="search-body">
                 <div class="search-tags">
-                    <span class="search-tag-label">热门搜索：</span>
+                    <span class="search-tag-label">🔥 热门搜索：</span>
                     <button class="search-tag" data-search="棚屋">棚屋</button>
-                    <button class="search-tag" data-search="蜂后">蜂后</button>
-                    <button class="search-tag" data-search="小游戏">小游戏</button>
-                    <button class="search-tag" data-search="时钟">时钟</button>
-                    <button class="search-tag" data-search="配合">配合技巧</button>
+                    <button class="search-tag" data-search="蜂后">🐝 蜂后</button>
+                    <button class="search-tag" data-search="小游戏">🎮 小游戏</button>
+                    <button class="search-tag" data-search="时钟">🕐 时钟</button>
+                    <button class="search-tag" data-search="配合">🤝 配合技巧</button>
                 </div>
                 <div class="search-results" id="searchResults"></div>
             </div>
@@ -81,16 +119,16 @@
     <main class="main page-main">
         <section class="page-hero">
             <div class="page-hero-content">
-                <h1>配合技巧</h1>
-                <p>双人合作核心要点与章节避坑指南，让通关效率提升90%</p>
+                <h1>🤝 配合技巧</h1>
+                <p>双人合作核心要点与章节避坑指南，让通关效率提升90% 🚀</p>
             </div>
         </section>
 
         <section class="tips-section">
             <div class="tips-categories">
-                <button class="tip-category-btn active" data-category="all">全部</button>
-                <button class="tip-category-btn" data-category="核心技巧">核心技巧</button>
-                <button class="tip-category-btn" data-category="章节避坑">章节避坑</button>
+                <button class="tip-category-btn active" data-category="all">🎯 全部</button>
+                <button class="tip-category-btn" data-category="核心技巧">💡 核心技巧</button>
+                <button class="tip-category-btn" data-category="章节避坑">⚠️ 章节避坑</button>
             </div>
             
             <div class="tips-list" id="tipsList"></div>
@@ -98,51 +136,28 @@
 
         <section class="tips-highlight-section">
             <div class="highlight-container">
-                <h2>四大万能技巧</h2>
+                <h2>🏆 四大万能技巧</h2>
                 <div class="highlight-grid">
                     <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 11l18-5v12L3 13v-2z"></path>
-                                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
-                            </svg>
-                        </div>
+                        <div class="highlight-icon">📢</div>
                         <span class="highlight-num">01</span>
                         <h3>新图技能通报</h3>
                         <p>进入新章节或获得新技能时，先明确通报各自持有的技能及其功能，再进行操作。</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                        </div>
+                        <div class="highlight-icon">👥</div>
                         <span class="highlight-num">02</span>
                         <h3>跳跃口令同步</h3>
                         <p>跳跃环节实行口令制，指定一人指挥喊出"1、2、跳"，双方同步按键。</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="6"></circle>
-                                <circle cx="12" cy="12" r="2"></circle>
-                            </svg>
-                        </div>
+                        <div class="highlight-icon">⚔️</div>
                         <span class="highlight-num">03</span>
                         <h3>Boss战分工轮换</h3>
                         <p>一人负责拉仇恨，一人负责攻击弱点。每轮结束后互换角色，确保公平与节奏。</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="M21 21l-4.35-4.35"></path>
-                            </svg>
-                        </div>
+                        <div class="highlight-icon">🔍</div>
                         <span class="highlight-num">04</span>
                         <h3>解谜试错与兜底</h3>
                         <p>一人负责动手尝试操作，另一人负责全局观察问题，避免两人同时盲目操作。</p>
@@ -164,18 +179,18 @@
                     </svg>
                     <span>双人成行攻略站</span>
                 </div>
-                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台</p>
+                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台 💑</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>攻略分类</h4>
+                    <h4>📂 攻略分类</h4>
                     <a href="chapters.html">章节攻略</a>
                     <a href="bosses.html">Boss打法</a>
                     <a href="minigames.html">小游戏</a>
                     <a href="tips.html">配合技巧</a>
                 </div>
                 <div class="footer-column">
-                    <h4>章节</h4>
+                    <h4>🗺️ 章节</h4>
                     <a href="chapters.html#shed">棚屋</a>
                     <a href="chapters.html#tree">大树</a>
                     <a href="chapters.html#rose">罗斯的房间</a>
@@ -235,20 +250,8 @@
         }
         
         .highlight-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--gradient-primary);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 32px;
             margin-bottom: 16px;
-        }
-        
-        .highlight-icon svg {
-            width: 24px;
-            height: 24px;
-            color: white;
         }
         
         .highlight-num {
@@ -299,19 +302,19 @@
                 : gameData.tips.filter(t => t.category === category);
             
             const icons = {
-                megaphone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-5v12L3 13v-2z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>',
-                users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>',
-                target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle></svg>',
-                search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>',
-                alert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>'
+                megaphone: '📢',
+                users: '👥',
+                target: '🎯',
+                search: '🔍',
+                alert: '⚠️'
             };
             
             list.innerHTML = filtered.map(tip => `
                 <div class="tip-detail-card">
                     <div class="tip-detail-header">
-                        <span class="tip-category">${tip.category}</span>
-                        <div class="tip-icon" style="margin-left: auto;">
-                            ${icons[tip.icon] || icons.target}
+                        <span class="tip-category">${tip.category === '核心技巧' ? '💡' : '⚠️'} ${tip.category}</span>
+                        <div class="tip-icon" style="margin-left: auto; font-size: 20px;">
+                            ${icons[tip.icon] || '💡'}
                         </div>
                     </div>
                     <h3>${tip.title}</h3>

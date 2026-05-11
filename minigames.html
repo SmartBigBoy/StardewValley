@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +13,76 @@
 <body>
     <div id="particles-bg"></div>
     
+    <audio id="bgMusic" loop>
+        <source src="https://images.licensed-game.com/audio/it-takes-two-main-theme.mp3" type="audio/mpeg">
+    </audio>
+    
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <circle cx="14" cy="20" r="6" fill="white"/>
+                        <circle cx="34" cy="20" r="6" fill="white"/>
+                        <path d="M14 28C14 28 10 36 10 40C10 44 12 46 14 46C16 46 18 44 18 40C18 36 14 28 14 28Z" fill="white"/>
+                        <path d="M34 28C34 28 30 36 30 40C30 44 32 46 34 46C36 46 38 44 38 40C38 36 34 28 34 28Z" fill="white"/>
+                        <path d="M20 24C20 24 24 28 24 32C24 36 26 38 28 38C30 38 32 36 32 32C32 28 28 24 28 24" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
                 <span class="logo-text">双人成行<span class="logo-sub">攻略站</span></span>
             </a>
             
             <nav class="nav">
-                <a href="index.html" class="nav-link">首页</a>
-                <a href="chapters.html" class="nav-link">章节攻略</a>
-                <a href="bosses.html" class="nav-link">Boss战</a>
-                <a href="minigames.html" class="nav-link active">小游戏</a>
-                <a href="tips.html" class="nav-link">配合技巧</a>
+                <a href="index.html" class="nav-link">🏠 首页</a>
+                <a href="chapters.html" class="nav-link">📖 章节攻略</a>
+                <a href="bosses.html" class="nav-link">⚔️ Boss战</a>
+                <a href="minigames.html" class="nav-link active">🎮 小游戏</a>
+                <a href="tips.html" class="nav-link">🤝 配合技巧</a>
             </nav>
             
-            <button class="search-toggle" id="searchToggle" aria-label="搜索">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-            </button>
-            
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                    <div class="theme-menu">
+                        <button class="theme-option" data-theme="dark">
+                            <span class="emoji">🌙</span> 黑夜模式
+                        </button>
+                        <button class="theme-option" data-theme="light">
+                            <span class="emoji">☀️</span> 白天模式
+                        </button>
+                        <button class="theme-option" data-theme="eye-care">
+                            <span class="emoji">📖</span> 护眼模式
+                        </button>
+                    </div>
+                </button>
+                
+                <button class="music-toggle" id="musicToggle" aria-label="播放音乐">
+                    <svg class="music-icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <div class="music-bars">
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                    </div>
+                </button>
+                
+                <button class="search-toggle" id="searchToggle" aria-label="搜索">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -66,12 +104,12 @@
             </div>
             <div class="search-body">
                 <div class="search-tags">
-                    <span class="search-tag-label">热门搜索：</span>
+                    <span class="search-tag-label">🔥 热门搜索：</span>
                     <button class="search-tag" data-search="棚屋">棚屋</button>
-                    <button class="search-tag" data-search="蜂后">蜂后</button>
-                    <button class="search-tag" data-search="小游戏">小游戏</button>
-                    <button class="search-tag" data-search="时钟">时钟</button>
-                    <button class="search-tag" data-search="配合">配合技巧</button>
+                    <button class="search-tag" data-search="蜂后">🐝 蜂后</button>
+                    <button class="search-tag" data-search="小游戏">🎮 小游戏</button>
+                    <button class="search-tag" data-search="时钟">🕐 时钟</button>
+                    <button class="search-tag" data-search="配合">🤝 配合技巧</button>
                 </div>
                 <div class="search-results" id="searchResults"></div>
             </div>
@@ -81,21 +119,21 @@
     <main class="main page-main">
         <section class="page-hero">
             <div class="page-hero-content">
-                <h1>小游戏大全</h1>
-                <p>25个小游戏位置与玩法详解，集齐解锁"小游戏大亨"成就</p>
+                <h1>🎮 小游戏大全</h1>
+                <p>25个小游戏位置与玩法详解，集齐解锁"小游戏大亨"成就 🏆</p>
             </div>
         </section>
 
         <section class="minigames-section">
             <div class="chapter-filter" style="margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <button class="chapter-filter-btn active" data-chapter="all">全部</button>
-                <button class="chapter-filter-btn" data-chapter="棚屋">棚屋 (2)</button>
-                <button class="chapter-filter-btn" data-chapter="大树">大树 (2)</button>
-                <button class="chapter-filter-btn" data-chapter="罗斯的房间">罗斯的房间 (7)</button>
-                <button class="chapter-filter-btn" data-chapter="布谷鸟钟">布谷鸟钟 (2)</button>
-                <button class="chapter-filter-btn" data-chapter="雪景球">雪景球 (4)</button>
-                <button class="chapter-filter-btn" data-chapter="花园">花园 (3)</button>
-                <button class="chapter-filter-btn" data-chapter="阁楼">阁楼 (5)</button>
+                <button class="chapter-filter-btn active" data-chapter="all">🎯 全部</button>
+                <button class="chapter-filter-btn" data-chapter="棚屋">🔨 棚屋 (2)</button>
+                <button class="chapter-filter-btn" data-chapter="大树">🌲 大树 (2)</button>
+                <button class="chapter-filter-btn" data-chapter="罗斯的房间">🌹 罗斯的房间 (7)</button>
+                <button class="chapter-filter-btn" data-chapter="布谷鸟钟">🕐 布谷鸟钟 (2)</button>
+                <button class="chapter-filter-btn" data-chapter="雪景球">❄️ 雪景球 (4)</button>
+                <button class="chapter-filter-btn" data-chapter="花园">🌻 花园 (3)</button>
+                <button class="chapter-filter-btn" data-chapter="阁楼">🎵 阁楼 (5)</button>
             </div>
             <div class="minigames-grid" id="minigamesGrid"></div>
         </section>
@@ -113,18 +151,18 @@
                     </svg>
                     <span>双人成行攻略站</span>
                 </div>
-                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台</p>
+                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台 💑</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>攻略分类</h4>
+                    <h4>📂 攻略分类</h4>
                     <a href="chapters.html">章节攻略</a>
                     <a href="bosses.html">Boss打法</a>
                     <a href="minigames.html">小游戏</a>
                     <a href="tips.html">配合技巧</a>
                 </div>
                 <div class="footer-column">
-                    <h4>章节</h4>
+                    <h4>🗺️ 章节</h4>
                     <a href="chapters.html#shed">棚屋</a>
                     <a href="chapters.html#tree">大树</a>
                     <a href="chapters.html#rose">罗斯的房间</a>
@@ -155,12 +193,12 @@
                 <div class="minigame-card">
                     <div class="minigame-header">
                         <span class="minigame-number">#${minigame.id}</span>
-                        <h3>${minigame.name}</h3>
+                        <h3>🎮 ${minigame.name}</h3>
                     </div>
                     <div class="minigame-info">
-                        <p><strong>位置：</strong>${minigame.chapter} - ${minigame.section}</p>
-                        <p><strong>玩法：</strong>${minigame.desc}</p>
-                        <p><strong>技巧：</strong>${minigame.tips}</p>
+                        <p><strong>📍 位置：</strong>${minigame.chapter} - ${minigame.section}</p>
+                        <p><strong>🎯 玩法：</strong>${minigame.desc}</p>
+                        <p><strong>💡 技巧：</strong>${minigame.tips}</p>
                     </div>
                 </div>
             `).join('');

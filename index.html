@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +13,76 @@
 <body>
     <div id="particles-bg"></div>
     
+    <audio id="bgMusic" loop>
+        <source src="https://images.licensed-game.com/audio/it-takes-two-main-theme.mp3" type="audio/mpeg">
+    </audio>
+    
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <circle cx="14" cy="20" r="6" fill="white"/>
+                        <circle cx="34" cy="20" r="6" fill="white"/>
+                        <path d="M14 28C14 28 10 36 10 40C10 44 12 46 14 46C16 46 18 44 18 40C18 36 14 28 14 28Z" fill="white"/>
+                        <path d="M34 28C34 28 30 36 30 40C30 44 32 46 34 46C36 46 38 44 38 40C38 36 34 28 34 28Z" fill="white"/>
+                        <path d="M20 24C20 24 24 28 24 32C24 36 26 38 28 38C30 38 32 36 32 32C32 28 28 24 28 24" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
                 <span class="logo-text">双人成行<span class="logo-sub">攻略站</span></span>
             </a>
             
             <nav class="nav">
-                <a href="index.html" class="nav-link active">首页</a>
-                <a href="chapters.html" class="nav-link">章节攻略</a>
-                <a href="bosses.html" class="nav-link">Boss战</a>
-                <a href="minigames.html" class="nav-link">小游戏</a>
-                <a href="tips.html" class="nav-link">配合技巧</a>
+                <a href="index.html" class="nav-link active">🏠 首页</a>
+                <a href="chapters.html" class="nav-link">📖 章节攻略</a>
+                <a href="bosses.html" class="nav-link">⚔️ Boss战</a>
+                <a href="minigames.html" class="nav-link">🎮 小游戏</a>
+                <a href="tips.html" class="nav-link">🤝 配合技巧</a>
             </nav>
             
-            <button class="search-toggle" id="searchToggle" aria-label="搜索">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-            </button>
-            
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                    <div class="theme-menu">
+                        <button class="theme-option" data-theme="dark">
+                            <span class="emoji">🌙</span> 黑夜模式
+                        </button>
+                        <button class="theme-option" data-theme="light">
+                            <span class="emoji">☀️</span> 白天模式
+                        </button>
+                        <button class="theme-option" data-theme="eye-care">
+                            <span class="emoji">📖</span> 护眼模式
+                        </button>
+                    </div>
+                </button>
+                
+                <button class="music-toggle" id="musicToggle" aria-label="播放音乐">
+                    <svg class="music-icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <div class="music-bars">
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                        <div class="music-bar"></div>
+                    </div>
+                </button>
+                
+                <button class="search-toggle" id="searchToggle" aria-label="搜索">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -66,12 +104,12 @@
             </div>
             <div class="search-body">
                 <div class="search-tags">
-                    <span class="search-tag-label">热门搜索：</span>
+                    <span class="search-tag-label">🔥 热门搜索：</span>
                     <button class="search-tag" data-search="棚屋">棚屋</button>
-                    <button class="search-tag" data-search="蜂后">蜂后</button>
-                    <button class="search-tag" data-search="小游戏">小游戏</button>
-                    <button class="search-tag" data-search="时钟">时钟</button>
-                    <button class="search-tag" data-search="配合">配合技巧</button>
+                    <button class="search-tag" data-search="蜂后">🐝 蜂后</button>
+                    <button class="search-tag" data-search="小游戏">🎮 小游戏</button>
+                    <button class="search-tag" data-search="时钟">🕐 时钟</button>
+                    <button class="search-tag" data-search="配合">🤝 配合技巧</button>
                 </div>
                 <div class="search-results" id="searchResults"></div>
             </div>
@@ -82,65 +120,58 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>🏆</span>
                     <span>TGA年度游戏攻略</span>
                 </div>
                 <h1 class="hero-title">
                     <span class="hero-title-cn">双人成行</span>
                     <span class="hero-title-en">It Takes Two</span>
                 </h1>
-                <p class="hero-desc">专为Switch/PC玩家打造的专业攻略指南，涵盖7大章节详解、11+ Boss打法、25个小游戏位置，以及双人配合核心技巧，助您与伙伴完美通关！</p>
+                <p class="hero-desc">🎮 专为Switch/PC玩家打造的专业攻略指南，涵盖7大章节详解、11+ Boss打法、25个小游戏位置，以及双人配合核心技巧，助您与伙伴完美通关！💑</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">7</span>
-                        <span class="stat-label">章节</span>
+                        <span class="stat-label">📚 章节</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">11+</span>
-                        <span class="stat-label">Boss</span>
+                        <span class="stat-label">⚔️ Boss</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">25</span>
-                        <span class="stat-label">小游戏</span>
+                        <span class="stat-label">🎮 小游戏</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">15h</span>
-                        <span class="stat-label">游戏时长</span>
+                        <span class="stat-label">⏱️ 游戏时长</span>
                     </div>
                 </div>
                 <div class="hero-actions">
                     <a href="chapters.html" class="btn btn-primary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                        开始攻略
+                        <span>🚀</span> 开始攻略
                     </a>
                     <a href="bosses.html" class="btn btn-secondary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"></path></svg>
-                        Boss打法
+                        <span>⚔️</span> Boss打法
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="hero-card-stack">
-                    <div class="hero-card hero-card-1">
-                        <div class="hero-card-inner">
-                            <span class="hero-card-tag">第一章</span>
-                            <h3>棚屋</h3>
-                            <p>锤子与钉子</p>
-                        </div>
+                <div class="hero-image-container">
+                    <img class="hero-image" src="https://images.licensed-game.com/screenshot/it-takes-two-screenshot-1.jpg" alt="双人成行游戏截图" onerror="this.style.display='none'">
+                    <div class="hero-image-overlay"></div>
+                </div>
+                <div class="hero-float-cards">
+                    <div class="hero-float-card">
+                        <h4>🎯 科迪 & 小梅</h4>
+                        <p>一起踏上冒险之旅</p>
                     </div>
-                    <div class="hero-card hero-card-2">
-                        <div class="hero-card-inner">
-                            <span class="hero-card-tag">第二章</span>
-                            <h3>大树</h3>
-                            <p>树脂与火焰</p>
-                        </div>
+                    <div class="hero-float-card">
+                        <h4>💡 合作解谜</h4>
+                        <p>双人配合突破难关</p>
                     </div>
-                    <div class="hero-card hero-card-3">
-                        <div class="hero-card-inner">
-                            <span class="hero-card-tag">第三章</span>
-                            <h3>罗斯的房间</h3>
-                            <p>想象力王国</p>
-                        </div>
+                    <div class="hero-float-card">
+                        <h4>🏆 TGA年度最佳</h4>
+                        <p>年度最佳游戏</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +179,7 @@
 
         <section class="section chapters-section">
             <div class="section-header">
-                <h2 class="section-title">章节导航</h2>
+                <h2 class="section-title">📍 章节导航</h2>
                 <p class="section-desc">七大独特章节，每章配备专属技能与玩法</p>
             </div>
             <div class="chapters-grid" id="chaptersGrid"></div>
@@ -158,10 +189,7 @@
             <div class="quick-links-grid">
                 <a href="bosses.html" class="quick-link quick-link-boss">
                     <div class="quick-link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
+                        <span class="icon-emoji">⚔️</span>
                     </div>
                     <div class="quick-link-content">
                         <h3>Boss战指南</h3>
@@ -173,11 +201,7 @@
                 </a>
                 <a href="minigames.html" class="quick-link quick-link-minigame">
                     <div class="quick-link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                            <circle cx="8" cy="12" r="2"></circle>
-                            <circle cx="16" cy="12" r="2"></circle>
-                        </svg>
+                        <span class="icon-emoji">🎮</span>
                     </div>
                     <div class="quick-link-content">
                         <h3>小游戏大全</h3>
@@ -189,10 +213,7 @@
                 </a>
                 <a href="tips.html" class="quick-link quick-link-tips">
                     <div class="quick-link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            <path d="M9 12l2 2 4-4"></path>
-                        </svg>
+                        <span class="icon-emoji">🤝</span>
                     </div>
                     <div class="quick-link-content">
                         <h3>配合技巧</h3>
@@ -207,44 +228,38 @@
 
         <section class="section characters-section">
             <div class="section-header">
-                <h2 class="section-title">游戏角色</h2>
+                <h2 class="section-title">🎭 游戏角色</h2>
                 <p class="section-desc">了解科迪与小梅的独特能力</p>
             </div>
             <div class="characters-grid">
                 <div class="character-card character-cody">
                     <div class="character-avatar">
-                        <svg viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="35" r="20"/>
-                            <path d="M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60"/>
-                        </svg>
+                        <img src="https://images.licensed-game.com/character/cody.png" alt="科迪" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2235%22 r=%2220%22 fill=%22%238B5CF6%22/><path d=%22M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60%22 fill=%22%238B5CF6%22/></svg>'">
                     </div>
                     <div class="character-info">
-                        <h3>科迪 (Cody)</h3>
+                        <h3>🧑 科迪 (Cody)</h3>
                         <div class="character-abilities">
-                            <span class="ability-tag">钉子</span>
-                            <span class="ability-tag">火焰枪</span>
-                            <span class="ability-tag">时间倒流</span>
-                            <span class="ability-tag">磁力吸引</span>
+                            <span class="ability-tag">📌 钉子</span>
+                            <span class="ability-tag">🔥 火焰枪</span>
+                            <span class="ability-tag">⏪ 时间倒流</span>
+                            <span class="ability-tag">🧲 磁力吸引</span>
                         </div>
-                        <p class="character-desc">冷静理性，擅长精准操作与物理控制</p>
+                        <p class="character-desc">冷静理性，擅长精准操作与物理控制 🔧</p>
                     </div>
                 </div>
                 <div class="character-card character-may">
                     <div class="character-avatar">
-                        <svg viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="35" r="20"/>
-                            <path d="M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60"/>
-                        </svg>
+                        <img src="https://images.licensed-game.com/character/may.png" alt="小梅" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2235%22 r=%2220%22 fill=%22%23F97316%22/><path d=%22M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60%22 fill=%22%23F97316%22/></svg>'">
                     </div>
                     <div class="character-info">
-                        <h3>小梅 (May)</h3>
+                        <h3>👩 小梅 (May)</h3>
                         <div class="character-abilities">
-                            <span class="ability-tag">锤子</span>
-                            <span class="ability-tag">树脂枪</span>
-                            <span class="ability-tag">时间冻结</span>
-                            <span class="ability-tag">磁力排斥</span>
+                            <span class="ability-tag">🔨 锤子</span>
+                            <span class="ability-tag">🌳 树脂枪</span>
+                            <span class="ability-tag">❄️ 时间冻结</span>
+                            <span class="ability-tag">🧲 磁力排斥</span>
                         </div>
-                        <p class="character-desc">热情活力，擅长破坏与状态辅助</p>
+                        <p class="character-desc">热情活力，擅长破坏与状态辅助 💪</p>
                     </div>
                 </div>
             </div>
@@ -252,10 +267,43 @@
 
         <section class="section hot-tips-section">
             <div class="section-header">
-                <h2 class="section-title">热门攻略</h2>
+                <h2 class="section-title">🔥 热门攻略</h2>
                 <p class="section-desc">玩家最常查阅的高频内容</p>
             </div>
             <div class="tips-grid" id="hotTipsGrid"></div>
+        </section>
+
+        <section class="section gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">📸 游戏图鉴</h2>
+                <p class="section-desc">精彩游戏画面回顾</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-1">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-1.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                    <div class="gallery-overlay">
+                        <span>🌲 大树章节</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-2">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-2.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                    <div class="gallery-overlay">
+                        <span>🏠 棚屋章节</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-3">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-3.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                    <div class="gallery-overlay">
+                        <span>❄️ 雪景球章节</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-4">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-4.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                    <div class="gallery-overlay">
+                        <span>🎵 阁楼章节</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -271,18 +319,18 @@
                     </svg>
                     <span>双人成行攻略站</span>
                 </div>
-                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台</p>
+                <p class="footer-desc">专为双人成行玩家打造的专业攻略平台 💑</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>攻略分类</h4>
+                    <h4>📂 攻略分类</h4>
                     <a href="chapters.html">章节攻略</a>
                     <a href="bosses.html">Boss打法</a>
                     <a href="minigames.html">小游戏</a>
                     <a href="tips.html">配合技巧</a>
                 </div>
                 <div class="footer-column">
-                    <h4>章节</h4>
+                    <h4>🗺️ 章节</h4>
                     <a href="chapters.html#shed">棚屋</a>
                     <a href="chapters.html#tree">大树</a>
                     <a href="chapters.html#rose">罗斯的房间</a>
@@ -291,7 +339,7 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 双人成行攻略站. 本网站仅供学习交流使用</p>
-                <p class="footer-credit">游戏版权归Hazelight Studios与EA所有</p>
+                <p class="footer-credit">🎮 游戏版权归Hazelight Studios与EA所有</p>
             </div>
         </div>
     </footer>
