@@ -9,6 +9,234 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 图片轮播样式 */
+        .hero-carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.2));
+        }
+        
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+        
+        .carousel-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        /* 技能展示图片 */
+        .skill-showcase {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border);
+        }
+        
+        .skill-showcase h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 24px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .skill-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--radius-lg);
+            transition: var(--transition-fast);
+        }
+        
+        .skill-item:hover {
+            background: rgba(139, 92, 246, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            background: var(--gradient-primary);
+        }
+        
+        .skill-item h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .skill-item p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        /* 场景画廊扩展 */
+        .gallery-grid-extended {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        
+        .gallery-item-large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* 游戏特色展示 */
+        .features-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            display: flex;
+            gap: 20px;
+            padding: 24px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            transition: var(--transition-normal);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .feature-image {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .feature-content h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .feature-content p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 1024px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid-extended {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item-large {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            
+            .feature-card {
+                flex-direction: column;
+            }
+            
+            .feature-image {
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="particles-bg"></div>
@@ -156,9 +384,31 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="hero-image-container">
-                    <img class="hero-image" src="https://images.licensed-game.com/screenshot/it-takes-two-screenshot-1.jpg" alt="双人成行游戏截图" onerror="this.style.display='none'">
-                    <div class="hero-image-overlay"></div>
+                <div class="hero-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="https://images.licensed-game.com/screenshot/it-takes-two-hero-1.jpg" alt="双人成行游戏截图1" onerror="this.src='https://images.unsplash.com/photo-1552820728-8b83bb6b2b0a?w=800'">
+                            <div class="carousel-overlay"></div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.licensed-game.com/screenshot/it-takes-two-hero-2.jpg" alt="双人成行游戏截图2" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'">
+                            <div class="carousel-overlay"></div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.licensed-game.com/screenshot/it-takes-two-hero-3.jpg" alt="双人成行游戏截图3" onerror="this.src='https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800'">
+                            <div class="carousel-overlay"></div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.licensed-game.com/screenshot/it-takes-two-hero-4.jpg" alt="双人成行游戏截图4" onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800'">
+                            <div class="carousel-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <div class="carousel-dot active" data-slide="0"></div>
+                        <div class="carousel-dot" data-slide="1"></div>
+                        <div class="carousel-dot" data-slide="2"></div>
+                        <div class="carousel-dot" data-slide="3"></div>
+                    </div>
                 </div>
                 <div class="hero-float-cards">
                     <div class="hero-float-card">
@@ -234,7 +484,7 @@
             <div class="characters-grid">
                 <div class="character-card character-cody">
                     <div class="character-avatar">
-                        <img src="https://images.licensed-game.com/character/cody.png" alt="科迪" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2235%22 r=%2220%22 fill=%22%238B5CF6%22/><path d=%22M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60%22 fill=%22%238B5CF6%22/></svg>'">
+                        <img src="https://images.licensed-game.com/character/cody-avatar.jpg" alt="科迪" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop'">
                     </div>
                     <div class="character-info">
                         <h3>🧑 科迪 (Cody)</h3>
@@ -249,7 +499,7 @@
                 </div>
                 <div class="character-card character-may">
                     <div class="character-avatar">
-                        <img src="https://images.licensed-game.com/character/may.png" alt="小梅" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2235%22 r=%2220%22 fill=%22%23F97316%22/><path d=%22M30 60 Q50 90 70 60 Q70 50 50 45 Q30 50 30 60%22 fill=%22%23F97316%22/></svg>'">
+                        <img src="https://images.licensed-game.com/character/may-avatar.jpg" alt="小梅" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop'">
                     </div>
                     <div class="character-info">
                         <h3>👩 小梅 (May)</h3>
@@ -260,6 +510,33 @@
                             <span class="ability-tag">🧲 磁力排斥</span>
                         </div>
                         <p class="character-desc">热情活力，擅长破坏与状态辅助 💪</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技能展示 -->
+            <div class="skill-showcase">
+                <h3>🎮 核心技能展示</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🔨</div>
+                        <h4>锤子</h4>
+                        <p>小梅专属，破坏障碍物</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📌</div>
+                        <h4>钉子</h4>
+                        <p>科迪专属，固定机关</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🔥</div>
+                        <h4>火焰枪</h4>
+                        <p>科迪专属，点燃树脂</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🌳</div>
+                        <h4>树脂枪</h4>
+                        <p>小梅专属，粘附燃烧</p>
                     </div>
                 </div>
             </div>
@@ -278,29 +555,87 @@
                 <h2 class="section-title">📸 游戏图鉴</h2>
                 <p class="section-desc">精彩游戏画面回顾</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-item-1">
-                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-1.jpg" alt="游戏场景" onerror="this.style.display='none'">
+            <div class="gallery-grid-extended">
+                <div class="gallery-item gallery-item-large">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-1.jpg" alt="大树章节" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800'">
                     <div class="gallery-overlay">
-                        <span>🌲 大树章节</span>
+                        <span>🌲 大树章节 - 松鼠与黄蜂的战争</span>
                     </div>
                 </div>
-                <div class="gallery-item gallery-item-2">
-                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-2.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                <div class="gallery-item">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-2.jpg" alt="棚屋章节" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'">
                     <div class="gallery-overlay">
-                        <span>🏠 棚屋章节</span>
+                        <span>🏠 棚屋</span>
                     </div>
                 </div>
-                <div class="gallery-item gallery-item-3">
-                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-3.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                <div class="gallery-item">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-3.jpg" alt="雪景球章节" onerror="this.src='https://images.unsplash.com/photo-1483664852095-d6cc6870705d?w=400'">
                     <div class="gallery-overlay">
-                        <span>❄️ 雪景球章节</span>
+                        <span>❄️ 雪景球</span>
                     </div>
                 </div>
-                <div class="gallery-item gallery-item-4">
-                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-4.jpg" alt="游戏场景" onerror="this.style.display='none'">
+                <div class="gallery-item">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-4.jpg" alt="阁楼章节" onerror="this.src='https://images.unsplash.com/photo-1516280440614-6697288d5d38?w=400'">
                     <div class="gallery-overlay">
-                        <span>🎵 阁楼章节</span>
+                        <span>🎵 阁楼</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-5.jpg" alt="罗斯的房间" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400'">
+                    <div class="gallery-overlay">
+                        <span>🌹 罗斯的房间</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.licensed-game.com/screenshot/it-takes-two-scene-6.jpg" alt="花园章节" onerror="this.src='https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400'">
+                    <div class="gallery-overlay">
+                        <span>🌻 花园</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏特色展示 -->
+        <section class="section features-section">
+            <div class="section-header">
+                <h2 class="section-title">✨ 游戏特色</h2>
+                <p class="section-desc">探索双人成行的独特魅力</p>
+            </div>
+            <div class="features-showcase">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.licensed-game.com/feature/co-op.jpg" alt="合作玩法" onerror="this.src='https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=400'">
+                    </div>
+                    <div class="feature-content">
+                        <h4>🤝 强制双人合作</h4>
+                        <p>游戏设计核心就是双人配合，每个谜题都需要两位玩家协作完成，单人无法通关。这种设计让游戏体验更加独特和有趣。</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.licensed-game.com/feature/mechanics.jpg" alt="多样玩法" onerror="this.src='https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400'">
+                    </div>
+                    <div class="feature-content">
+                        <h4>🎮 丰富游戏机制</h4>
+                        <p>从平台跳跃到射击，从解谜到竞速，游戏融合了多种玩法类型，每个章节都有全新的机制等待探索。</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.licensed-game.com/feature/story.jpg" alt="感人故事" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400'">
+                    </div>
+                    <div class="feature-content">
+                        <h4>💕 温馨感人故事</h4>
+                        <p>科迪和小梅的冒险之旅充满了欢笑与泪水，通过游戏讲述了一个关于爱情、家庭和理解的动人故事。</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.licensed-game.com/feature/visuals.jpg" alt="精美画面" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400'">
+                    </div>
+                    <div class="feature-content">
+                        <h4>🎨 精美视觉效果</h4>
+                        <p>从棚屋到太空，从花园到音乐世界，每个场景都经过精心设计，视觉效果令人惊叹，带来沉浸式体验。</p>
                     </div>
                 </div>
             </div>
@@ -346,5 +681,45 @@
 
     <script src="data.js"></script>
     <script src="app.js"></script>
+    <script>
+        // 轮播图功能
+        document.addEventListener('DOMContentLoaded', function() {
+            initCarousel();
+        });
+        
+        function initCarousel() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentSlide = 0;
+            let interval;
+            
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                const next = (currentSlide + 1) % slides.length;
+                showSlide(next);
+            }
+            
+            // 自动轮播
+            interval = setInterval(nextSlide, 4000);
+            
+            // 点击指示器切换
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(interval);
+                    showSlide(index);
+                    interval = setInterval(nextSlide, 4000);
+                });
+            });
+        }
+    </script>
 </body>
 </html>

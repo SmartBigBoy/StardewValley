@@ -9,6 +9,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="pages.css">
+    <style>
+        .boss-image-section {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border);
+        }
+        
+        .boss-image-section h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 24px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .boss-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .boss-gallery-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+        }
+        
+        .boss-gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .boss-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .boss-gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .boss-gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 16px;
+        }
+        
+        .boss-gallery-overlay h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 4px;
+        }
+        
+        .boss-gallery-overlay .difficulty-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .boss-gallery-overlay .difficulty-badge.easy {
+            background: rgba(16, 185, 129, 0.8);
+        }
+        
+        .boss-gallery-overlay .difficulty-badge.medium {
+            background: rgba(245, 158, 11, 0.8);
+        }
+        
+        .boss-gallery-overlay .difficulty-badge.hard {
+            background: rgba(239, 68, 68, 0.8);
+        }
+        
+        @media (max-width: 1024px) {
+            .boss-gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .boss-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="particles-bg"></div>
@@ -126,6 +225,69 @@
 
         <section class="bosses-grid-section">
             <div class="bosses-grid" id="bossesGrid"></div>
+        </section>
+
+        <!-- Boss图片画廊 -->
+        <section class="section boss-image-section">
+            <h3>👹 Boss图鉴</h3>
+            <div class="boss-gallery-grid">
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/vacuum.jpg" alt="吸尘器" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🌀 吸尘器</h4>
+                        <span class="difficulty-badge easy">😊 简单</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/toolbox.jpg" alt="工具箱" onerror="this.src='https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🧰 工具箱</h4>
+                        <span class="difficulty-badge medium">🤔 中等</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/beetle.jpg" alt="巨型甲壳虫" onerror="this.src='https://images.unsplash.com/photo-1551731409-43eb3e517a1a?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🪲 巨型甲壳虫</h4>
+                        <span class="difficulty-badge medium">🤔 中等</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/wasp-queen.jpg" alt="蜂后" onerror="this.src='https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🐝 蜂后</h4>
+                        <span class="difficulty-badge hard">😱 困难</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/monkey.jpg" alt="太空猴子" onerror="this.src='https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🐵 太空猴子</h4>
+                        <span class="difficulty-badge medium">🤔 中等</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/octopus.jpg" alt="巨型章鱼" onerror="this.src='https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🐙 巨型章鱼</h4>
+                        <span class="difficulty-badge medium">🤔 中等</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/snowman.jpg" alt="雪人王" onerror="this.src='https://images.unsplash.com/photo-1483664852095-d6cc6870705d?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>⛄ 雪人王</h4>
+                        <span class="difficulty-badge medium">🤔 中等</span>
+                    </div>
+                </div>
+                <div class="boss-gallery-item">
+                    <img src="https://images.licensed-game.com/boss/joey.jpg" alt="乔伊" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400'">
+                    <div class="boss-gallery-overlay">
+                        <h4>🌿 乔伊</h4>
+                        <span class="difficulty-badge hard">😱 困难</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
